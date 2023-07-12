@@ -1,0 +1,541 @@
+.swiper-button-next {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.line-icon-Arrow-OutLeft:before {
+    content: "\e657";
+}
+
+/*.heading-6 {
+    font-size: 27px;
+}
+
+.btn.btn-fancy.btn-sm {
+    font-size: 11px;
+    letter-spacing: .5px;
+    padding: 10px 24px;
+}
+
+.btn.btn-sm {
+    font-size: 11px;
+    line-height: normal;
+    padding: 8px 22px;
+}
+
+.btn,
+.btn:hover {
+    border-color: #232323;
+}
+
+.btn:hover {
+    background-color: #232323;
+    color: white;
+}
+
+.btn {
+    color: #232323;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0.25rem;
+}
+
+.text-xmd {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.btn.btn-sonar {
+    border-radius: 9999px;
+    font-size: 43px;
+    line-height: 1;
+    padding: 0px;
+    position: relative;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-5 {
+    font-size: 32.2px;
+}
+
+.heading-4 {
+    font-size: 2.85rem;
+    line-height: 3.4rem;
+}
+
+.cover-background {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-about-bg.webp");
+    opacity: 1;
+}
+
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.portfolio-colorful .portfolio-box {
+    position: relative;
+}
+
+.portfolio-colorful .portfolio-box img {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.portfolio-colorful .portfolio-box:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.portfolio-colorful .portfolio-box .portfolio-hover,
+.portfolio-colorful .portfolio-box .portfolio-hover i {
+    opacity: 0;
+    position: absolute;
+    transition: all .3s cubic-bezier(.2, 0, .3, 1);
+}
+
+.portfolio-colorful .portfolio-box .portfolio-hover {
+    background: #c3964ee6;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.portfolio-colorful .portfolio-box .portfolio-hover .portfolio-content {
+    bottom: 3rem;
+    left: 4rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    transition: all .3s cubic-bezier(.2, 0, .3, 1);
+}
+
+.portfolio-colorful .portfolio-box .portfolio-hover svg {
+    font-size: 28px;
+    right: 4rem;
+    top: 3rem;
+    transform: translateX(15px);
+    position: absolute;
+    transition: all .3s cubic-bezier(.2, 0, .3, 1);
+    color: white;
+}
+
+.counter-style-02 .counter-content {
+    color: #828282;
+    display: block;
+    font-family: var(--alt-font);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.counter-style-02 .counter-title {
+    margin-right: 4px;
+    overflow-wrap: normal;
+}
+
+.cover1-background {
+    opacity: 1;
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-services.webp");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.fancy-text-box-05 {
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.bg-banner-image {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-services.webp");
+}
+
+.fancy-text-box-05 .fancy-box-item .bg-banner-image {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition-duration: .5s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 0;
+}
+
+.fancy-text-box-05 .fancy-box-item .fancy-text-box .fancy-text-content {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: auto;
+    transform: translateY(70px);
+    transition: all .5s ease-in-out;
+    width: 100%;
+    z-index: 9;
+}
+
+.fancy-text-box-05 .fancy-box-item .fancy-text-box .fancy-text-content .fancy-text-box-bottom {
+    opacity: 1;
+    transform: translateY(15px);
+    transition: all .5s ease-in-out;
+}
+
+.fancy-text-box-05 .fancy-box-item:hover .fancy-text-box .fancy-text-content {
+    background-color: #c3964e;
+    transform: translateY(0);
+}
+
+.blog-Simple {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .08);
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+}
+
+.blog-Simple .blog-post-image {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/blog-img232.webp");
+    background-position: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.blog-Simple .blog-post-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.blog-Simple .post-details {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+    width: 50%;
+}
+
+.blog-Simple .post-details .blog-category {
+    align-self: flex-start;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px hsla(0, 0%, 9%, .08);
+}
+
+.blog-Simple .post-details .blog-category {
+    --tw-text-opacity: 1;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(35 35 35/var(--tw-text-opacity));
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 4.5rem;
+    padding: 6px 16px;
+    text-transform: uppercase;
+}
+
+.blog-Simple .post-details .blog-category:hover,
+.blog-Simple .post-details .blog-title:hover {
+    color: #0a58ca;
+}
+
+.blog-Simple .post-details .blog-title {
+    --tw-text-opacity: 1;
+    color: rgb(35 35 35/var(--tw-text-opacity));
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.blog-Simple .post-details .blog-author {
+    align-self: flex-start;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #c3964e;
+}
+
+.interiordesign-blog .blog-author {
+    background: var(--base-color) !important;
+}
+
+.blog-Simple:hover .blog-post-image {
+    background-position: 0;
+}
+
+.blog-Simple:hover .blog-post-image a {
+    opacity: .3;
+}
+
+.blog-Simple .blog-post-image a {
+    background: #374162;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+
+.bg-cover {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-start-project-bg.webp");
+}
+
+.text-decoration-line-bottom {
+    border-bottom: 1px solid white;
+    position: relative;
+    white-space: nowrap;
+} */
+
+/* media */
+/* decoration service */
+@media (max-width:985px) {
+    .heading-5 {
+        font-size: 25.2px;
+    }
+}
+
+@media (max-width: 880px) {
+    .heading-5 {
+        font-size: 23.2px;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading-5 {
+        text-align: start !important;
+        font-size: 23.2px;
+    }
+}
+
+@media (max-width: 670px) {
+    .heading-5 {
+        text-align: start !important;
+        font-size: 21.2px;
+    }
+}
+
+/* our customer css */
+.title {
+    font-weight: 500;
+    color: #c3964e;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.heading-5 {
+    font-size: 32.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #232323;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex img {
+    margin-right: 50px;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+}
+
+@media (max-width:640px) {
+    .flex img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .flex {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .flex img {
+        width: 100px;
+        height: 100px;
+        margin-right: 11px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .heading-5 {
+        font-size: 27.2px;
+    }
+}
+
+@media (max-width:320px) {
+    .heading-5 {
+        font-size: 25.2px;
+    }
+}
+
+.detail {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #828282;
+    line-height: 29px;
+}
+
+.customerName {
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #232323;
+}
+
+.customerDes {
+    font-size: 14px;
+    line-height: 20px;
+    color: #828282;
+}
+
+/* banner css */
+.bg-cover {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-start-project-bg.webp");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.padding {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+@media (max-width:768px) {
+    .padding {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+}
+
+@media (max-width:640px) {
+    .padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.background {
+    opacity: 0.5;
+    background-color: #232323;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerHeading {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.startLink {
+    font-weight: 600;
+    padding-top: 0;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    position: relative;
+    white-space: nowrap;
+}
+
+@media (max-width:768px) {
+
+    .bannerHeading,
+    .startLink {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* about interior design css */
+.cover-background {
+    background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-about-bg.webp");
+    opacity: 1;
+}
+
+.aboutPadding {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+@media (max-width:1024px) {
+
+    .aboutPadding {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .aboutPadding {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width:640px) {
+
+    .aboutPadding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-top: 100px;
+    }
+}
