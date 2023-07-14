@@ -13,8 +13,6 @@ import Blogs from './Pages/Blogs/Blogs';
 import Navbar from './Components/Navbar/Navbar';
 import "./App.css";
 
-// Today I have completed the website, just check the code structure and some design
-
 const App = () => {
   return (
     <>
