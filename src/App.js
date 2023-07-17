@@ -11,7 +11,9 @@ import Fancy from './Pages/Fancy/Fancy';
 import Customer from './Pages/Customer/Customer';
 import Blogs from './Pages/Blogs/Blogs';
 import Navbar from './Components/Navbar/Navbar';
-import "./App.css";
+import "./Style.scss";
+// import "./App.css";
+// import "./Animation.scss";
 
 const App = () => {
   return (
@@ -20,15 +22,11 @@ const App = () => {
       <Slider />
       <Trends />
       <Services />
-      {/* complete only image section in remaining */}
       <About />
-      {/* complete only slider adjustment */}
       <Projects />
       <Counter />
-      {/* Hover effect */}
       <Fancy />
       <Customer />
-      {/* Incomplete  */}
       <Blogs />
       <Banner />
       <Footer />

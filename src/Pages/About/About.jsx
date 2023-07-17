@@ -1,28 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const About = () => {
+    // const [fadeIn, setFadeIn] = useState(false);
 
-    const [fadeIn, setFadeIn] = useState(false);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const animatedElement = document.querySelector('.aboutPadding');
+    //         const elementPosition = animatedElement.getBoundingClientRect().top;
+    //         const windowHeight = window.innerHeight;
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const animatedElement = document.querySelector('.aboutPadding');
-            const elementPosition = animatedElement.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
+    //         if (elementPosition < windowHeight - 100) {
+    //             setFadeIn(true);
+    //         }
+    //     };
 
-            if (elementPosition < windowHeight - 100) {
-                setFadeIn(true);
-            }
-        };
+    //     window.addEventListener('scroll', handleScroll);
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     return (
-        <section className={`cover-background aboutPadding ${fadeIn ? 'fade-in' : ''}`}>
+        <section className={`cover-background aboutPadding`}>
+            {/* ${fadeIn ? 'fade-in' : ''} */}
             <div className="relative container">
                 <div className="items-center justify-center row">
                     <div className="relative lg:mt-[30px] md:mb-36 sm:mb-36 md:mt-0 col-lg-6 col-md-10">
@@ -52,7 +53,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default About
+export default About;
