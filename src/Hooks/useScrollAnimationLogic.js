@@ -16,8 +16,12 @@ const useScrollAnimationLogic = (leftTargetClass, rightTargetClass, animateColum
     };
 
     const isInView = (element) => {
-      const rect = element.getBoundingClientRect();
-      return rect.top < window.innerHeight;
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight;
+      } else {
+        console.log("error");
+      }
     };
 
     animateColumns(); // Call the animateColumns function once to apply initial animations

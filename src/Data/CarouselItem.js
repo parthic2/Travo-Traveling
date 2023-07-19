@@ -6,12 +6,17 @@ export const carouselItems = [
     },
     {
         number: '02',
-        text: 'Lighting',
+        text: 'Interior decoration',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
     {
         number: '03',
-        text: 'design123',
+        text: 'Lighting design',
+        detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
+    },
+    {
+        number: '04',
+        text: 'Interior decoration',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
 ];

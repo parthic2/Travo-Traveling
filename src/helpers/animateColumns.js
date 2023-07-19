@@ -13,8 +13,12 @@ const animateColumns = () => {
 };
 
 const isInView = (element) => {
-    const rect = element.getBoundingClientRect();
-    return rect.top < window.innerHeight;
+    if (element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight;
+    } else {
+        console.log("error");
+    }
 };
 
 export { animateColumns };

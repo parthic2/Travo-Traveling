@@ -6,6 +6,9 @@ const useScrollAnimationTrends = () => {
     useEffect(() => {
         const handleScroll = () => {
             const elementsInView = animatedElements.current.filter((element) => {
+                // Check if the element exists before accessing its properties
+                if (!element) return false;
+                
                 const top = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
                 return top < windowHeight;

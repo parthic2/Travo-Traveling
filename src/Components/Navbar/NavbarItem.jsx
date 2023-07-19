@@ -8,11 +8,13 @@ const NavbarItem = ({ isSidebarOpen }) => {
                 type="radio"
                 name="slider"
                 id="menu-btn"
+                readOnly
                 checked={isSidebarOpen} />
             <input
                 type="radio"
                 name="slider"
                 id="close-btn"
+                readOnly
                 checked={!isSidebarOpen} />
             <ul className={`nav-links ${isSidebarOpen ? 'show' : ''}`}>
                 <li>

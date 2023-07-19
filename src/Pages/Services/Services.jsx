@@ -58,7 +58,7 @@ const Services = () => {
                 responsive={responsiveService}
                 ssr
                 infinite
-                autoPlay
+                // autoPlay
                 autoPlaySpeed={2500}
                 keyBoardControl
                 customTransition="transform 300ms ease-in-out"
@@ -67,7 +67,7 @@ const Services = () => {
                 removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
               >
                 {carouselItems.map((item, index) => (
-                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5" key={index}>
+                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5 h-72 ease-in duration-100" key={index}>
                     <div className="feature-box-move-bottom-top">
                       <h2 className="number">{item.number}</h2>
                       <div className="feature-box-content">
