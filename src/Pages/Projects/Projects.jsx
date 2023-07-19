@@ -2,55 +2,21 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { BsArrowUpRight } from 'react-icons/bs';
+import useScrollAnimation from '../../Hooks/useScrollAnimation';
+import { projectData } from '../../Data/CarouselItem';
+
+const responsiveProject = {
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 2.5, partialVisibilityGutter: 30 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2.5, partialVisibilityGutter: 30 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1.5, partialVisibilityGutter: 30 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+};
 
 const Projects = () => {
-  const responsiveProject = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 2.5,
-      partialVisibilityGutter: 30, // Adjust the value as needed
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2.5,
-      partialVisibilityGutter: 30, // Adjust the value as needed
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1.5,
-      partialVisibilityGutter: 30, // Adjust the value as needed
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
-  const projectData = [
-    {
-      imageSrc: '/assets/home-interior-design-portfolio-img01.png',
-      category: 'Interior',
-      title: 'Mongolish',
-    },
-    {
-      imageSrc: '/assets/home-interior-design-portfolio-img02.png',
-      category: 'Interior12',
-      title: 'Geometry',
-    },
-    {
-      imageSrc: '/assets/home-interior-design-portfolio-img03.png',
-      category: 'Interior12',
-      title: 'Sphere',
-    },
-    {
-      imageSrc: '/assets/home-interior-design-portfolio-img04.png',
-      category: 'Interior',
-      title: 'Bedroom',
-    },
-  ];
+  const fadeIn = useScrollAnimation(".animate");
 
   return (
-    <section className="py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px] relative border-t border-[#e4e4e4] overflow-hidden">
+    <section className={`py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px] relative border-t border-[#e4e4e4] overflow-hidden animate ${fadeIn ? 'fade-in' : ''}`}>
       <div className="container-fluid">
         <div className="row justify-center text-center mb-[98px] lg:mb-20 md:mb-16">
           <div className="col-xl-6 col-lg-7 col-md-8 col-sm-12">

@@ -1,32 +1,12 @@
 import React from 'react';
+import useScrollAnimation from '../../Hooks/useScrollAnimation';
+import { blogs } from '../../Data/CarouselItem';
 
 const Blogs = () => {
-  const blogs = [
-    {
-      category: 'creative',
-      imageSrc: '/assets/blog-img232.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
-    },
-    {
-      category: 'creative',
-      imageSrc: '/assets/blog-img233.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
-    },
-    {
-      category: 'creative',
-      imageSrc: '/assets/blog-img237.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
-    }
-  ];
+  const fadeIn = useScrollAnimation(".animate");
 
   return (
-    <section className="py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px] relative bg-[#f1edea]">
+    <section className={`py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px] relative bg-[#f1edea] animate ${fadeIn ? 'fade-in' : ''}`}>
       <div className="container-fluid">
         <div className="justify-center text-center row">
           <div className="flex flex-col items-center text-center mb-24 lg:mb-16 md:mb-12 xs:mb-20 col-xl-6 col-lg-7 col-md-8 col-sm-12">

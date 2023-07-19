@@ -1,78 +1,23 @@
 import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
+import { testimonialItems } from "../../Data/CarouselItem";
+import { animateColumn } from '../../helpers/animateColumn';
+
+const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+};
 
 const Customer = () => {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
+    useEffect(() => {
+        animateColumn();
+    }, []);
 
-    // useEffect(() => {
-    //     const animateColumns = () => {
-    //         const leftColumn = document.querySelector('.customerLeftColumn');
-    //         const rightColumn = document.querySelector('.customerRightColumn');
-
-    //         if (isInView(leftColumn)) {
-    //             leftColumn.classList.add('animate-left');
-    //         }
-
-    //         if (isInView(rightColumn)) {
-    //             rightColumn.classList.add('animate-right');
-    //         }
-    //     };
-
-    //     const isInView = (element) => {
-    //         const rect = element.getBoundingClientRect();
-    //         return rect.top < window.innerHeight;
-    //     };
-
-    //     animateColumns();
-
-    //     window.addEventListener('scroll', animateColumns);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', animateColumns);
-    //     };
-    // }, []);
-
-    const testimonialItems = [
-        {
-            image: '/assets/home-interior-design-testimonial-img01.png',
-            detail:
-                'This theme has a wide variety of options and a really good customer support. But even so, the theme still gives a lot of features while prioritizing web speed.',
-            customerName: 'Harvard Alexander',
-            customerDes: 'Microsoft Design'
-        },
-        {
-            image: '/assets/home-interior-design-testimonial-img02.png',
-            detail:
-                'Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies. Excellent company!',
-            customerName: 'Mackangy Rose',
-            customerDes: 'Creative director'
-        },
-        {
-            image: '/assets/home-interior-design-testimonial-img03.png',
-            detail:
-                'Their team is easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Professional support.',
-            customerName: 'Jonsan Donner',
-            customerDes: 'Sales manager'
-        }
-    ];
+    useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
 
     return (
         <section className="py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px]">

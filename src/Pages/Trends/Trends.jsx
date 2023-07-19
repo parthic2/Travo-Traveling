@@ -1,39 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { BsPlay } from 'react-icons/bs';
+import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
 
 const Trends = () => {
-  // const animatedElements = useRef([]);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const elementsInView = animatedElements.current.filter((element) => {
-  //       const top = element.getBoundingClientRect().top;
-  //       const windowHeight = window.innerHeight;
-  //       return top < windowHeight;
-  //     });
-
-  //     elementsInView.forEach((element) => {
-  //       element.classList.add('animate');
-  //     });
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // const registerElement = (element) => {
-  //   animatedElements.current.push(element);
-  // };
+  const registerElement = useScrollAnimationTrends();
 
   return (
     <section className="relative py-[160px] lg:py-[100px] md:py-[95px] sm:py-[80px] xs:py-[50px]">
       <div className="container">
         <div className="row">
-          {/* ref={registerElement} */}
-          <div className="col-xs-12 col-md-4">
+          <div className="col-xs-12 col-md-4" ref={(element) => registerElement(element)}>
             <h1 className="heading-3">We are interior design team based in New York</h1>
 
             <div className="lg:mt-20 w-[70%] mx:lg-0 md:mt-0 xs:w-1/2 xxs:w-[70%]">
@@ -44,8 +21,7 @@ const Trends = () => {
             </div>
           </div>
 
-          {/*  ref={registerElement} */}
-          <div className="col-xs-12 col-md-4 pt-30">
+          <div className="col-xs-12 col-md-4 pt-30" ref={(element) => registerElement(element)}>
             <div className="uppercase text-xmd font-semibold text-[#232323] lg:mb-[25px] sm:mb-[15px]">
               New Design Trends 2020
             </div>

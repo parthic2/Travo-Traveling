@@ -1,29 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useScrollAnimation from '../../Hooks/useScrollAnimation';
 
 const About = () => {
-    // const [fadeIn, setFadeIn] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const animatedElement = document.querySelector('.aboutPadding');
-    //         const elementPosition = animatedElement.getBoundingClientRect().top;
-    //         const windowHeight = window.innerHeight;
-
-    //         if (elementPosition < windowHeight - 100) {
-    //             setFadeIn(true);
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+    const fadeIn = useScrollAnimation(".aboutPadding");
 
     return (
-        <section className={`cover-background aboutPadding`}>
-            {/* ${fadeIn ? 'fade-in' : ''} */}
+        <section className={`cover-background aboutPadding ${fadeIn ? 'fade-in' : ''}`}>
             <div className="relative container">
                 <div className="items-center justify-center row">
                     <div className="relative lg:mt-[30px] md:mb-36 sm:mb-36 md:mt-0 col-lg-6 col-md-10">

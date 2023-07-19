@@ -11,9 +11,8 @@ import Fancy from './Pages/Fancy/Fancy';
 import Customer from './Pages/Customer/Customer';
 import Blogs from './Pages/Blogs/Blogs';
 import Navbar from './Components/Navbar/Navbar';
-import "./Style.scss";
-// import "./App.css";
-// import "./Animation.scss";
+import "./Assets/Animation.scss";
+import "./Assets/Style.scss";
 
 const App = () => {
   return (

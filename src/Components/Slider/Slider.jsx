@@ -3,29 +3,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Dots from './Dots';
-import CustomLeftArrow from './CustomLeftArrow';
-import CustomRightArrow from './CustomRightArrow';
+
+const responsive = {
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+};
 
 const Slider = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
   return (
     <section className="relative">
       <Carousel
@@ -40,8 +26,6 @@ const Slider = () => {
         keyBoardControl
         customTransition="transform 300ms ease-in-out"
         customDot={<Dots />}
-        customLeftArrow={<CustomLeftArrow />}
-        customRightArrow={<CustomRightArrow />}
         transitionDuration={500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}

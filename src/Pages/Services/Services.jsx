@@ -1,95 +1,31 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
+import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
+import { carouselItems } from "../../Data/CarouselItem";
+import { animateColumns } from '../../helpers/animateColumns';
+
+const responsiveService = {
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 2 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+};
 
 const Services = () => {
-  const responsiveService = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 2
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+  const registerElement = useScrollAnimationTrends();
 
-  // const animatedElements = useRef([]);
-  // const columnsRef = useRef({ leftColumn: null, rightColumn: null });
+  useEffect(() => {
+    animateColumns();
+  }, []);
 
-  // useEffect(() => {
-  //   const handleIntersection = (entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add('animate');
-  //       }
-  //     });
-  //   };
-
-  //   const observerOptions = {
-  //     root: null,
-  //     rootMargin: '0px',
-  //     threshold: 0.1
-  //   };
-
-  //   const observer = new IntersectionObserver(handleIntersection, observerOptions);
-
-  //   animatedElements.current.forEach((element) => {
-  //     observer.observe(element);
-  //   });
-
-  //   const leftColumn = columnsRef.current.leftColumn;
-  //   const rightColumn = columnsRef.current.rightColumn;
-
-  //   if (leftColumn && isInView(leftColumn)) {
-  //     leftColumn.classList.add('animate-left');
-  //   }
-
-  //   if (rightColumn && isInView(rightColumn)) {
-  //     rightColumn.classList.add('animate-right');
-  //   }
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, []);
-
-  // const isInView = (element) => {
-  //   const rect = element.getBoundingClientRect();
-  //   return rect.top < window.innerHeight;
-  // };
-
-  const carouselItems = [
-    {
-      number: '01',
-      text: 'Lighting design',
-      detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
-    },
-    {
-      number: '02',
-      text: 'Lighting',
-      detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
-    },
-    {
-      number: '03',
-      text: 'design123',
-      detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
-    },
-  ];
+  useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
 
   return (
     <section className="bg-[#f1edea] pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] overflow-hidden xs:pt-[9%] xs:px-[15px]">
-      {/* ref={(el) => animatedElements.current.push(el)} */}
       <div className="row overflow-hidden">
-        <div className="overlap-section overflow-hidden relative -left-[10px] px-0 text-start font-semibold text-[#fff] text-[154px] leading-[154px] -tracking-[2px] whitespace-nowrap hide" style={{ marginTop: "-61.6px" }}>
+        <div className="overlap-section overflow-hidden relative -left-[10px] px-0 text-start font-semibold text-[#fff] text-[154px] leading-[154px] -tracking-[2px] whitespace-nowrap hide" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
           achievements
         </div>
       </div>
@@ -108,14 +44,12 @@ const Services = () => {
         </div>
 
         <div className="items-center row">
-          {/* ref={(el) => (columnsRef.current.leftColumn = el)} */}
-          <div className="col-xs-12 col-md-4 col-lg-4 pt-50">
+          <div className="col-xs-12 col-md-4 col-lg-4 pt-50 customerLeftColumns">
             <span className="mb-[20px] block uppercase font-medium text-[#828282]">Expert services</span>
             <h1 className="heading-6">We like to make you feel more at home</h1>
           </div>
 
-          {/*  ref={(el) => (columnsRef.current.rightColumn = el)} */}
-          <div className="col-xs-12 col-md-8 col-lg-8">
+          <div className="col-xs-12 col-md-8 col-lg-8 customerRightColumns">
             <div className="slider">
               <Carousel
                 className="mySwiper"
@@ -133,8 +67,7 @@ const Services = () => {
                 removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
               >
                 {carouselItems.map((item, index) => (
-                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5" key={index} >
-                    {/* ref={(el) => animatedElements.current.push(el)} */}
+                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5" key={index}>
                     <div className="feature-box-move-bottom-top">
                       <h2 className="number">{item.number}</h2>
                       <div className="feature-box-content">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import useScrollAnimation from '../../Hooks/useScrollAnimation';
 
 const defaultImage = '/assets/home-interior-design-services.png';
 
@@ -35,7 +36,6 @@ const FancyBoxItem = ({ image, title, description, handleHover, handleMouseLeave
 };
 
 const Fancy = () => {
-
   const handleHover = (image) => {
     setHoveredImage(image);
   };
@@ -45,9 +45,10 @@ const Fancy = () => {
   };
 
   const [hoveredImage, setHoveredImage] = useState(defaultImage);
+  const fadeIn = useScrollAnimation(".cover1-background");
 
   return (
-    <section className="cover1-background" style={{ backgroundImage: `url(${hoveredImage})` }}>
+    <section className={`cover1-background  ${fadeIn ? 'fade-in' : ''}`} style={{ backgroundImage: `url(${hoveredImage})` }}>
       <div className="px-0">
         <div className="fancy-text-box-05 row row-cols-1 row-cols-xl-4 row-cols-sm-2 gx-0 px-0 row">
           <div className="col justify-center">

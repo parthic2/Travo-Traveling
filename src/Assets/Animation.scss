@@ -1,0 +1,70 @@
+// trends animation 
+.animate {
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// service animate
+.animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 2s ease forwards;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 2s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// About animate 
+@keyframes fadeInAbout {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInAbout 2s ease-in-out;
+}
