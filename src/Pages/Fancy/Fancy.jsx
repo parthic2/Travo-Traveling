@@ -51,7 +51,7 @@ const Fancy = () => {
     <section className={`cover1-background  ${fadeIn ? 'fade-in' : ''}`} style={{ backgroundImage: `url(${hoveredImage})` }}>
       <div className="px-0">
         <div className="fancy-text-box-05 row row-cols-1 row-cols-xl-4 row-cols-sm-2 gx-0 px-0 row">
-          <div className="col justify-center">
+          <div className="col justify-center" style={{ opacity: 1 }}>
             <FancyBoxItem
               image="/assets/home-interior-design-services.png"
               title="interior design is a business of trust"
@@ -61,7 +61,7 @@ const Fancy = () => {
             />
           </div>
 
-          <div className="col justify-center">
+          <div className="col justify-center" style={{ opacity: 1 }}>
             <FancyBoxItem
               image="/assets/home-interior-design-services-02.png"
               title="we believe in the power of design"
@@ -71,7 +71,7 @@ const Fancy = () => {
             />
           </div>
 
-          <div className="col justify-center">
+          <div className="col justify-center" style={{ opacity: 1 }}>
             <FancyBoxItem
               image="/assets/home-interior-design-services-03.png"
               title="design is process of discovery"
@@ -81,7 +81,7 @@ const Fancy = () => {
             />
           </div>
 
-          <div className="col justify-center">
+          <div className="col justify-center" style={{ opacity: 1 }}>
             <FancyBoxItem
               image="/assets/home-interior-design-services-04.png"
               title="we want to bring interior design"

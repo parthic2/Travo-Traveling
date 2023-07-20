@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useScroll = () => {
     const [navbarVisible, setNavbarVisible] = useState(true);
+    const [navbarColor, setNavbarColor] = useState("");
+    const [textColor, setTextColor] = useState("");
 
     useEffect(() => {
         let prevScrollY = window.scrollY;
@@ -9,10 +11,19 @@ const useScroll = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            if (currentScrollY > prevScrollY) {
-                setNavbarVisible(false); // Scrolling down, hide the navbar
+            const isAtTop = currentScrollY === 0;
+
+            if (isAtTop) {
+                setNavbarColor("transparent");
+                setTextColor("#f4f4f4");
+            } else if (currentScrollY > prevScrollY) {
+                setNavbarVisible(false);
+                setNavbarColor("transparent");
+                setTextColor("#f4f4f4");
             } else {
-                setNavbarVisible(true); // Scrolling up, show the navbar
+                setNavbarVisible(true);
+                setNavbarColor("white");
+                setTextColor("black");
             }
 
             prevScrollY = currentScrollY;
@@ -24,7 +35,6 @@ const useScroll = () => {
             window.addEventListener('scroll', handleScroll);
         }
 
-        // Clean up the event listener when the component unmounts
         return () => {
             if (isDesktop) {
                 window.removeEventListener('scroll', handleScroll);
@@ -32,7 +42,7 @@ const useScroll = () => {
         };
     }, []);
 
-    return navbarVisible;
+    return { navbarVisible, navbarColor, textColor };
 };
 
 export default useScroll;

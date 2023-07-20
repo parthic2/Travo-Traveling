@@ -41,7 +41,7 @@ export const projectData = [
         imageSrc: '/assets/home-interior-design-portfolio-img04.png',
         category: 'Interior',
         title: 'Bedroom',
-    },
+    }
 ];
 
 export const testimonialItems = [
@@ -70,24 +70,24 @@ export const testimonialItems = [
 
 export const blogs = [
     {
-      category: 'creative',
-      imageSrc: '/assets/blog-img232.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
+        category: 'creative',
+        imageSrc: '/assets/blog-img232.png',
+        title: 'Creativity is nothing but a mindset free',
+        detail: 'Lorem ipsum is simply dummy text printing...',
+        author: 'Jeremy Dupont'
     },
     {
-      category: 'creative',
-      imageSrc: '/assets/blog-img233.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
+        category: 'concept',
+        imageSrc: '/assets/blog-img233.png',
+        title: 'Simplicity, wit, and good typography',
+        detail: 'Lorem ipsum is simply dummy text printing...',
+        author: 'bill gardner'
     },
     {
-      category: 'creative',
-      imageSrc: '/assets/blog-img237.png',
-      title: 'Creativity is nothing but a mindset free',
-      detail: 'Lorem ipsum is simply dummy text printing...',
-      author: 'Jeremy Dupont'
+        category: 'business',
+        imageSrc: '/assets/blog-img237.png',
+        title: 'Look at usual things with unusual',
+        detail: 'Lorem ipsum is simply dummy text printing...',
+        author: 'vico magistre'
     }
-  ];
+];

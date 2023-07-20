@@ -106,7 +106,7 @@
 
 // banner css
 .bannerBg {
-	background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-start-project-bg.webp");
+	background-image: url("../../public/assets/home-interior-design-start-project-bg.png");
 	background-size: cover;
 	position: relative;
 	background-position: center;
@@ -165,8 +165,38 @@
 
 // about interior design css
 .cover-background {
-	background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-about-bg.webp");
+	background-image: url("../../public/assets/home-interior-design-about-bg.png");
 	opacity: 1;
+}
+
+.aboutImage-1 {
+	width: 278px;
+	height: 344px;
+
+	@media (max-width: 500px) {
+		width: 278px;
+		height: 300px;
+	}
+
+	@media (max-width: 400px) {
+		width: 278px;
+		height: 230px;
+	}
+}
+
+.aboutImage-2 {
+	width: 380px;
+	height: 554px;
+
+	@media (max-width: 500px) {
+		width: 380px;
+		height: 480px;
+	}
+
+	@media (max-width: 400px) {
+		width: 380px;
+		height: 400px;
+	}
 }
 
 .aboutPadding {
@@ -582,15 +612,15 @@
 	height: 100vh;
 
 	&.sliderImage-1 {
-		background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-slider-img01.webp");
+		background-image: url("../../public/assets/home-interior-design-slider-img01.png");
 	}
 
 	&.sliderImage-2 {
-		background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-slider-img02.webp");
+		background-image: url("../../public/assets/home-interior-design-slider-img02.png");
 	}
 
 	&.sliderImage-3 {
-		background-image: url("https://lithoreact.themezaa.com/assets/img/webp/home-interior-design-slider-img03.webp");
+		background-image: url("../../public/assets/home-interior-design-slider-img03.png");
 	}
 }
 
@@ -602,7 +632,6 @@
 	opacity: 0.5;
 	width: 12px;
 	border-radius: 100%;
-	// padding: 5px;
 	transition: background 0.5s;
 	border-style: solid;
 	margin-bottom: 60px;
@@ -686,7 +715,7 @@
 
 		img {
 			display: inline-block;
-			height: auto;
+			height: 580px;
 			width: 100%;
 		}
 

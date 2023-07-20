@@ -10,10 +10,10 @@ const About = () => {
                 <div className="items-center justify-center row">
                     <div className="relative lg:mt-[30px] md:mb-36 sm:mb-36 md:mt-0 col-lg-6 col-md-10">
                         <div className="lg-no-parallax relative w-1/2 md:w-[70%] z-[2] mt-[20%] lg:mt-0 lg:mr-auto flex justify-center items-center">
-                            <img src="/assets/home-interior-design-about-img02.png" alt="about" width={278} height={344} />
+                            <img src="/assets/home-interior-design-about-img02.png" alt="about" className="aboutImage-1" />
                         </div>
                         <div className="lg-no-parallax flex justify-center items-center w-[65%] bg-no-repeat absolute bottom-[-100px] right-[15px] lg:!left-auto lg:!right-0">
-                            <img src="/assets/home-interior-design-about-img03.png" alt="about" width={380} height={554} />
+                            <img src="/assets/home-interior-design-about-img03.png" className="aboutImage-2" alt="about" />
                         </div>
                     </div>
 

@@ -6,7 +6,7 @@ import NavbarItem from './NavbarItem';
 import useScroll from '../../Hooks/useScroll';
 
 const Navbar = () => {
-  const navbarVisible = useScroll();
+  const { navbarVisible, navbarColor, textColor } = useScroll();
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -18,17 +18,17 @@ const Navbar = () => {
     <header className="reverse-scroll"
       style={{ display: navbarVisible ? 'block' : 'none' }}
     >
-      <nav id="headerBar" className="navbar">
+      <nav id="headerBar" className="navbar" style={{ backgroundColor: navbarColor, color: textColor }}>
         <div className="sm:!px-0 container flex justify-between items-center">
           <div className="">
-            <span className="logo">Alpha</span>
+            <span className="logo" style={{ color: textColor }}>Alpha</span>
           </div>
 
           <div className="justify-center">
-            <NavbarItem isSidebarOpen={isSidebarOpen} />
+            <NavbarItem isSidebarOpen={isSidebarOpen} textColor={textColor} />
           </div>
 
-          <div className="social">
+          <div className="social" style={{ color: textColor }}>
             <label
               htmlFor="menu-btn"
               className="btn menu-btn"
