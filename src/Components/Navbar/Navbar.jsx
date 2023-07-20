@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
-import { FaBars } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import NavbarItem from './NavbarItem';
 import useScroll from '../../Hooks/useScroll';
 
@@ -32,7 +32,7 @@ const Navbar = () => {
             <label
               htmlFor="menu-btn"
               className="btn menu-btn"
-            ><FaBars onClick={handleSidebarToggle} /></label>
+            ><FaTimes onClick={handleSidebarToggle} /></label>
 
             <span><BiLogoFacebook /></span>
             <span><BiLogoInstagram /></span>
