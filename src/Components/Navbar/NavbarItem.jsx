@@ -20,7 +20,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
                 <li>
                     <a
                         href="#"
-                        className="desktop-item uppercase"
+                        className="desktop-item uppercase sm:text-black"
                         style={{ color: textColor }}
                     >Home</a>
                     <input
