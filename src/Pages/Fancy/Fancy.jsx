@@ -20,7 +20,7 @@ const FancyBoxItem = ({ image, title, description, handleHover, handleMouseLeave
           <h3 className="fancy-content-text">{title}</h3>
           <div className="fancy-text-box-bottom justify-center">
             <div className="flex">
-              <p className="mb-2 self-center text-[#fff] opacity-60 text-[15px] leading-[29px]">{description}</p>
+              <p className="mb-2 self-center text-[#fff] opacity-60 text-[14px] leading-[20px]">{description}</p>
               <span className="self-center text-center ml-auto">
                 <span className="inline-flex justify-center items-center leading-10 rounded-full bg-[#232323] h-[40px] w-[40px] text-white">
                   <AiOutlineArrowRight />
