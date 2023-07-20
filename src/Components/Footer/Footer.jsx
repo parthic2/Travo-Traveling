@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="col-xs-12 col-sm-12 col-md-3 mb-[10px] text-[#828282]">
                         <span className="mb-[15px] block leading-[18px] mt-[15px]">Connect with social</span>
 
-                        <ul className="flex gap-4">
+                        <ul className="flex gap-4 cursor-pointer">
                             <li><FaFacebookF /></li>
                             <li><AiOutlineDribbble /></li>
                             <li><BsTwitter /></li>

@@ -570,26 +570,25 @@
 .blog-image {
 	flex-shrink: 0;
 	width: 50%;
-	height: 100%;
+	height: 380px;
 	object-fit: cover;
 	object-position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	position: relative;
 
-	@media (max-width: 991px) {
+	@media (max-width: 1279px) {
 		width: 50%;
-		height: 84.3%;
+		height: 432px;
 	}
 
-	@media (max-width: 767px) {
+	@media (max-width: 991px) {
 		width: 50%;
-		height: 99.3%;
+		height: 380px;
 	}
 
 	@media (max-width: 639px) {
 		width: 100%;
-		height: 50%;
 	}
 }
 
@@ -776,14 +775,14 @@
 	transition: all 0.5s ease-in-out;
 
 	.bg-banner-image {
-		height: 100%;
-		left: 0;
-		opacity: 0;
+		opacity: 0.1;
+		background-color: #232323;
 		position: absolute;
 		top: 0;
-		transition-duration: 0.5s;
-		visibility: hidden;
+		left: 0;
 		width: 100%;
+		height: 100%;
+		transition-duration: 0.5s;
 		z-index: 0;
 	}
 
@@ -824,7 +823,7 @@
 }
 
 .fancy-content-text {
-	padding-bottom: 20px;
+	margin: 0 0 15px;
 	font-size: 24px;
 	font-weight: 600;
 	color: white;
@@ -1091,12 +1090,12 @@
 	}
 
 	.navbar {
-		background-color: white;
+		background-color: white !important;
 	}
 
 	.logo,
 	.social {
-		color: black;
+		color: black !important;
 	}
 
 	.wrapper .btn {
@@ -1183,6 +1182,7 @@
 		font-weight: 500;
 		padding-left: 30px;
 		cursor: pointer;
+		color: black;
 	}
 
 	.nav-links li:hover .mega-box {

@@ -20,11 +20,11 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {blogs.map((blog, index) => (
             <div className="col-xs-12 col-md-12 col-lg-6 col-sm-12 mb-3" key={index}>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap justify-center items-center">
                 <div className={blog.category}>
                   <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center">
                     <img alt="team" className="blog-image" src={blog.imageSrc} />
