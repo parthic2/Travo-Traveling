@@ -1,6 +1,6 @@
-/* trends animation */
+/* trends animation  */
 .animate {
-    animation: fadeIn 1s ease forwards;
+    animation: fadeIn 2s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -52,7 +52,7 @@
     }
 }
 
-/* About animate */
+/* About animate  */
 @keyframes fadeInAbout {
     0% {
         opacity: 0;
@@ -66,5 +66,5 @@
 }
 
 .fade-in {
-    animation: fadeInAbout 1s ease-in-out;
+    animation: fadeInAbout 2s ease-in-out;
 }

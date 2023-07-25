@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <nav id="headerBar" className="navbar" style={{ backgroundColor: navbarColor, color: textColor }}>
         <div className="sm:!px-0 container flex justify-between items-center">
-          <div className="">
+          <div>
             <span className="logo" style={{ color: textColor }}>Alpha</span>
           </div>
 

@@ -34,13 +34,13 @@ const Slider = () => {
           <div key={index} className={`sliderImage-${index}`}>
             <div className="flex flex-col justify-end ml-auto md:w-[550px] h-full xl:w-[550px] lg:w-[550px] sm:w-full">
               <div className="sliderCard">
-                <div className="p-0 mb-[25px] md:inline-block items-center justify-center col">
+                <div className="p-0 mb-[25px] md:inline-block items-center justify-center">
                   <span className="text-[#c3964e] inline-block font-medium align-middle">{`0${index}`}</span>
                   <span className="w-[35px] h-[1px] inline-block align-middle bg-[#e4e4e4] ml-[22px] mr-[15px]" />
                   <span className="inline-block text-[#c3964e] uppercase font-medium align-middle">Resident interior</span>
                 </div>
 
-                <div className="w-[100%] p-0 justify-center mb-[10px] col">
+                <div className="w-[100%] p-0 justify-center mb-[10px]">
                   <div className="flex">
                     <h2 className="heading-1">
                       {index === 1

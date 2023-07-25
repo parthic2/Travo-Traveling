@@ -1,92 +1,111 @@
-import React, { useEffect } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
-import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
-import { carouselItems } from "../../Data/CarouselItem";
-import { animateColumns } from '../../helpers/animateColumns';
-
-const responsiveService = {
-  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 2 },
-  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
-};
+import React from 'react';
+import Navbar1 from '../../Components/Navbar/Navabr1';
+import Footer from '../../Components/Footer/Footer';
 
 const Services = () => {
-  const registerElement = useScrollAnimationTrends();
-
-  useEffect(() => {
-    animateColumns();
-  }, []);
-
-  useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
-
   return (
-    <section className="bg-[#f1edea] pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] overflow-hidden xs:pt-[9%] xs:px-[15px]">
-      <div className="row overflow-hidden">
-        <div className="overlap-section overflow-hidden relative -left-[10px] px-0 text-start font-semibold text-[#fff] text-[154px] leading-[154px] -tracking-[2px] whitespace-nowrap hide" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
-          achievements
-        </div>
-      </div>
+    <div className="">
+      <Navbar1 />
+      <div className="container mx-auto px-4 py-10 min-h-screen">
+        <h2 className="text-center text-[25px] font-bold">
+          Services Which We Offer And Expertise In Home And Commercial Interior Design Service
+        </h2>
 
-      <div className="lg:pt-[8%] pt-25 container">
-        <div className="flex lg:justify-center md:justify-start text-center lg:mb-16 md:mb-12 xs:mb-20">
-          <div className="md:text-left">
-            <span className="text-[#c3964e] font-medium mb-[20px] uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
-              Home decoration services
-            </span>
-            <h2 className="heading-5 text-start">
-              Simple is good, we turn ideas
-              <span className="flex justify-center items-center start">into works of design art</span>
-            </h2>
-          </div>
-        </div>
-
-        <div className="items-center row">
-          <div className="col-xs-12 col-md-4 col-lg-4 pt-50 customerLeftColumns">
-            <span className="mb-[20px] block uppercase font-medium text-[#828282]">Expert services</span>
-            <h1 className="heading-6">We like to make you feel more at home</h1>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10">
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/2d.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">2D/ 3D Design Layout</h1>
+                <p className="mt-2 text-[#828282]">We Do All Types Of 2D And 3D design Elegant Innovative Luxurious Computerized Design Interior And Exterior Design Which Is Already Vastu Approved Design</p>
+              </div>
+            </div>
           </div>
 
-          <div className="col-xs-12 col-md-8 col-lg-8 customerRightColumns">
-            <div className="slider">
-              <Carousel
-                className="mySwiper"
-                draggable
-                showDots={false}
-                responsive={responsiveService}
-                ssr
-                infinite
-                // autoPlay
-                autoPlaySpeed={2500}
-                keyBoardControl
-                customTransition="transform 300ms ease-in-out"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
-              >
-                {carouselItems.map((item, index) => (
-                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5 h-72 ease-in duration-100" key={index}>
-                    <div className="feature-box-move-bottom-top">
-                      <h2 className="number">{item.number}</h2>
-                      <div className="feature-box-content">
-                        <span className="text">{item.text}</span>
-                        <p className="detail">{item.detail}</p>
-                      </div>
-                      <div className="w-full flex justify-start xs:mt-0">
-                        <span className="readBtn">Read More</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </Carousel>
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/master.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Master Bathroom</h1>
+                <p className="mt-2 text-[#828282]"> We Do Master Bathroom Designing And Decoration And Luxury Bathroom Designing</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/office.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Office Interior</h1>
+                <p className="mt-2 text-[#828282]">We Do All Types Of Interior Designing Solution And Decoration Of Office And Other Commercial Space That Creates An Environment Which Perfectly Blends With Your Mind To Grow Your Business</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/kitchen.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Modular Kitchen</h1>
+                <p className="mt-2 text-[#828282]">We Do All Types Of Modular Kitchen Designing And Decoration And Luxury Kitchen Designing So To Make Your Kitchen Your Favorite Place</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/residential.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Residential Interior</h1>
+                <p className="mt-2 text-[#828282]">We Do All Types Of Interior Designing, Decoration And Furnishing Of Bed Room, Living Room, Dinning Room, Hall Room, Home Entertainment Room, Kids Room, Study Room, Guest Room So That Each Room Can Perfectly Brighten Up Your Environment And Enhance Your Mood</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/furniture.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Furniture & Fixture</h1>
+                <p className="mt-2 text-[#828282]">We Make Custom Design Furniture And Deals With All Types Of Other Modular Furniture And Fixture, So That You Can Get Exactly What You Want</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/false.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">False Ceiling</h1>
+                <p className="mt-2 text-[#828282]"> We Make Custom Made False Ceiling And Do All Types Of Ceiling Work. We Also Do 3D False Ceiling Work So That You Always Look Up In Your Home And In Your Life</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/restaurants.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Restaurants & Cafeteria</h1>
+                <p className="mt-2 text-[#828282]">All Types Of Interior Designing For Restaurant, Coffee Shops And Cafeteria, So That People Get A Reason To Spend More Time In Your Place</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+            <img className="rounded-xl" src="/assets/glass.png" alt="" />
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="mt-5 text-xl font-semibold">Glass & Lightening</h1>
+                <p className="mt-2 text-[#828282]">All Types Of Glass Decoration And Light Decoration With Innovative Modern Glass And Lightning So That Your Space Can Get A Look Of Masterpiece</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
-};
+      <Footer />
+    </div>
+  )
+}
 
 export default Services;

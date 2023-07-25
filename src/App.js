@@ -1,36 +1,38 @@
-import React from 'react';
-import Banner from './Components/Banner/Banner';
-import Footer from './Components/Footer/Footer';
-import Slider from './Components/Slider/Slider';
-import Trends from './Pages/Trends/Trends';
-import Services from './Pages/Services/Services';
+import './Assets/Style.css';
+import './Assets/Animation.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Index from './Components/Index';
+import RootLayout from './RootLayout/RootLayout';
 import About from './Pages/About/About';
-import Projects from './Pages/Projects/Projects';
-import Counter from './Pages/Counter/Counter';
-import Fancy from './Pages/Fancy/Fancy';
-import Customer from './Pages/Customer/Customer';
-import Blogs from './Pages/Blogs/Blogs';
-import Navbar from './Components/Navbar/Navbar';
-import "./Assets/Animation.scss";
-import "./Assets/Style.scss";
+import Services from './Pages/Services/Services';
+import Contact from './Pages/Contact/Contact';
 
-const App = () => {
+const Router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [{ index: true, path: "/", element: <Index /> }],
+  },
+  {
+    path: "/About",
+    element: <About />
+  },
+  {
+    path: "/Service",
+    element: <Services />
+  },
+  {
+    path: "/Contact",
+    element: <Contact />
+  }
+]);
+
+function App() {
   return (
     <>
-      <Navbar />
-      <Slider />
-      <Trends />
-      <Services />
-      <About />
-      <Projects />
-      <Counter />
-      <Fancy />
-      <Customer />
-      <Blogs />
-      <Banner />
-      <Footer />
+      <RouterProvider router={Router} />
     </>
-  )
+  );
 }
 
 export default App;

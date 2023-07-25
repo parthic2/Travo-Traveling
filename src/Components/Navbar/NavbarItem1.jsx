@@ -2,7 +2,7 @@ import React from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
-const NavbarItem = ({ isSidebarOpen, textColor }) => {
+const NavbarItem1 = ({ isSidebarOpen }) => {
     return (
         <div className="wrapper">
             <input
@@ -21,8 +21,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
                 <li>
                     <Link
                         to="/"
-                        className="desktop-item uppercase sm:text-black"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase sm:text-black"
                     >Home</Link>
                     <input
                         type="checkbox"
@@ -98,8 +97,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Pages</Link>
                     <input
                         type="checkbox"
@@ -199,8 +197,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Portfolio</Link>
                     <input
                         type="checkbox"
@@ -373,8 +370,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Elements</Link>
                     <input
                         type="checkbox"
@@ -454,8 +450,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Features</Link>
                     <input
                         type="checkbox"
@@ -619,8 +614,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Blogs</Link>
                     <input
                         type="checkbox"
@@ -689,8 +683,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
 
                 <li>
                     <Link
-                        className="desktop-item uppercase"
-                        style={{ color: textColor }}
+                        className="desktop-item1 uppercase"
                     >Shop</Link>
                     <input
                         type="checkbox"
@@ -732,4 +725,4 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
     )
 }
 
-export default NavbarItem;
+export default NavbarItem1;
