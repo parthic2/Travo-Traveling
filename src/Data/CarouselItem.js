@@ -91,3 +91,60 @@ export const blogs = [
         author: 'vico magistre'
     }
 ];
+
+export const service = [
+    {
+        category: '2D / 3D',
+        imageSrc: '/assets/2d.png',
+        title: '2D / 3D Design Layout',
+        detail: 'We Do All Types Of 2D And 3D design Elegant Innovative Luxurious Computerized Design Interior And Exterior Design Which Is Already Vastu Approved Design.'
+    },
+    {
+        category: 'Bathroom',
+        imageSrc: '/assets/master.png',
+        title: 'Master Bathroom',
+        detail: 'We Do Master Bathroom Designing And Decoration And Luxury Bathroom Designing.'
+    },
+    {
+        category: 'Office',
+        imageSrc: '/assets/office.png',
+        title: 'Office Interior',
+        detail: 'We Do All Types Of Interior Designing Solution And Decoration Of Office And Other Commercial Space That Creates An Environment Which Perfectly Blends With Your Mind To Grow Your Business.'
+    },
+    {
+        category: 'Kitchen',
+        imageSrc: '/assets/kitchen.png',
+        title: 'Modular Kitchen',
+        detail: 'We Do All Types Of Modular Kitchen Designing And Decoration And Luxury Kitchen Designing So To Make Your Kitchen Your Favorite Place.'
+    },
+    {
+        category: 'Residential',
+        imageSrc: '/assets/residential.png',
+        title: 'Residential Interior',
+        detail: 'We Do All Types Of Interior Designing, Decoration And Furnishing Of Bed Room, Living Room, Dinning Room, Hall Room, Home Entertainment Room, Kids Room, Study Room, Guest Room.'
+    },
+    {
+        category: 'Furniture',
+        imageSrc: '/assets/furniture.png',
+        title: 'Furniture & Fixture',
+        detail: 'We Make Custom Design Furniture And Deals With All Types Of Other Modular Furniture And Fixture, So That You Can Get Exactly What You Want.'
+    },
+    {
+        category: 'false',
+        imageSrc: '/assets/false.png',
+        title: 'False Ceiling',
+        detail: 'We Make Custom Made False Ceiling And Do All Types Of Ceiling Work. We Also Do 3D False Ceiling Work So That You Always Look Up In Your Home And In Your Life.'
+    },
+    {
+        category: 'restaurants',
+        imageSrc: '/assets/restaurants.png',
+        title: 'Restaurants & Cafeteria',
+        detail: 'All Types Of Interior Designing For Restaurant, Coffee Shops And Cafeteria, So That People Get A Reason To Spend More Time In Your Place.'
+    },
+    {
+        category: 'Glass & Lightening',
+        imageSrc: '/assets/glass.png',
+        title: 'Glass & Lightening',
+        detail: 'All Types Of Glass Decoration And Light Decoration With Innovative Modern Glass And Lightning So That Your Space Can Get A Look Of Masterpiece.'
+    }
+];

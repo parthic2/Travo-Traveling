@@ -19,7 +19,7 @@ const Navbar = () => {
       style={{ display: navbarVisible ? 'block' : 'none' }}
     >
       <nav id="headerBar" className="navbar" style={{ backgroundColor: navbarColor, color: textColor }}>
-        <div className="sm:!px-0 container flex justify-between items-center">
+        <div className="sm:!px-0 flex justify-between items-center">
           <div>
             <span className="logo" style={{ color: textColor }}>Alpha</span>
           </div>

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaGripLines } from 'react-icons/fa';
-import NavbarItem1 from './NavbarItem1';
+import NavbarInnerItem from './NavbarInnerItem';
 
-const Navbar1 = () => {
+const NavbarInner = () => {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const Navbar1 = () => {
           </div>
 
           <div className="justify-center">
-            <NavbarItem1 isSidebarOpen={isSidebarOpen} />
+            <NavbarInnerItem isSidebarOpen={isSidebarOpen} />
           </div>
 
           <div className="social">
@@ -40,4 +40,4 @@ const Navbar1 = () => {
   )
 }
 
-export default Navbar1;
+export default NavbarInner;

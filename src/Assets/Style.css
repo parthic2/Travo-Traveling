@@ -239,6 +239,10 @@
     .pt-50 {
         padding-top: 50px;
     }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
@@ -250,10 +254,6 @@
 @media (max-width: 1024px) {
     .start {
         justify-content: start;
-    }
-
-    .hide {
-        display: none;
     }
 
     .pt-25 {
@@ -658,14 +658,6 @@
     }
 }
 
-.detail {
-    display: inline-block;
-    margin-bottom: 25px;
-    color: #828282;
-    line-height: 29px;
-    font-size: 15px;
-}
-
 .customerName {
     font-weight: 600;
     text-transform: uppercase;
@@ -733,6 +725,7 @@
     line-height: 24px;
     margin-bottom: 15px;
     width: 186px;
+    cursor: pointer;
 }
 
 .blog-title:hover {
@@ -915,6 +908,7 @@
     opacity: 0;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1;
 }
 
 .nav-links li:hover .drop-menu {
@@ -939,6 +933,7 @@
     top: 85px;
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
 }
 
 .mega-box .content {
@@ -1008,7 +1003,7 @@
     border-radius: 5px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
     position: fixed;
-    right: 34.5%;
+    right: 34.8%;
     top: 13%;
     width: 18%;
     padding: 20px 45px;
@@ -1119,11 +1114,13 @@
         line-height: 40px;
         overflow-y: auto;
         transition: all 0.3s ease;
+        z-index: 10;
     }
 
     .menu-btn {
         display: block;
         color: black;
+        cursor: pointer;
     }
 
     #menu-btn:checked~.nav-links {
@@ -1138,11 +1135,11 @@
         display: block;
     }
 
-    .nav-links li .desktop-item {
+    /* .nav-links li a {
         padding: 0 20px;
         display: block;
         font-size: 20px;
-    }
+    } */
 
     .nav-links .drop-menu {
         position: static;
@@ -1177,7 +1174,7 @@
         padding: 0;
     }
 
-    .nav-links .desktop-item, 
+    .nav-links .desktop-item,
     .nav-links .desktop-item1 {
         display: none;
     }
@@ -1298,7 +1295,7 @@ nav input {
 }
 
 /* inner navbar css */
-.navbar-inner{
+.navbar-inner {
     background-color: white;
     color: black;
     padding: 20px 35px;
