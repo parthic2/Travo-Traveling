@@ -87,7 +87,7 @@ const About1 = () => {
                   responsive={responsive}
                   ssr
                   infinite
-                  // autoPlay
+                  autoPlay
                   autoPlaySpeed={2500}
                   keyBoardControl
                   customTransition="transform 300ms ease-in-out"
