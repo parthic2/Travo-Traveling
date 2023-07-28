@@ -63,7 +63,7 @@ const About1 = () => {
             <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
               {team.map((item, index) => (
                 <div key={index} className="relative team-hover">
-                  <img src={item.imageSrc} alt="portfolio" className="w-[100%] h-[350px]" />
+                  <img src={item.imageSrc} alt="portfolio" className="w-[100%]" />
                   <div className="icon-social">
                     <Link><BiLogoFacebook /></Link>
                     <Link><BiLogoInstagram /></Link>
