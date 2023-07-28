@@ -7,6 +7,7 @@ import { team, review } from "../../Data/CarouselItem";
 import { BiRadioCircle, BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { VscQuote } from 'react-icons/vsc';
 
 const responsiveService = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
@@ -150,7 +151,7 @@ const About2 = () => {
       <div className="bg-[#f1edea]">
         <div className="items-center grid grid-cols-1 gap-4 p-9 lg:p-28 container mx-auto">
           <div className="flex justify-center items-center pb-10">
-            <img src="http://templates.thememodern.com/ronmi/images/quote.png" alt="quote" />
+            <VscQuote className="text-[#c3964e] w-[37px] h-[30px]" />
           </div>
           <div className="">
             <div className="slider">

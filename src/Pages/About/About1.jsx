@@ -5,6 +5,7 @@ import { team, review } from "../../Data/CarouselItem";
 import { Link } from 'react-router-dom';
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { VscQuote } from 'react-icons/vsc';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -99,7 +100,7 @@ const About1 = () => {
                     <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5 h-auto ease-in duration-100" key={index}>
                       <div className="feature-box-move-bottom-top">
                         <h2 className="">
-                          <img src="http://templates.thememodern.com/ronmi/images/quote.png" alt="quote" />
+                          <VscQuote className="text-[#c3964e] w-[37px] h-[30px]" />
                         </h2>
                         <div className="text mt-5">" {item.review} "</div>
                         <div className="detail !mb-0">{item.name}</div>
