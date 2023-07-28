@@ -30,7 +30,7 @@ const About = () => {
             <p className="detail">
               Lorem ipsum dolor amet consectetur adipiscing do eiusmod tempor incididunt ut labore et dolore ut enim ad minim veniam nostrud exercitation laboris nisi ut aliquip ex ea commodo.
             </p>
-            <button className="discover">discover litho</button>
+            <button className="discover">discover</button>
           </div>
         </div>
       </div>

@@ -47,7 +47,7 @@ const About3 = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-2 gap-2">
-                <img src="/assets/choose-about.png" alt="about2" />
+                <img src="/assets/choose-about6.png" alt="about2" />
                 <img src="/assets/choose-about3.png" alt="about2" />
                 <img src="/assets/choose-about4.png" alt="about2" />
                 <img src="/assets/choose-about5.png" alt="about2" />
