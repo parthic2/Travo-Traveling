@@ -210,3 +210,51 @@ export const review = [
         name: "Andrew Fox"
     }
 ]
+
+export const portfolio = [
+    {
+        imgSrc: "/assets/hotel-interior-design.png",
+        title: "Hotel Interior Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/modern-home-design.png",
+        title: "Modern Home Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/home-office-design.png",
+        title: "Home Office Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/apartments-design.png",
+        title: "Apartments Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/bedroom-design.png",
+        title: "Bedroom Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/dining-room-design.png",
+        title: "Dining Room Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/kids-room-design.png",
+        title: "Kids Room Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/studio-apartments-design.png",
+        title: "Studio Apartments Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        imgSrc: "/assets/bathroom-design.png",
+        title: "Bathroom Design",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+]
