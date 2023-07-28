@@ -148,3 +148,65 @@ export const service = [
         detail: 'All Types Of Glass Decoration And Light Decoration With Innovative Modern Glass And Lightning So That Your Space Can Get A Look Of Masterpiece.'
     }
 ];
+
+export const team = [
+    {
+        imageSrc: '/assets/team1.png',
+        name: 'Anna smith',
+        designation: 'Co-founder',
+    },
+    {
+        imageSrc: '/assets/team2.png',
+        name: 'Amanda red',
+        designation: 'Interior designer',
+    },
+    {
+        imageSrc: '/assets/team3.png',
+        name: 'samuel jacobs',
+        designation: 'Photographer',
+    },
+    {
+        imageSrc: '/assets/team4.png',
+        name: 'Alan Miller',
+        designation: 'Interior Designer',
+    },
+    {
+        imageSrc: '/assets/team5.png',
+        name: 'Clara sonra',
+        designation: 'Interior Designer',
+    },
+    {
+        imageSrc: '/assets/team6.png',
+        name: 'Tommy Ridar',
+        designation: 'Photographer',
+    },
+    {
+        imageSrc: '/assets/team7.png',
+        name: 'Anna Ridar',
+        designation: 'Architecture',
+    },
+    {
+        imageSrc: '/assets/team8.png',
+        name: 'Amah sonra',
+        designation: 'art director',
+    },
+]
+
+export const review = [
+    {
+        review: "You will never fake the feeling of being in such a place. The live minimalism base on the natural materials & alive unprocessed.",
+        name: "Anna Paulina"
+    },
+    {
+        review: "You will never fake the feeling of being in such a place. The live minimalism base on the natural materials and alive unprocessed textures — true, authentic, close to nature.",
+        name: "Andrew Fox"
+    },
+    {
+        review: "You will never fake the feeling of being in such a place. The live minimalism base on the natural materials and alive unprocessed textures — true, authentic, close to nature.",
+        name: "Anna Paulina"
+    },
+    {
+        review: "You will never fake the feeling of being in such a place. The live minimalism base on the natural materials & alive unprocessed.",
+        name: "Andrew Fox"
+    }
+]

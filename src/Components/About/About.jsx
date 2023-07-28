@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className={`cover-background aboutPadding ${fadeIn ? 'fade-in' : ''}`}>
       <div className="relative container mx-auto px-4">
-        <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
           <div className="relative lg:mt-[30px] md:mb-36 sm:mb-36 md:mt-0 col-lg-6 col-md-10">
             <div className="lg-no-parallax relative w-1/2 md:w-[70%] z-[2] mt-[20%] lg:mt-0 lg:mr-auto flex justify-center items-center">
               <img src="/assets/home-interior-design-about-img02.png" alt="about" className="aboutImage-1" />
