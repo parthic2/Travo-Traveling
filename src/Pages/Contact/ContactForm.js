@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const [formValue, setFormValue] = useState({
@@ -30,7 +32,7 @@ const ContactForm = () => {
       process.env.REACT_APP_PUBLIC_KEY
     )
       .then(() => {
-        // toast.success("Message Sent Successfully!");
+        toast.success("Message Sent Successfully!");
         setFormValue({
           name: "",
           email: "",
@@ -41,7 +43,7 @@ const ContactForm = () => {
         });
       })
       .catch((error) => {
-        // toast.error("Something Went Wrong!");
+        toast.error("Something Went Wrong!");
         setFormValue({
           name: "",
           email: "",
@@ -64,6 +66,7 @@ const ContactForm = () => {
 
   return (
     <form ref={form} className="flex justify-center items-center" onSubmit={sendEmail} autoComplete="off">
+      <ToastContainer position="top-left" style={{ padding: "20px" }} />
       <div className="lg:w-3/4 md:w-3/4 space-y-4 w-full">
         <div>
           <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">Name</label>
