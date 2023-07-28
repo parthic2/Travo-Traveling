@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../Components/Footer/Footer';
 import NavbarInner from '../../Components/Navbar/NavbarInner';
 import Carousel from 'react-multi-carousel';
@@ -8,6 +8,8 @@ import { BiRadioCircle, BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { VscQuote } from 'react-icons/vsc';
+import { animateColumns } from '../../helpers/animateColumns';
+import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 
 const responsiveService = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
@@ -24,13 +26,19 @@ const responsive = {
 };
 
 const About2 = () => {
+  useEffect(() => {
+    animateColumns();
+  }, []);
+
+  useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
+
   return (
     <>
       <NavbarInner />
       <div className="container mx-auto px-4 py-10">
         <div className="flex min-h-screen flex-col">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
-            <div className="mt-5 self-center">
+            <div className="mt-5 self-center customerLeftColumns">
               <h2 className="heading-4 xl:w-full">
                 It’s Time for a New Material
               </h2>
@@ -44,17 +52,17 @@ const About2 = () => {
               <button className="discover">discover</button>
             </div>
 
-            <div className="pl-0 lg:pl-20">
+            <div className="pl-0 lg:pl-20 customerRightColumns">
               <img src="/assets/material-about.png" alt="about2" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center customerLeftColumns">
               <img src="/assets/choose-about.png" alt="about2" />
             </div>
 
-            <div className="mt-5 pl-0 lg:pl-20 self-center">
+            <div className="mt-5 pl-0 lg:pl-20 self-center customerRightColumns">
               <div className="small">
                 <span className="smallBorder" />
                 <div className="flex-grow-1">

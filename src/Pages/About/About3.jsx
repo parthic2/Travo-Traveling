@@ -8,6 +8,8 @@ import { BiRadioCircle, BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { VscQuote } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
+import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
+import useScrollAnimation from '../../Hooks/useScrollAnimation';
 
 const responsiveService = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
@@ -17,12 +19,15 @@ const responsiveService = {
 };
 
 const About3 = () => {
+  const registerElement = useScrollAnimationTrends();
+  const fadeIn = useScrollAnimation(".animate");
+
   return (
     <>
       <NavbarInner />
       <div className="container mx-auto px-4 py-10">
         <div className="flex min-h-screen flex-col">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2" ref={(element) => registerElement(element)}>
             <div className="mt-5 self-center">
               <h2 className="heading-4 xl:w-full">
                 It’s Time for a New Material
@@ -45,7 +50,7 @@ const About3 = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28" ref={(element) => registerElement(element)}>
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-2 gap-2">
                 <img src="/assets/choose-about6.png" alt="about2" />
@@ -148,7 +153,7 @@ const About3 = () => {
       </div>
 
       <div className="bg-[#f1edea]">
-        <div className="items-center grid grid-cols-1 lg:grid-cols-2 gap-4 p-9 lg:p-28 container mx-auto">
+        <div className={`animate items-center grid grid-cols-1 lg:grid-cols-2 gap-4 p-9 lg:p-28 container mx-auto ${fadeIn ? 'fade-in' : ''}`}>
           {review.map((item, index) => (
             <div key={index}>
               <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden lg:mr-5 md:mr-0 h-auto ease-in duration-100">
