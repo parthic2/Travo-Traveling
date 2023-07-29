@@ -20,54 +20,87 @@ const ContactForm = () => {
     country: "",
     message: ""
   });
+  
+  // Validation function for each field
+  const validateName = (value) => {
+    if (value.trim() === "") {
+      return "Name is required.";
+    } else if (!/^[A-Za-z\s]+$/.test(value)) {
+      return "Name should contain only characters.";
+    } else {
+      return "";
+    }
+  };
 
-  // validation
+  const validateEmail = (value) => {
+    if (value.trim() === "") {
+      return "Email Address is required.";
+    } else if (!/\S+@\S+\.\S+/.test(value)) {
+      return "Invalid email address.";
+    } else {
+      return "";
+    }
+  };
+
+  const validateNumber = (value) => {
+    if (value.trim() === "") {
+      return "Contact Number is required.";
+    } else if (!/^\d{10}$/.test(value)) {
+      return "Contact Number must be a 10-digit number.";
+    } else {
+      return "";
+    }
+  };
+
+  const validateCountry = (value) => {
+    if (value === "" || value === "select country") {
+      return "Please select a valid country.";
+    } else {
+      return "";
+    }
+  };
+
+  const validateMessage = (value) => {
+    if (value.trim() === "") {
+      return "Message is required.";
+    } else {
+      return "";
+    }
+  };
+
+  // Handle onBlur event for each input field
+  const handleInputBlur = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+
+    // Validate the current field and set the error message
+    if (name === 'name') {
+      setFormErrors({ ...formErrors, [name]: validateName(value) });
+    } else if (name === 'email') {
+      setFormErrors({ ...formErrors, [name]: validateEmail(value) });
+    } else if (name === 'number') {
+      setFormErrors({ ...formErrors, [name]: validateNumber(value) });
+    } else if (name === 'country') {
+      setFormErrors({ ...formErrors, [name]: validateCountry(value) });
+    } else if (name === 'message') {
+      setFormErrors({ ...formErrors, [name]: validateMessage(value) });
+    }
+  };
+
   const validateForm = () => {
-    let valid = true;
+    // Validate all form fields and set the error messages
     const newErrors = {
-      name: "",
-      email: "",
-      number: "",
-      country: "",
-      message: ""
+      name: validateName(formValue.name),
+      email: validateEmail(formValue.email),
+      number: validateNumber(formValue.number),
+      country: validateCountry(formValue.country),
+      message: validateMessage(formValue.message)
     };
 
-    if (formValue.name.trim() === "") {
-      newErrors.name = "Name is required.";
-      valid = false;
-    } else if (!/^[A-Za-z\s]+$/.test(formValue.name)) {
-      newErrors.name = "Name should contain only characters.";
-      valid = false;
-    }
-
-    if (formValue.email.trim() === "") {
-      newErrors.email = "Email Address is required.";
-      valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formValue.email)) {
-      newErrors.email = "Invalid email address.";
-      valid = false;
-    }
-
-    if (formValue.number.trim() === "") {
-      newErrors.number = "Contact Number is required.";
-      valid = false;
-    } else if (!/^\d{10}$/.test(formValue.number)) {
-      newErrors.number = "Contact Number must be a 10-digit number.";
-      valid = false;
-    }
-
-    if (formValue.country === "" || formValue.country === "select country") {
-      newErrors.country = "Please select a valid country.";
-      valid = false;
-    }
-
-    if (formValue.message.trim() === "") {
-      newErrors.message = "Message is required.";
-      valid = false;
-    }
-
     setFormErrors(newErrors);
-    return valid;
+
+    // Check if the form is valid by checking if there are no error messages
+    return !Object.values(newErrors).some((error) => error !== "");
   };
 
   // For Sending Email
@@ -135,9 +168,6 @@ const ContactForm = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
-
-    // Clear the error message for the current field when the user starts typing in it
-    setFormErrors({ ...formErrors, [name]: "" });
   };
 
   const handleCheckboxChange = (e) => {
@@ -155,6 +185,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             value={formValue.name}
+            onBlur={handleInputBlur}
             onChange={handleInputChange}
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
           />
@@ -169,6 +200,7 @@ const ContactForm = () => {
             type="email"
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.email}
+            onBlur={handleInputBlur}
             onChange={handleInputChange}
           />
           {formErrors.email && <p className="text-red-500">{formErrors.email}</p>}
@@ -183,6 +215,7 @@ const ContactForm = () => {
             maxLength="10"
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.number}
+            onBlur={handleInputBlur}
             onChange={handleInputChange}
           />
           {formErrors.number && <p className="text-red-500">{formErrors.number}</p>}
@@ -196,6 +229,7 @@ const ContactForm = () => {
             type="text"
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.country}
+            onBlur={handleInputBlur}
             onChange={handleInputChange}
           >
             <option>select country</option>
@@ -216,6 +250,7 @@ const ContactForm = () => {
             type="text"
             className="mt-2 w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             value={formValue.message}
+            onBlur={handleInputBlur}
             onChange={handleInputChange}
           />
           {formErrors.message && <p className="text-red-500">{formErrors.message}</p>}
