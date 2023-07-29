@@ -20,7 +20,7 @@ const ContactForm = () => {
     country: "",
     message: ""
   });
-  
+
   // Validation function for each field
   const validateName = (value) => {
     if (value.trim() === "") {
@@ -35,7 +35,7 @@ const ContactForm = () => {
   const validateEmail = (value) => {
     if (value.trim() === "") {
       return "Email Address is required.";
-    } else if (!/\S+@\S+\.\S+/.test(value)) {
+    } else if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z]+)*$/.test(value)) {
       return "Invalid email address.";
     } else {
       return "";
