@@ -35,6 +35,9 @@ const ContactForm = () => {
     if (formValue.name.trim() === "") {
       newErrors.name = "Name is required.";
       valid = false;
+    } else if (!/^[A-Za-z\s]+$/.test(formValue.name)) {
+      newErrors.name = "Name should contain only characters.";
+      valid = false;
     }
 
     if (formValue.email.trim() === "") {
@@ -132,6 +135,9 @@ const ContactForm = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
+
+    // Clear the error message for the current field when the user starts typing in it
+    setFormErrors({ ...formErrors, [name]: "" });
   };
 
   const handleCheckboxChange = (e) => {
@@ -220,11 +226,11 @@ const ContactForm = () => {
             type="checkbox"
             name="subscribe"
             id="subscribe"
-            className="bg-white rounded border"
+            className="bg-white rounded border custom-checkbox"
             checked={formValue.subscribe}
             onChange={handleCheckboxChange}
           />
-          <label htmlFor="subscribe" className="ml-4 text-sm font-medium leading-6 text-gray-900">Subscribe</label>
+          <label htmlFor="subscribe" className="ml-2 text-sm font-medium leading-6 text-gray-900">Subscribe</label>
         </div>
 
         <div>

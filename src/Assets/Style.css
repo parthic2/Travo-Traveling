@@ -1076,3 +1076,9 @@ nav input {
     color: #c3964e;
     background-color: #fff;
 }
+
+/* Contact form css */
+input[type=checkbox]:checked {
+    accent-color: #a77e2d !important;
+    color: #ffffff !important;
+}
