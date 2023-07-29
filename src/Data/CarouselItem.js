@@ -258,3 +258,26 @@ export const portfolio = [
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
 ]
+
+export const countries = [
+    { value: 'Afghanistan', label: 'Afghanistan' },
+    { value: 'Aland Islands', label: 'Aland Islands' },
+    { value: 'Albania', label: 'Albania' },
+    { value: "Algeria", label: "Algeria" },
+    { value: "American Samoa", label: "American Samoa" },
+    { value: "Andorra", label: "Andorra" },
+    { value: "Angola", label: "Angola" },
+    { value: "Austria", label: "Austria" },
+    { value: "Canada", label: "Canada" },
+    { value: "Falkland Islands (Malvinas)", label: "Falkland Islands(Malvinas)" },
+    { value: "Faroe Islands", label: "Faroe Islands" },
+    { value: "Fiji", label: "Fiji" },
+    { value: "Finland", label: "Finland" },
+    { value: "France", label: "France" },
+    { value: "Georgia", label: "Georgia" },
+    { value: "Germany", label: "Germany" },
+    { value: "Hungary", label: "Hungary" },
+    { value: "Iceland", label: "Iceland" },
+    { value: "India", label: "India" },
+    { value: "Indonesia", label: "Indonesia" }
+];

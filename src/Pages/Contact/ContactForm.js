@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { countries } from '../../Data/CarouselItem';
 
 const ContactForm = () => {
   const [formValue, setFormValue] = useState({
@@ -12,12 +13,70 @@ const ContactForm = () => {
     message: "",
     subscribe: false
   });
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    number: "",
+    country: "",
+    message: ""
+  });
+
+  // validation
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      number: "",
+      country: "",
+      message: ""
+    };
+
+    if (formValue.name.trim() === "") {
+      newErrors.name = "Name is required.";
+      valid = false;
+    }
+
+    if (formValue.email.trim() === "") {
+      newErrors.email = "Email Address is required.";
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formValue.email)) {
+      newErrors.email = "Invalid email address.";
+      valid = false;
+    }
+
+    if (formValue.number.trim() === "") {
+      newErrors.number = "Contact Number is required.";
+      valid = false;
+    } else if (!/^\d{10}$/.test(formValue.number)) {
+      newErrors.number = "Contact Number must be a 10-digit number.";
+      valid = false;
+    }
+
+    if (formValue.country === "" || formValue.country === "select country") {
+      newErrors.country = "Please select a valid country.";
+      valid = false;
+    }
+
+    if (formValue.message.trim() === "") {
+      newErrors.message = "Message is required.";
+      valid = false;
+    }
+
+    setFormErrors(newErrors);
+    return valid;
+  };
 
   // For Sending Email
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return; // If the form is not valid, do not proceed with sending the email
+    }
+
     const message = formValue.subscribe ? "Subscribe" : "Unsubscribe";
 
     const templateParams = {
@@ -41,6 +100,14 @@ const ContactForm = () => {
           message: "",
           subscribe: false
         });
+
+        setFormErrors({
+          name: "",
+          email: "",
+          number: "",
+          country: "",
+          message: ""
+        });
       })
       .catch((error) => {
         toast.error("Something Went Wrong!");
@@ -51,6 +118,13 @@ const ContactForm = () => {
           country: "",
           message: "",
           subscribe: false
+        });
+        setFormErrors({
+          name: "",
+          email: "",
+          number: "",
+          country: "",
+          message: ""
         });
       });
   };
@@ -76,9 +150,9 @@ const ContactForm = () => {
             name="name"
             value={formValue.name}
             onChange={handleInputChange}
-            required
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
           />
+          {formErrors.name && <p className="text-red-500">{formErrors.name}</p>}
         </div>
 
         <div>
@@ -87,11 +161,11 @@ const ContactForm = () => {
             id="email"
             name="email"
             type="email"
-            required
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.email}
             onChange={handleInputChange}
           />
+          {formErrors.email && <p className="text-red-500">{formErrors.email}</p>}
         </div>
 
         <div>
@@ -101,11 +175,11 @@ const ContactForm = () => {
             name="number"
             type="text"
             maxLength="10"
-            required
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.number}
             onChange={handleInputChange}
           />
+          {formErrors.number && <p className="text-red-500">{formErrors.number}</p>}
         </div>
 
         <div>
@@ -114,33 +188,18 @@ const ContactForm = () => {
             id="country"
             name="country"
             type="text"
-            required
             className="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
             value={formValue.country}
             onChange={handleInputChange}
           >
             <option>select country</option>
-            <option value="Afghanistan">Afghanistan</option>
-            <option value="Aland Islands">Aland Islands</option>
-            <option value="Albania">Albania</option>
-            <option value="Algeria">Algeria</option>
-            <option value="American Samoa">American Samoa</option>
-            <option value="Andorra">Andorra</option>
-            <option value="Angola">Angola</option>
-            <option value="Austria">Austria</option>
-            <option value="Canada">Canada</option>
-            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-            <option value="Faroe Islands">Faroe Islands</option>
-            <option value="Fiji">Fiji</option>
-            <option value="Finland">Finland</option>
-            <option value="France">France</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Germany">Germany</option>
-            <option value="Hungary">Hungary</option>
-            <option value="Iceland">Iceland</option>
-            <option value="India">India</option>
-            <option value="Indonesia">Indonesia</option>
+            {countries.map((country) => (
+              <option key={country.value} value={country.value}>
+                {country.label}
+              </option>
+            ))}
           </select>
+          {formErrors.country && <p className="text-red-500">{formErrors.country}</p>}
         </div>
 
         <div>
@@ -151,9 +210,9 @@ const ContactForm = () => {
             type="text"
             className="mt-2 w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             value={formValue.message}
-            required
             onChange={handleInputChange}
           />
+          {formErrors.message && <p className="text-red-500">{formErrors.message}</p>}
         </div>
 
         <div className="flex items-center">
