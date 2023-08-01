@@ -5,13 +5,7 @@ import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
 import { carouselItems } from "../../Data/CarouselItem";
 import { animateColumns } from '../../helpers/animateColumns';
-
-const responsiveService = {
-  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 2 },
-  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
-};
+import { responsiveTwoSlide } from '../../Data/ResponsiveCarousel';
 
 const Services = () => {
   const registerElement = useScrollAnimationTrends();
@@ -55,7 +49,7 @@ const Services = () => {
                 className="mySwiper"
                 draggable
                 showDots={false}
-                responsive={responsiveService}
+                responsive={responsiveTwoSlide}
                 ssr
                 infinite
                 autoPlay

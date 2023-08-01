@@ -1,3 +1,21 @@
+export const slides = [
+    {
+        id: 1,
+        title: 'Concrete pent house',
+        category: 'Resident interior',
+    },
+    {
+        id: 2,
+        title: 'Modernism table pots',
+        category: 'Resident interior',
+    },
+    {
+        id: 3,
+        title: 'Comfort seating',
+        category: 'Resident interior',
+    },
+];
+
 export const carouselItems = [
     {
         number: '01',
@@ -19,6 +37,13 @@ export const carouselItems = [
         text: 'Interior decoration',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
+];
+
+export const counterItems = [
+    { number: '2500', title: 'working hours' },
+    { number: '3250', title: 'photo capture' },
+    { number: '2800', title: 'work completed' },
+    { number: '2750', title: 'telephonic talk' },
 ];
 
 export const projectData = [
@@ -280,4 +305,27 @@ export const countries = [
     { value: "Iceland", label: "Iceland" },
     { value: "India", label: "India" },
     { value: "Indonesia", label: "Indonesia" }
+];
+
+export const fancyBoxItems = [
+    {
+        image: "/assets/home-interior-design-services.png",
+        title: "interior design is a business of trust",
+        description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
+    },
+    {
+        image: "/assets/home-interior-design-services-02.png",
+        title: "we believe in the power of design",
+        description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
+    },
+    {
+        image: "/assets/home-interior-design-services-03.png",
+        title: "design is the process of discovery",
+        description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
+    },
+    {
+        image: "/assets/home-interior-design-services-04.png",
+        title: "we want to bring interior design",
+        description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
+    }
 ];

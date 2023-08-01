@@ -1,3 +1,6 @@
+/* Import package CSS */
+@import url('../Assets/Animation.css');
+
 /* Slider css */
 .sliderImage-1,
 .sliderImage-2,

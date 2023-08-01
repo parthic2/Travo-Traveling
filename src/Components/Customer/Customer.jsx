@@ -4,13 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import { testimonialItems } from "../../Data/CarouselItem";
 import { animateColumn } from '../../helpers/animateColumn';
-
-const responsive = {
-  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
-  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
-};
+import { responsiveOneSlide } from '../../Data/ResponsiveCarousel';
 
 const Customer = () => {
   useEffect(() => {
@@ -34,7 +28,7 @@ const Customer = () => {
                 className="mySwiper"
                 draggable
                 showDots={false}
-                responsive={responsive}
+                responsive={responsiveOneSlide}
                 ssr
                 infinite
                 autoPlay

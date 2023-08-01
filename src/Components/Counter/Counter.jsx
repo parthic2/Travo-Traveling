@@ -1,13 +1,7 @@
 import React from 'react';
+import { counterItems } from '../../Data/CarouselItem';
 
 const Counter = () => {
-  const counterItems = [
-    { number: '2500', title: 'working hours' },
-    { number: '3250', title: 'photo capture' },
-    { number: '2800', title: 'work completed' },
-    { number: '2750', title: 'telephonic talk' },
-  ];
-
   return (
     <section className="pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px]">
       <div className="container mx-auto px-4">

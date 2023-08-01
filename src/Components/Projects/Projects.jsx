@@ -4,13 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { BsArrowUpRight } from 'react-icons/bs';
 import useScrollAnimation from '../../Hooks/useScrollAnimation';
 import { projectData } from '../../Data/CarouselItem';
-
-const responsiveProject = {
-  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 2.5, partialVisibilityGutter: 30 },
-  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2.5, partialVisibilityGutter: 30 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1.5, partialVisibilityGutter: 30 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
-};
+import { responsiveProject } from '../../Data/ResponsiveCarousel';
 
 const Projects = () => {
   const fadeIn = useScrollAnimation(".animate");

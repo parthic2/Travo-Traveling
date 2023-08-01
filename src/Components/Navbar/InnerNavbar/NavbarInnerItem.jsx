@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { navigationItems } from '../../Data/NavbarItem';
+import { navigationItems } from '../../../Data/NavbarItem';
 
-const NavbarItem = ({ isSidebarOpen, textColor }) => {
+const NavbarInnerItem = ({ isSidebarOpen, textColor }) => {
   return (
     <div className="wrapper">
       <input
@@ -22,7 +22,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
           <li key={index}>
             <Link
               to={item.link}
-              className="list uppercase sm:text-black"
+              className="item uppercase sm:text-black"
               style={{ color: textColor }}
             >
               {item.text}
@@ -44,4 +44,4 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
   )
 }
 
-export default NavbarItem;
+export default NavbarInnerItem;
