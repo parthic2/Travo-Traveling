@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
 import { carouselItems } from "../../Data/CarouselItem";
 import { animateColumns } from '../../helpers/animateColumns';
 import { responsiveTwoSlide } from '../../Data/ResponsiveCarousel';
+import { carouselSettings } from '../../Project.config';
 
 const Services = () => {
   const registerElement = useScrollAnimationTrends();
@@ -17,17 +17,17 @@ const Services = () => {
   useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
 
   return (
-    <section className="bg-[#f1edea] pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] overflow-hidden xs:pt-[9%] xs:px-[15px]">
+    <section className="bg-background-light pb-content-spacing lg:pb-content-spacing-lg md:pb-content-spacing-md sm:pb-content-spacing-xs overflow-hidden">
       <div className="overflow-hidden">
-        <div className="overlap-section overflow-hidden relative -left-[10px] px-0 text-start font-semibold text-[#fff] text-[154px] leading-[154px] -tracking-[2px] whitespace-nowrap hide" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
+        <div className="overlap-section overflow-hidden relative -left-spacing-left-10 px-0 text-start font-semibold text-white-text text-larger-text leading-l-154 -tracking-[2px] whitespace-nowrap hide" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
           achievements
         </div>
       </div>
 
-      <div className="lg:pt-[8%] pt-25 container mx-auto px-4">
+      <div className="lg:pt-spacing-t-8 pt-25 container mx-auto px-4">
         <div className="flex lg:justify-center md:justify-start text-center lg:mb-16 md:mb-12 xs:mb-20">
           <div className="md:text-left">
-            <span className="text-[#c3964e] font-medium mb-[20px] uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
+            <span className="text-primary-strong font-medium mb-spacing-b-20 uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
               Home decoration services
             </span>
             <h2 className="heading-5 text-start">
@@ -39,7 +39,7 @@ const Services = () => {
 
         <div className="items-center grid grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="col-span-2 lg:col-span-1 pt-50 customerLeftColumns">
-            <span className="mb-[20px] block uppercase font-medium text-[#828282]">Expert services</span>
+            <span className="mb-spacing-b-20 block uppercase font-medium text-grey-text">Expert services</span>
             <h1 className="heading-6">We like to make you feel more at home</h1>
           </div>
 
@@ -47,21 +47,11 @@ const Services = () => {
             <div className="slider">
               <Carousel
                 className="mySwiper"
-                draggable
-                showDots={false}
                 responsive={responsiveTwoSlide}
-                ssr
-                infinite
-                autoPlay
-                autoPlaySpeed={2500}
-                keyBoardControl
-                customTransition="transform 300ms ease-in-out"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
+                {...carouselSettings}
               >
                 {carouselItems.map((item, index) => (
-                  <div className="hover:bg-white border-[1px] border-[#0000001a] overflow-hidden mr-5 h-72 ease-in duration-100" key={index}>
+                  <div className="hover:bg-white border border-[#0000001a] overflow-hidden mr-5 h-72 ease-in duration-100" key={index}>
                     <div className="feature-box-move-bottom-top">
                       <h2 className="number">{item.number}</h2>
                       <div className="feature-box-content">

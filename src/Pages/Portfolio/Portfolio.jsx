@@ -15,8 +15,8 @@ const Portfolio = () => {
 
                   <div className="portfolio-hover-card justify-between flex">
                     <div className="portfolio-content">
-                      <h3 className="text-[20px] font-semibold text-white uppercase mb-2">{item.title}</h3>
-                      <span className="text-sm text-white mb-[5px] opacity-70 inline-block">
+                      <h3 className="text-normal-text font-semibold text-white uppercase mb-2">{item.title}</h3>
+                      <span className="text-sm text-white mb-spacing-b-5 opacity-70 inline-block">
                         {item.description}
                       </span>
                     </div>

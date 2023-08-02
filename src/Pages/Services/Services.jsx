@@ -3,11 +3,11 @@ import { service } from '../../Data/CarouselItem';
 
 const Services = () => {
   return (
-    <section className={`py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px] relative bg-[#f1edea]`}>
+    <section className={`py-content-spacing lg:py-content-spacing-lg md:py-content-spacing-md xs:content-spacing-xs relative bg-background-light`}>
       <div className="container-fluid">
         <div className="justify-center text-center">
           <div className="flex flex-col items-center text-center mb-24 lg:mb-16 md:mb-12 xs:mb-20">
-            <h2 className="text-center text-[25px] font-bold">
+            <h2 className="text-center text-normal-text-1 font-bold">
               Services Which We Offer And Expertise In Home And Commercial Interior Design Service
             </h2>
           </div>
@@ -23,7 +23,7 @@ const Services = () => {
                 <div className={blog.category}>
                   <div className="h-full flex sm:flex-row flex-col sm:justify-start">
                     <img alt="team" className="blog-image" src={blog.imageSrc} style={{ height: "400px" }} />
-                    <div className="p-[5%]">
+                    <div className="p-spacing-p">
                       <div className="blog-title" style={{ width: "100%" }}>{blog.title}</div>
                       <p className="detail" style={{ marginBottom: "0" }}>{blog.detail}</p>
                       <div className="w-full flex justify-start xs:mt-0">

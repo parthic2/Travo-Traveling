@@ -1,5 +1,6 @@
 /* Import package CSS */
 @import url('../Assets/Animation.css');
+@import url("react-multi-carousel/lib/styles.css");
 
 /* Slider css */
 .sliderImage-1,

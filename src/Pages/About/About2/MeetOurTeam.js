@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import { team } from '../../../Data/CarouselItem';
 import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { responsiveFourSlide } from '../../../Data/ResponsiveCarousel';
+import { carouselSettings } from '../../../Project.config';
 
 const MeetOurTeam = () => {
   return (
@@ -14,7 +14,7 @@ const MeetOurTeam = () => {
         <div className="small">
           <span className="smallBorder" />
           <div className="flex-grow-1">
-            <span className="text-[#c3964e] uppercase">OUR PROFESSIONALS</span>
+            <span className="text-primary-strong uppercase">OUR PROFESSIONALS</span>
           </div>
         </div>
         <h2 className="heading-4 xl:w-full">
@@ -29,22 +29,12 @@ const MeetOurTeam = () => {
         <div className="slider">
           <Carousel
             className="mySwiper"
-            draggable
-            showDots={false}
             responsive={responsiveFourSlide}
-            ssr
-            infinite
-            autoPlay
-            autoPlaySpeed={2500}
-            keyBoardControl
-            customTransition="transform 300ms ease-in-out"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
+           {...carouselSettings}
           >
             {team.map((item, index) => (
               <div key={index} className="relative team-hover">
-                <img src={item.imageSrc} alt="portfolio" className="w-[90%] h-[100%] border-2 border-[#c3964e]" />
+                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" />
                 <div className="icon-social" style={{ width: "88%" }}>
                   <Link><BiLogoFacebook /></Link>
                   <Link><BiLogoInstagram /></Link>

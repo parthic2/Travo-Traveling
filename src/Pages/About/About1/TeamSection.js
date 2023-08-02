@@ -10,7 +10,7 @@ const TeamSection = () => {
   return (
     <div className="pt-28">
       <div className="lg:text-center md:text-left">
-        <span className="text-[#c3964e] font-medium mb-[20px] uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
+        <span className="text-primary-strong font-medium mb-spacing-b-20 uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
           OUR PROFESSIONALS
         </span>
         <h2 className="heading-5">
@@ -25,7 +25,7 @@ const TeamSection = () => {
       <div className={`animate items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10 ${fadeIn ? 'fade-in' : ''}`}>
         {team.map((item, index) => (
           <div key={index} className="relative team-hover">
-            <img src={item.imageSrc} alt="portfolio" className="w-[100%]" />
+            <img src={item.imageSrc} alt="portfolio" className="w-width-100" />
             <div className="icon-social">
               <Link><BiLogoFacebook /></Link>
               <Link><BiLogoInstagram /></Link>

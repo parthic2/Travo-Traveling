@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
         <div className="small">
           <span className="smallBorder" />
           <div className="flex-grow-1">
-            <span className="text-[#c3964e] uppercase">WHY CHOOSE US</span>
+            <span className="text-primary-strong uppercase">WHY CHOOSE US</span>
           </div>
         </div>
         <h2 className="heading-4 xl:w-full">
@@ -32,19 +32,19 @@ const WhyChooseUs = () => {
         <div>
           <ul className="detail">
             <li className="flex items-center">
-              <BiRadioCircle className="text-[#c3964e] mr-2" />
+              <BiRadioCircle className="text-primary-strong mr-2" />
               High-quality services
             </li>
             <li className="flex items-center">
-              <BiRadioCircle className="text-[#c3964e] mr-2" />
+              <BiRadioCircle className="text-primary-strong mr-2" />
               Massage to any taste
             </li>
             <li className="flex items-center">
-              <BiRadioCircle className="text-[#c3964e] mr-2" />
+              <BiRadioCircle className="text-primary-strong mr-2" />
               Qualified treatment
             </li>
             <li className="flex items-center">
-              <BiRadioCircle className="text-[#c3964e] mr-2" />
+              <BiRadioCircle className="text-primary-strong mr-2" />
               Pleasant prices
             </li>
           </ul>
