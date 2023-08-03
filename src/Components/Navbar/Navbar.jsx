@@ -4,6 +4,7 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaGripLines } from 'react-icons/fa';
 import NavbarItem from './NavbarItem';
 import useScroll from '../../Hooks/useScroll';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { navbarVisible, navbarColor, textColor } = useScroll();
@@ -18,25 +19,24 @@ const Navbar = () => {
     <header className="reverse-scroll"
       style={{ display: navbarVisible ? 'block' : 'none' }}
     >
-      <nav id="headerBar" className="navbar" style={{ backgroundColor: navbarColor, color: textColor }}>
-        <div className="sm:!px-0 flex justify-between items-center">
-          <div>
-            <span className="logo" style={{ color: textColor }}>Alpha</span>
-          </div>
+      <nav id="headerBar" className="navbar flex justify-between items-center" style={{ backgroundColor: navbarColor, color: textColor }}>
+        <div className="logo" style={{ color: textColor }}>
+          <Link to="/">Alpha</Link>
+        </div>
 
-          <div className="justify-center">
-            <NavbarItem isSidebarOpen={isSidebarOpen} textColor={textColor} />
+        <div className="justify-center">
+          <NavbarItem isSidebarOpen={isSidebarOpen} textColor={textColor} />
+        </div>
+
+        <div className="flex gap-3">
+          <div className="btn menu-btn">
+            <FaGripLines onClick={handleSidebarToggle} />
           </div>
 
           <div className="social" style={{ color: textColor }}>
-            <label
-              htmlFor="menu-btn"
-              className="btn menu-btn"
-            ><FaGripLines onClick={handleSidebarToggle} /></label>
-
-            <span><BiLogoFacebook /></span>
-            <span><BiLogoInstagram /></span>
-            <span><AiOutlineTwitter /></span>
+            <div><Link to="/"><BiLogoFacebook /></Link></div>
+            <div><Link to="/"><BiLogoInstagram /></Link></div>
+            <div><Link to="/"><AiOutlineTwitter /></Link></div>
           </div>
         </div>
       </nav>

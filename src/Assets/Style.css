@@ -864,11 +864,8 @@
 
 .social {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     color: white;
     gap: 16px;
-    cursor: pointer;
 }
 
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@ import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaGripLines } from 'react-icons/fa';
 import NavbarInnerItem from './NavbarInnerItem';
+import { Link } from 'react-router-dom';
 
 const NavbarInner = () => {
 
@@ -14,25 +15,24 @@ const NavbarInner = () => {
 
   return (
     <header className="">
-      <nav id="headerBar" className="navbar-inner">
-        <div className="flex justify-between items-center">
-          <div>
-            <span className="text-black cursor-pointer">Alpha</span>
-          </div>
+      <nav id="headerBar" className="navbar-inner flex justify-between items-center">
+        <div className="text-black cursor-pointer">
+          <Link to="/">Alpha</Link>
+        </div>
 
-          <div className="justify-center">
-            <NavbarInnerItem isSidebarOpen={isSidebarOpen} />
+        <div className="justify-center">
+          <NavbarInnerItem isSidebarOpen={isSidebarOpen} />
+        </div>
+
+        <div className="flex gap-3">
+          <div className="btn menu-btn">
+            <FaGripLines onClick={handleSidebarToggle} />
           </div>
 
           <div className="social">
-            <label
-              htmlFor="menu-btn"
-              className="btn menu-btn"
-            ><FaGripLines onClick={handleSidebarToggle} /></label>
-
-            <span className="text-black"><BiLogoFacebook /></span>
-            <span className="text-black"><BiLogoInstagram /></span>
-            <span className="text-black"><AiOutlineTwitter /></span>
+            <div className="text-black"><Link to="/"><BiLogoFacebook /></Link></div>
+            <div className="text-black"><Link to="/"><BiLogoInstagram /></Link></div>
+            <div className="text-black"><Link to="/"><AiOutlineTwitter /></Link></div>
           </div>
         </div>
       </nav>
