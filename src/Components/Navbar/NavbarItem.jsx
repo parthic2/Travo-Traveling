@@ -27,6 +27,9 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
             >
               {item.text}
             </Link>
+            {item.icon ?
+              <p className="dropdown-icon">{item.icon}</p>
+              : ""}
 
             {item.subItems && (
               <ul>

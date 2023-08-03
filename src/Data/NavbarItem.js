@@ -1,3 +1,5 @@
+import { MdOutlineArrowDropDown } from "react-icons/md";
+
 export const navigationItems = [
     {
         text: 'Home',
@@ -6,6 +8,7 @@ export const navigationItems = [
     {
         text: 'About',
         link: '',
+        icon: <MdOutlineArrowDropDown />,
         subItems: [
             { text: 'About 1', link: '/About_1' },
             { text: 'About 2', link: '/About_2' },

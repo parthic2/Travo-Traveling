@@ -994,6 +994,15 @@ nav input {
     #close-btn:checked~.btn.menu-btn {
         display: block;
     }
+
+    .dropdown-icon {
+        display: inline-flex !important;
+        margin-left: 10px;
+    }
+}
+
+.dropdown-icon {
+    display: none;
 }
 
 /* navbar inner css */

@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <>
       <NavbarInner />
-      <section className={`py-content-spacing lg:py-content-spacing-lg md:py-content-spacing-md xs:content-spacing-xs relative bg-background-light`}>
+      <section className={`relative bg-background-light py-32`}>
         <div className="container-fluid">
           <div className="justify-center text-center">
             <div className="flex flex-col items-center text-center mb-24 lg:mb-16 md:mb-12 xs:mb-20">

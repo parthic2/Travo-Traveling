@@ -28,6 +28,10 @@ const NavbarInnerItem = ({ isSidebarOpen, textColor }) => {
               {item.text}
             </Link>
 
+            {item.icon ?
+              <p className="dropdown-icon">{item.icon}</p>
+              : ""}
+
             {item.subItems && (
               <ul>
                 {item.subItems.map((subItems, subIndex) => (
