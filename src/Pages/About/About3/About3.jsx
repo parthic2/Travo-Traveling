@@ -4,6 +4,8 @@ import useScrollAnimation from '../../../Hooks/useScrollAnimation';
 import ClientReview from './ClientReview';
 import MeetOurTeam from './MeetOurTeam';
 import WhyChooseUs from './WhyChooseUs';
+import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
+import Footer from '../../../Components/Footer/Footer';
 
 const About3 = () => {
   const registerElement = useScrollAnimationTrends();
@@ -11,6 +13,7 @@ const About3 = () => {
 
   return (
     <>
+      <NavbarInner />
       <div className="container mx-auto px-4 py-10">
         <div className="flex min-h-screen flex-col">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2" ref={(element) => registerElement(element)}>
@@ -43,6 +46,7 @@ const About3 = () => {
       </div>
 
       <ClientReview fadeIn={fadeIn} />
+      <Footer />
     </>
   )
 }

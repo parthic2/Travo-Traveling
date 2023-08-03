@@ -5,7 +5,7 @@ export const navigationItems = [
     },
     {
         text: 'About',
-        link: '/',
+        link: '',
         subItems: [
             { text: 'About 1', link: '/About_1' },
             { text: 'About 2', link: '/About_2' },
