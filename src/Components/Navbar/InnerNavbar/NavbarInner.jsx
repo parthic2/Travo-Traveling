@@ -4,8 +4,10 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaGripLines } from 'react-icons/fa';
 import NavbarInnerItem from './NavbarInnerItem';
 import { Link } from 'react-router-dom';
+import useScrollNavbar from '../../../Hooks/useScrollNavbar';
 
 const NavbarInner = () => {
+  const { navbarVisible } = useScrollNavbar();
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -14,8 +16,8 @@ const NavbarInner = () => {
   };
 
   return (
-    <header className="">
-      <nav id="headerBar" className="navbar-inner flex justify-between items-center">
+    <header className="reverse-scroll" style={{ display: navbarVisible ? 'block' : 'none' }}>
+      <nav id="headerBar" className="navbar-inner flex justify-between items-center" >
         <div className="text-black cursor-pointer">
           <Link to="/">Alpha</Link>
         </div>

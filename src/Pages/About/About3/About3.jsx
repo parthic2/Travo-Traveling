@@ -14,7 +14,7 @@ const About3 = () => {
   return (
     <>
       <NavbarInner />
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-24">
         <div className="flex min-h-screen flex-col">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2" ref={(element) => registerElement(element)}>
             <div className="mt-5 self-center">

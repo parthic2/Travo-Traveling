@@ -17,7 +17,7 @@ const About1 = () => {
   return (
     <>
       <NavbarInner />
-      <section className="pt-24">
+      <section className="pt-36">
         <div className="relative container mx-auto px-4">
           <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
             <div className="relative lg:mt-spacing-top md:mb-36 sm:mb-36 md:mt-0 customerLeftColumns">
