@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
 import { FaGripLines } from 'react-icons/fa';
 import NavbarItem from './NavbarItem';
 import useScroll from '../../Hooks/useScroll';
@@ -34,9 +33,9 @@ const Navbar = () => {
           </div>
 
           <div className="social" style={{ color: textColor }}>
-            <div><Link to="/"><BiLogoFacebook /></Link></div>
-            <div><Link to="/"><BiLogoInstagram /></Link></div>
-            <div><Link to="/"><AiOutlineTwitter /></Link></div>
+            <div><Link to="https://www.facebook.com/people/Stackholic-Infotech/100088083011866/?mibextid=ZbWKwL"><BiLogoFacebook /></Link></div>
+            <div><Link to="https://www.instagram.com/stackholic_infotech/"><BiLogoInstagram /></Link></div>
+            <div><Link to="https://www.linkedin.com/company/stackholic-infotech/"><BiLogoLinkedin /></Link></div>
           </div>
         </div>
       </nav>

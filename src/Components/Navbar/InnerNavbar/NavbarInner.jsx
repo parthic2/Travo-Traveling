@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
 import { FaGripLines } from 'react-icons/fa';
 import NavbarInnerItem from './NavbarInnerItem';
 import { Link } from 'react-router-dom';
@@ -32,9 +31,9 @@ const NavbarInner = () => {
           </div>
 
           <div className="social">
-            <div className="text-black"><Link to="/"><BiLogoFacebook /></Link></div>
-            <div className="text-black"><Link to="/"><BiLogoInstagram /></Link></div>
-            <div className="text-black"><Link to="/"><AiOutlineTwitter /></Link></div>
+            <div className="text-black"><Link to="https://www.facebook.com/people/Stackholic-Infotech/100088083011866/?mibextid=ZbWKwL"><BiLogoFacebook /></Link></div>
+            <div className="text-black"><Link to="https://www.instagram.com/stackholic_infotech/"><BiLogoInstagram /></Link></div>
+            <div className="text-black"><Link to="https://www.linkedin.com/company/stackholic-infotech/"><BiLogoLinkedin /></Link></div>
           </div>
         </div>
       </nav>
