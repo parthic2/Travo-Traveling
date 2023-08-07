@@ -1,7 +1,6 @@
 import React from 'react';
-import { AiOutlineInstagram, AiOutlineDribbble } from 'react-icons/ai';
-import { BsTwitter } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -38,10 +37,9 @@ const Footer = () => {
             <span className="mb-spacing-mb-15 block leading-l-18 mt-spacing-mb-15">Connect with social</span>
 
             <ul className="flex gap-4 cursor-pointer lg:justify-center lg:items-center">
-              <li><FaFacebookF /></li>
-              <li><AiOutlineDribbble /></li>
-              <li><BsTwitter /></li>
-              <li><AiOutlineInstagram /></li>
+              <Link to="https://www.facebook.com/people/Stackholic-Infotech/100088083011866/?mibextid=ZbWKwL"><BiLogoFacebook /></Link>
+              <Link to="https://www.instagram.com/stackholic_infotech/"><BiLogoInstagram /></Link>
+              <Link to="https://www.linkedin.com/company/stackholic-infotech/"><BiLogoLinkedin /></Link>
             </ul>
           </div>
         </div>
