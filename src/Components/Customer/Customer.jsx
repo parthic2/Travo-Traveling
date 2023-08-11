@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Carousel from 'react-multi-carousel';
-import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
+// import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import { testimonialItems } from "../../Data/CarouselItem";
-import { animateColumn } from '../../helpers/animateColumn';
+// import { animateColumn } from '../../helpers/animateColumn';
 import { responsiveOneSlide } from '../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../Project.config';
 
 const Customer = () => {
-  useEffect(() => {
-    animateColumn();
-  }, []);
+  // useEffect(() => {
+  //   animateColumn();
+  // }, []);
 
-  useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
+  // useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
 
   return (
     <section className="py-content-spacing lg:py-content-spacing-lg md:py-content-spacing-md xs:py-content-spacing-xs">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="col-span-2 lg:col-span-1 customerLeftColumn">
+          <div className="col-span-2 lg:col-span-1">
             <span className="title">Loved by our customers</span>
             <h2 className="heading-5">What our clients are saying about our services</h2>
           </div>
 
-          <div className="col-span-2 xs:mt-10 sm:mt-10 customerRightColumn">
+          <div className="col-span-2 xs:mt-10 sm:mt-10">
             <div className="slider">
               <Carousel
                 className="mySwiper"

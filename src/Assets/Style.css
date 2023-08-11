@@ -16,15 +16,15 @@
 }
 
 .sliderImage-1 {
-    background-image: url("../../public/assets/home-interior-design-slider-img01.png");
+    background-image: url("../../public/assets1/home-interior-design-slider-img01.jpg");
 }
 
 .sliderImage-2 {
-    background-image: url("../../public/assets/home-interior-design-slider-img02.png");
+    background-image: url("../../public/assets1/home-interior-design-slider-img02.jpg");
 }
 
 .sliderImage-3 {
-    background-image: url("../../public/assets/home-interior-design-slider-img03.png");
+    background-image: url("../../public/assets1/home-interior-design-slider-img03.jpg");
 }
 
 .dots {
@@ -387,7 +387,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
     .pt-35 {
         padding-top: 35%;
     }
@@ -749,7 +749,6 @@
     flex-shrink: 0;
     width: 50%;
     height: 349px;
-    object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
     overflow: hidden;

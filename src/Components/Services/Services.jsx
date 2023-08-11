@@ -3,18 +3,18 @@ import Carousel from 'react-multi-carousel';
 import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
 import { carouselItems } from "../../Data/CarouselItem";
-import { animateColumns } from '../../helpers/animateColumns';
 import { responsiveTwoSlide } from '../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../Project.config';
+import { animateColumn } from '../../helpers/animateColumn';
 
 const Services = () => {
   const registerElement = useScrollAnimationTrends();
 
   useEffect(() => {
-    animateColumns();
+    animateColumn();
   }, []);
 
-  useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
+  useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
 
   return (
     <section className="bg-background-light pb-content-spacing lg:pb-content-spacing-lg md:pb-content-spacing-md sm:pb-content-spacing-xs overflow-hidden">
@@ -38,12 +38,12 @@ const Services = () => {
         </div>
 
         <div className="items-center grid grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="col-span-2 lg:col-span-1 pt-50 customerLeftColumns">
+          <div className="col-span-2 lg:col-span-1 pt-50 customerLeftColumn">
             <span className="mb-spacing-b-20 block uppercase font-medium text-grey-text">Expert services</span>
             <h1 className="heading-6">We like to make you feel more at home</h1>
           </div>
 
-          <div className="col-span-2 customerRightColumns">
+          <div className="col-span-2 customerRightColumn">
             <div className="slider">
               <Carousel
                 className="mySwiper"

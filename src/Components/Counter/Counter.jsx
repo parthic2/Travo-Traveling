@@ -3,7 +3,6 @@ import { counterItems } from '../../Data/CarouselItem';
 import CountUp from 'react-countup';
 import useOnScreen from '../../Hooks/useOnScreen';
 
-
 const Counter = () => {
   const ref = useRef();
   const isVisible = useOnScreen(ref);

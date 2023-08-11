@@ -17,7 +17,7 @@ const Slider = () => {
       >
         {slides.map((slide) => (
           <div key={slide.id} className={`sliderImage-${slide.id}`}>
-            <div className="flex flex-col justify-end ml-auto md:w-slider-w h-full xl:w-slider-w lg:w-slider-w sm:w-full">
+            <div className="flex flex-col justify-end ml-auto md:w-slider-w h-full sm:w-full">
               <div className="sliderCard">
                 <div className="p-0 mb-spacing-m-25 md:inline-block items-center justify-center">
                   <span className="text-primary-strong inline-block font-medium align-middle">{`0${slide.id}`}</span>

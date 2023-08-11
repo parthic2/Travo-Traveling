@@ -37,9 +37,9 @@ const Footer = () => {
             <span className="mb-spacing-mb-15 block leading-l-18 mt-spacing-mb-15">Connect with social</span>
 
             <ul className="flex gap-4 cursor-pointer lg:justify-center lg:items-center">
-              <Link to="https://www.facebook.com/people/Stackholic-Infotech/100088083011866/?mibextid=ZbWKwL"><BiLogoFacebook /></Link>
-              <Link to="https://www.instagram.com/stackholic_infotech/"><BiLogoInstagram /></Link>
-              <Link to="https://www.linkedin.com/company/stackholic-infotech/"><BiLogoLinkedin /></Link>
+              <Link><BiLogoFacebook /></Link>
+              <Link><BiLogoInstagram /></Link>
+              <Link><BiLogoLinkedin /></Link>
             </ul>
           </div>
         </div>

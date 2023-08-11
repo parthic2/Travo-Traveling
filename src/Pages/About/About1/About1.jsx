@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
-import { animateColumns } from '../../../helpers/animateColumns';
 import useScrollAnimationLogic from '../../../Hooks/useScrollAnimationLogic';
 import ClientReviews from './ClientReviews';
 import TeamSection from './TeamSection';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
+import { animateColumn } from '../../../helpers/animateColumn';
 
 const About1 = () => {
-
   useEffect(() => {
-    animateColumns();
+    animateColumn();
   }, []);
 
-  useScrollAnimationLogic('.customerLeftColumns', '.customerRightColumns', animateColumns);
+  useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
 
   return (
     <>
@@ -20,7 +19,7 @@ const About1 = () => {
       <section className="pt-36">
         <div className="relative container mx-auto px-4">
           <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
-            <div className="relative lg:mt-spacing-top md:mb-36 sm:mb-36 md:mt-0 customerLeftColumns">
+            <div className="relative customerLeftColumn">
               <div className="lg-no-parallax relative w-1/2 md:w-width-70 z-[2] mt-spacing-t lg:mt-0 lg:mr-auto flex justify-center items-center">
                 <img src="/assets/about1.png" alt="about" className="aboutImage-1" />
               </div>
@@ -29,7 +28,7 @@ const About1 = () => {
               </div>
             </div>
 
-            <div className="pt-35 lg:ml-20 customerRightColumns">
+            <div className="pt-35 lg:ml-20 customerRightColumn">
               <h2 className="heading-4 xl:w-full">
                 It Takes More Than Good Design To Build A Successful Design Business
               </h2>
