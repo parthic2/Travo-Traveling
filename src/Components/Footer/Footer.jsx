@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="">
+          <div>
             <span className="mb-spacing-m-25 block sm:w-full text-start md:w-4/5 lg:text-start leading-l-18 mt-spacing-mb-15">
               <span className="text-white">Newsletter sign-up. </span>
               <span className="text-grey-text">Get monthly updates and resources.</span>

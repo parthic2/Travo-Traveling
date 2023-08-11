@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
       <div className="flex justify-center items-center customerLeftColumn">
-        <img src="/assets/choose-about.png" alt="about2" />
+        <img src="/assets1/choose-about.jpg" alt="about2" />
       </div>
 
       <div className="mt-5 pl-0 lg:pl-20 self-center customerRightColumn">
@@ -51,8 +51,8 @@ const WhyChooseUs = () => {
         </div>
         <button className="discover">Our Service</button>
         <div className="grid grid-cols-2 gap-2 pt-4">
-          <img src="/assets/choose-about1.png" alt="about2" />
-          <img src="/assets/choose-about2.png" alt="about2" />
+          <img src="/assets1/choose-about1.jpg" alt="about2" />
+          <img src="/assets1/choose-about2.jpg" alt="about2" />
         </div>
       </div>
     </div>

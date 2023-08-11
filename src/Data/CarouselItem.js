@@ -48,22 +48,22 @@ export const counterItems = [
 
 export const projectData = [
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img01.png',
+        imageSrc: '/assets1/home-interior-design-portfolio-img01.jpg',
         category: 'Interior',
         title: 'Mongolish',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img02.png',
+        imageSrc: '/assets1/home-interior-design-portfolio-img02.jpg',
         category: 'Interior',
         title: 'Geometry',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img03.png',
+        imageSrc: '/assets1/home-interior-design-portfolio-img03.jpg',
         category: 'Interior',
         title: 'Sphere',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img04.png',
+        imageSrc: '/assets1/home-interior-design-portfolio-img04.jpg',
         category: 'Interior',
         title: 'Bedroom',
     }
@@ -96,21 +96,21 @@ export const testimonialItems = [
 export const blogs = [
     {
         category: 'creative',
-        imageSrc: '/assets/blog-img232.png',
+        imageSrc: '/assets1/blog-img232.jpg',
         title: 'Creativity is nothing but a mindset free',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'Jeremy Dupont'
     },
     {
         category: 'concept',
-        imageSrc: '/assets/blog-img233.png',
+        imageSrc: '/assets1/blog-img233.jpg',
         title: 'Simplicity, wit, and good typography',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'bill gardner'
     },
     {
         category: 'business',
-        imageSrc: '/assets/blog-img237.png',
+        imageSrc: '/assets1/blog-img237.jpg',
         title: 'Look at usual things with unusual',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'vico magistre'
@@ -120,55 +120,55 @@ export const blogs = [
 export const service = [
     {
         category: '2D / 3D',
-        imageSrc: '/assets/2d.png',
+        imageSrc: '/assets1/2d.jpg',
         title: '2D / 3D Design Layout',
-        detail: 'We Do All Types Of 2D And 3D design Elegant Innovative Luxurious Computerized Design Interior And Exterior Design Which Is Already Vastu Approved Design.'
+        detail: 'We Do All Types Of 2D And 3D design Elegant Innovative Luxurious Design Interior.'
     },
     {
         category: 'Bathroom',
-        imageSrc: '/assets/master.png',
+        imageSrc: '/assets1/master.jpg',
         title: 'Master Bathroom',
         detail: 'We Do Master Bathroom Designing And Decoration And Luxury Bathroom Designing.'
     },
     {
         category: 'Office',
-        imageSrc: '/assets/office.png',
+        imageSrc: '/assets1/office.jpg',
         title: 'Office Interior',
-        detail: 'We Do All Types Of Interior Designing Solution And Decoration Of Office And Other Commercial Space That Creates An Environment Which Perfectly Blends With Your Mind To Grow Your Business.'
+        detail: 'We Do All Types Of Interior Designing Solution And Decoration Of Office And Other Commercial Space.'
     },
     {
         category: 'Kitchen',
-        imageSrc: '/assets/kitchen.png',
+        imageSrc: '/assets1/kitchen.jpg',
         title: 'Modular Kitchen',
-        detail: 'We Do All Types Of Modular Kitchen Designing And Decoration And Luxury Kitchen Designing So To Make Your Kitchen Your Favorite Place.'
+        detail: 'We Do All Types Of Modular Kitchen Designing And Luxury Kitchen Designing So To Make Your Kitchen Your Favorite Place.'
     },
     {
         category: 'Residential',
-        imageSrc: '/assets/residential.png',
+        imageSrc: '/assets1/residential.jpg',
         title: 'Residential Interior',
-        detail: 'We Do All Types Of Interior Designing, Decoration And Furnishing Of Bed Room, Living Room, Dinning Room, Hall Room, Home Entertainment Room, Kids Room, Study Room, Guest Room.'
+        detail: 'We Do All Types Of Interior Designing, Decoration And Furnishing Of Bed Room, Living Room, Dinning Room, Hall Room, Kids Room, Guest Room.'
     },
     {
         category: 'Furniture',
-        imageSrc: '/assets/furniture.png',
+        imageSrc: '/assets1/furniture.jpg',
         title: 'Furniture & Fixture',
         detail: 'We Make Custom Design Furniture And Deals With All Types Of Other Modular Furniture And Fixture, So That You Can Get Exactly What You Want.'
     },
     {
         category: 'false',
-        imageSrc: '/assets/false.png',
+        imageSrc: '/assets1/false.jpg',
         title: 'False Ceiling',
         detail: 'We Make Custom Made False Ceiling And Do All Types Of Ceiling Work. We Also Do 3D False Ceiling Work So That You Always Look Up In Your Home And In Your Life.'
     },
     {
         category: 'restaurants',
-        imageSrc: '/assets/restaurants.png',
+        imageSrc: '/assets1/restaurants.jpg',
         title: 'Restaurants & Cafeteria',
         detail: 'All Types Of Interior Designing For Restaurant, Coffee Shops And Cafeteria, So That People Get A Reason To Spend More Time In Your Place.'
     },
     {
         category: 'Glass & Lightening',
-        imageSrc: '/assets/glass.png',
+        imageSrc: '/assets1/glass.jpg',
         title: 'Glass & Lightening',
         detail: 'All Types Of Glass Decoration And Light Decoration With Innovative Modern Glass And Lightning So That Your Space Can Get A Look Of Masterpiece.'
     }
@@ -176,42 +176,42 @@ export const service = [
 
 export const team = [
     {
-        imageSrc: '/assets/team1.png',
+        imageSrc: '/assets1/team1.png',
         name: 'Anna smith',
         designation: 'Co-founder',
     },
     {
-        imageSrc: '/assets/team2.png',
+        imageSrc: '/assets1/team2.png',
         name: 'Amanda red',
         designation: 'Interior designer',
     },
     {
-        imageSrc: '/assets/team3.png',
+        imageSrc: '/assets1/team3.png',
         name: 'samuel jacobs',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets/team4.png',
+        imageSrc: '/assets1/team4.png',
         name: 'Alan Miller',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets/team5.png',
+        imageSrc: '/assets1/team5.png',
         name: 'Clara sonra',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets/team6.png',
+        imageSrc: '/assets1/team6.png',
         name: 'Tommy Ridar',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets/team7.png',
+        imageSrc: '/assets1/team7.png',
         name: 'Anna Ridar',
         designation: 'Architecture',
     },
     {
-        imageSrc: '/assets/team8.png',
+        imageSrc: '/assets1/team8.png',
         name: 'Amah sonra',
         designation: 'art director',
     },
@@ -238,12 +238,12 @@ export const review = [
 
 export const portfolio = [
     {
-        imgSrc: "/assets/hotel-interior-design.png",
+        imgSrc: "/assets1/hotel-interior-design.jpg",
         title: "Hotel Interior Design",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-        imgSrc: "/assets/modern-home-design.png",
+        imgSrc: "/assets1/modern-home-design.jpg",
         title: "Modern Home Design",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
@@ -309,22 +309,22 @@ export const countries = [
 
 export const fancyBoxItems = [
     {
-        image: "/assets/home-interior-design-services.png",
+        image: "/assets1/home-interior-design-services.jpg",
         title: "interior design is a business of trust",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-02.png",
+        image: "/assets1/home-interior-design-services-02.jpg",
         title: "we believe in the power of design",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-03.png",
+        image: "/assets1/home-interior-design-services-03.jpg",
         title: "design is the process of discovery",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-04.png",
+        image: "/assets1/home-interior-design-services-04.jpg",
         title: "we want to bring interior design",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     }

@@ -35,7 +35,7 @@ const About2 = () => {
             </div>
 
             <div className="pl-0 lg:pl-20 customerRightColumn">
-              <img src="/assets/material-about.png" alt="about2" />
+              <img src="/assets1/material-about.jpg" alt="about2" />
             </div>
           </div>
 

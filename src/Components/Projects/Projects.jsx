@@ -19,36 +19,34 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="">
-          <div className="projectPadding">
-            <div className="grid-wrapper">
-              <Carousel
-                className="mySwiper"
-                responsive={responsiveProject}
-                {...carouselSettings}
-              >
-                {projectData.map((project, index) => (
-                  <div className="portfolio-colorful" key={index}>
-                    <div className="portfolio-box">
-                      <div className="portfolio-image">
-                        <img src={project.imageSrc} alt="portfolio" />
+        <div className="projectPadding">
+          <div className="grid-wrapper">
+            <Carousel
+              className="mySwiper"
+              responsive={responsiveProject}
+              {...carouselSettings}
+            >
+              {projectData.map((project, index) => (
+                <div className="portfolio-colorful" key={index}>
+                  <div className="portfolio-box">
+                    <div className="portfolio-image">
+                      <img src={project.imageSrc} alt="portfolio" />
 
-                        <div className="portfolio-hover justify-between flex">
-                          <div className="portfolio-content">
-                            <span className="text-sm text-white uppercase mb-spacing-m-5 opacity-70 inline-block">
-                              {project.category}
-                            </span>
-                            <h3 className="text-heading-text font-semibold text-white uppercase mb-0">{project.title}</h3>
-                          </div>
-
-                          <BsArrowUpRight />
+                      <div className="portfolio-hover justify-between flex">
+                        <div className="portfolio-content">
+                          <span className="text-sm text-white uppercase mb-spacing-m-5 opacity-70 inline-block">
+                            {project.category}
+                          </span>
+                          <h3 className="text-heading-text font-semibold text-white uppercase mb-0">{project.title}</h3>
                         </div>
+
+                        <BsArrowUpRight />
                       </div>
                     </div>
                   </div>
-                ))}
-              </Carousel>
-            </div>
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
       </div>

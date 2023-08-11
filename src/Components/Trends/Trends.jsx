@@ -38,7 +38,7 @@ const Trends = () => {
           <div className="pt-30" ref={(element) => registerElement(element)}>
             <div className="outside-box-bottom relative lg:mb-[-10vw] sm:mb-0">
               <img
-                src="/assets/home-interior-design-about-img01.png"
+                src="/assets1/home-interior-design-about-img01.jpg"
                 alt="about"
                 className="relative z-[1] w-full"
                 width={360}
