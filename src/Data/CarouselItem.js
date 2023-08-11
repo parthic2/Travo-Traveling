@@ -71,21 +71,21 @@ export const projectData = [
 
 export const testimonialItems = [
     {
-        image: '/assets/home-interior-design-testimonial-img01.png',
+        image: '/assets1/home-interior-design-testimonial-img01.jpg',
         detail:
             'This theme has a wide variety of options and a really good customer support. But even so, the theme still gives a lot of features while prioritizing web speed.',
         customerName: 'Harvard Alexander',
         customerDes: 'Microsoft Design'
     },
     {
-        image: '/assets/home-interior-design-testimonial-img02.png',
+        image: '/assets1/home-interior-design-testimonial-img02.jpg',
         detail:
             'Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies. Excellent company!',
         customerName: 'Mackangy Rose',
         customerDes: 'Creative director'
     },
     {
-        image: '/assets/home-interior-design-testimonial-img03.png',
+        image: '/assets1/home-interior-design-testimonial-img03.png',
         detail:
             'Their team is easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Professional support.',
         customerName: 'Jonsan Donner',
