@@ -19,7 +19,7 @@ const Services = () => {
   return (
     <section className="bg-background-light pb-content-spacing lg:pb-content-spacing-lg md:pb-content-spacing-md sm:pb-content-spacing-xs overflow-hidden">
       <div className="overflow-hidden">
-        <div className="overlap-section overflow-hidden relative -left-spacing-left-10 px-0 text-start font-semibold text-white-text text-larger-text leading-l-154 -tracking-[2px] whitespace-nowrap hide" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
+        <div className="overlap-section overflow-hidden relative -left-spacing-left-10 px-0 text-start font-semibold text-white-text xl:text-larger-text lg:text-larger-text-lg leading-l-154 -tracking-[2px] whitespace-nowrap hide z-10" ref={(element) => registerElement(element)} style={{ marginTop: "-61.6px" }}>
           achievements
         </div>
       </div>

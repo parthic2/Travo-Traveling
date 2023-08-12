@@ -1,21 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BiRadioCircle } from 'react-icons/bi';
-import useScrollAnimationLogic from '../../../Hooks/useScrollAnimationLogic';
-import { animateColumn } from '../../../helpers/animateColumn';
 
 const WhyChooseUs = () => {
-  useEffect(() => {
-    animateColumn();
-  }, []);
-
-  useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
-      <div className="flex justify-center items-center customerLeftColumn">
+      <div className="flex justify-center items-center">
         <img src="/assets1/choose-about.jpg" alt="about2" />
       </div>
 
-      <div className="mt-5 pl-0 lg:pl-20 self-center customerRightColumn">
+      <div className="mt-5 pl-0 lg:pl-20 self-center">
         <div className="small">
           <span className="smallBorder" />
           <div className="flex-grow-1">

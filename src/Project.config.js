@@ -1,5 +1,3 @@
-// carouselSettings.js
-
 export const carouselSettings = {
     draggable: true,
     showDots: false,

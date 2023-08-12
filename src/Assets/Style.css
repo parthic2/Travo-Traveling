@@ -243,7 +243,9 @@
     .pt-50 {
         padding-top: 50px;
     }
+}
 
+@media (max-width: 970px) {
     .hide {
         display: none;
     }
@@ -599,11 +601,11 @@
 }
 
 .fancyPadding {
-    padding: 21px 28px;
+    padding: 21px 18px;
 }
 
 .fancy-content-text {
-    margin: 0 0 15px;
+    /* margin: 0 0 15px; */
     font-size: 24px;
     font-weight: 600;
     color: white;
@@ -998,6 +1000,7 @@ nav input {
     .dropdown-icon {
         display: inline-flex !important;
         margin-left: 10px;
+        color: black;
     }
 }
 
@@ -1011,6 +1014,15 @@ nav input {
     color: black;
     padding: 20px 35px;
     box-shadow: 0 0 33px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .navbar-inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 
 .nav-links li .item {

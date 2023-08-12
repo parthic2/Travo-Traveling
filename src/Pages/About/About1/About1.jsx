@@ -1,25 +1,17 @@
-import React, { useEffect } from 'react';
-import useScrollAnimationLogic from '../../../Hooks/useScrollAnimationLogic';
+import React from 'react';
 import ClientReviews from './ClientReviews';
 import TeamSection from './TeamSection';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
-import { animateColumn } from '../../../helpers/animateColumn';
 
 const About1 = () => {
-  useEffect(() => {
-    animateColumn();
-  }, []);
-
-  useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
-
   return (
     <>
       <NavbarInner />
       <section className="pt-36">
         <div className="relative container mx-auto px-4">
           <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
-            <div className="relative customerLeftColumn">
+            <div className="relative">
               <div className="lg-no-parallax relative w-1/2 md:w-width-70 z-[2] mt-spacing-t lg:mt-0 lg:mr-auto flex justify-center items-center">
                 <img src="/assets1/about2.jpg" alt="about" className="aboutImage-1" />
               </div>
@@ -28,7 +20,7 @@ const About1 = () => {
               </div>
             </div>
 
-            <div className="pt-35 lg:ml-20 customerRightColumn">
+            <div className="pt-35 lg:ml-20">
               <h2 className="heading-4 xl:w-full">
                 It Takes More Than Good Design To Build A Successful Design Business
               </h2>
