@@ -39,8 +39,8 @@ module.exports = {
                 "counter-text": "40px",
                 "small-text-size": "14px",
                 "heading-text": "32px",
-                "larger-text": "148px",
-                "larger-text-lg": "110px",
+                "larger-text": "149px",
+                "larger-text-lg": "114px",
                 "normal-text-1": "25px",
                 "normal-text": "20px"
             },
