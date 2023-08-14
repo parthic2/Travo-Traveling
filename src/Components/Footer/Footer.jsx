@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="dark footer-style-09 bg-background-dark">
       <div className="py-spacing-p xs:py-spacing-p-13-f px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-          <div className="">
+          <div>
             <div className="md:text-center text-start last:m-0 md:mt-spacing-m-25 text-white">
-              <span>Alpha</span>
-              <p className="text-grey-text mt-3">© Copyright 2023
-                <span>Alpha</span>
+              <span>Decor Master</span>
+              <p className="text-grey-text mt-3">© Copyright 2023 {" "}
+                <span>Decor Master</span>
               </p>
             </div>
           </div>
