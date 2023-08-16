@@ -17,7 +17,7 @@ export const carouselSlider = {
     showDots: true,
     ssr: true,
     infinite: true,
-    // autoPlay: true,
+    autoPlay: true,
     autoPlaySpeed: 2500,
     keyBoardControl: true,
     customTransition: "transform 300ms ease-in-out",
