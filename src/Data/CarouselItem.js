@@ -2,12 +2,12 @@ export const slides = [
     {
         id: 1,
         title: 'Concrete pent house',
-        category: 'Resident interior',
+        category: 'Office interior',
     },
     {
         id: 2,
         title: 'Modernism table pots',
-        category: 'Resident interior',
+        category: 'Pots collection',
     },
     {
         id: 3,

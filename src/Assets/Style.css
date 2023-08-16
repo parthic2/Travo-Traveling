@@ -53,18 +53,16 @@
 
 .sliderCard {
     background-color: white;
-    padding: 70px 84px;
+    padding: 10%;
 }
 
 .heading-1 {
-    font-size: 47.9px;
-    line-height: 55px;
-    margin: 0;
-    align-self: center;
+    font-size: 38px;
+    line-height: 45px;
     color: #232323;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 767px) {
@@ -82,7 +80,7 @@
 
 @media (max-width: 768px) {
     .sliderCard {
-        padding: 40px;
+        padding: 5%;
     }
 
     .dots {
@@ -90,11 +88,11 @@
     }
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .sliderCard {
         padding: 27.5px;
     }
-}
+} */
 
 /* Trends css */
 .heading-3 {

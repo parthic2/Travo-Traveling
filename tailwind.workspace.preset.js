@@ -51,7 +51,8 @@ module.exports = {
                 "l-18": "18px"
             },
             width: {
-                "slider-w": "550px",
+                "slider-w": "35%",
+                "slider-w-lg": "46%",
                 "border-w": "35px",
                 "icon-w": "60px",
                 "width-100": "100%",
