@@ -73,6 +73,7 @@ module.exports = {
                 "height-500": "500px",
                 "height-250": "250px",
                 "height-320": "320px",
+                "height-350": "350px",
                 "height-100": "100%"
             }
         },
