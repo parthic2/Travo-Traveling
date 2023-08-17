@@ -26,7 +26,7 @@ const Services = () => {
                 <div
                   className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                   <div className={blog.category}>
-                    <div className="h-full flex sm:flex-row flex-col sm:justify-start">
+                    <div className="lg:h-height-320 sm:h-full flex sm:flex-row flex-col sm:justify-start">
                       <img alt="team" className="blog-image" src={blog.imageSrc} />
                       <div className="p-spacing-p">
                         <div className="blog-title" style={{ width: "100%" }}>{blog.title}</div>
