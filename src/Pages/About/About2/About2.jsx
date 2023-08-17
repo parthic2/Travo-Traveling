@@ -6,6 +6,7 @@ import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
 
 const About2 = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <NavbarInner />

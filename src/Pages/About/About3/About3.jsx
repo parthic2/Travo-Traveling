@@ -8,6 +8,7 @@ import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
 
 const About3 = () => {
+  window.scrollTo(0, 0);
   const registerElement = useScrollAnimationTrends();
   const fadeIn = useScrollAnimation(".animate");
 

@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 
 const RootLayout = () => {
+    window.scrollTo(0, 0);
     return (
         <div className="font-sans">
             <Navbar />

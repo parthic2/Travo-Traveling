@@ -5,6 +5,7 @@ import NavbarInner from '../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../Components/Footer/Footer';
 
 const Contact = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <NavbarInner />

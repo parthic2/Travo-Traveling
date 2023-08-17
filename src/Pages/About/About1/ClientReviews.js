@@ -17,7 +17,7 @@ const ClientReviews = () => {
               {...carouselSettings}
             >
               {review.map((item, index) => (
-                <div className="hover:bg-white border border-dark-border overflow-hidden mr-5 h-auto ease-in duration-100" key={index}>
+                <div className="hover:bg-white border border-dark-border overflow-hidden mr-5 ease-in duration-100 h-height-100" key={index}>
                   <div className="feature-box-move-bottom-top">
                     <h2 className="">
                       <VscQuote className="text-primary-strong w-width-37 h-height-30" />
