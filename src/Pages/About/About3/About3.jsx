@@ -34,8 +34,8 @@ const About3 = () => {
 
             <div className="pl-0 lg:pl-20">
               <div className="grid grid-cols-2 gap-2">
-                <img src="/assets1/material-about1.jpg" alt="about2" loading="lazy" />
-                <img src="/assets1/material-about2.jpg" alt="about2" loading="lazy" />
+                <img src="/assets1/material-about1.jpg" alt="about2" />
+                <img src="/assets1/material-about2.jpg" alt="about2" />
               </div>
             </div>
           </div>

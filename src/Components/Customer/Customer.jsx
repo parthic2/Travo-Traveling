@@ -1,18 +1,10 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-// import useScrollAnimationLogic from '../../Hooks/useScrollAnimationLogic';
 import { testimonialItems } from "../../Data/CarouselItem";
-// import { animateColumn } from '../../helpers/animateColumn';
 import { responsiveOneSlide } from '../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../Project.config';
 
 const Customer = () => {
-  // useEffect(() => {
-  //   animateColumn();
-  // }, []);
-
-  // useScrollAnimationLogic('.customerLeftColumn', '.customerRightColumn', animateColumn);
-
   return (
     <section className="py-content-spacing lg:py-content-spacing-lg md:py-content-spacing-md xs:py-content-spacing-xs">
       <div className="container mx-auto px-4">
@@ -31,7 +23,7 @@ const Customer = () => {
               >
                 {testimonialItems.map((item, index) => (
                   <div className="d-flex" key={index}>
-                    <img src={item.image} alt="customer" loading="lazy" />
+                    <img src={item.image} alt="customer" />
                     <div>
                       <p className="detail">{item.detail}</p>
                       <div className="customerName">{item.customerName}</div>

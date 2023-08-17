@@ -3,7 +3,6 @@ import { BsPlay } from 'react-icons/bs';
 import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
 
 const Trends = () => {
-
   const registerElement = useScrollAnimationTrends();
 
   return (
@@ -43,7 +42,6 @@ const Trends = () => {
                 className="relative z-[1] w-full"
                 width={360}
                 height={542}
-                loading="lazy"
               />
 
               <div className="absolute bottom-0 right-0 z-[1] landscape:md:!-bottom-spacing-m-25">

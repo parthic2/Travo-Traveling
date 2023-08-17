@@ -30,11 +30,11 @@ const MeetOurTeam = () => {
           <Carousel
             className="mySwiper"
             responsive={responsiveFourSlide}
-            {...carouselSettings}
+           {...carouselSettings}
           >
             {team.map((item, index) => (
               <div key={index} className="relative team-hover">
-                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" loading="lazy" />
+                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" />
                 <div className="icon-social" style={{ width: "88%" }}>
                   <Link><BiLogoFacebook /></Link>
                   <Link><BiLogoInstagram /></Link>
