@@ -31,7 +31,7 @@ const Customer = () => {
               >
                 {testimonialItems.map((item, index) => (
                   <div className="d-flex" key={index}>
-                    <img src={item.image} alt="customer" />
+                    <img src={item.image} alt="customer" loading="lazy" />
                     <div>
                       <p className="detail">{item.detail}</p>
                       <div className="customerName">{item.customerName}</div>

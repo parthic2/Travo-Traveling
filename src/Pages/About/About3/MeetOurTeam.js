@@ -33,7 +33,7 @@ const MeetOurTeam = () => {
             {team.map((item, index) => (
               <div key={index} className="bg-white p-5 shadow-inner m-2">
                 <div className="relative team-hover flex">
-                  <img src={item.imageSrc} alt="portfolio" className="w-width-140 h-height-140 rounded-[100%] mr-3" />
+                  <img src={item.imageSrc} alt="portfolio" className="w-width-140 h-height-140 rounded-[100%] mr-3" loading="lazy" />
                   <div className="team-detail">
                     <p className="pt-5 capitalize font-bold">{item.name}</p>
                     <p className="uppercase detail">{item.designation}</p>

@@ -28,7 +28,7 @@ const Blogs = () => {
               <div className="flex flex-wrap justify-center items-center">
                 <div className={blog.category}>
                   <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center">
-                    <img alt="team" className="blog-image" src={blog.imageSrc} style={{ height: "349px" }} />
+                    <img alt="team" className="blog-image" src={blog.imageSrc} style={{ height: "349px" }} loading="lazy" />
                     <div className="post-details">
                       <Link to="/" className="blog-category">{blog.category}</Link>
                       <Link to="/" className="blog-title">{blog.title}</Link>

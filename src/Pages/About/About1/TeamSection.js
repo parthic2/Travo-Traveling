@@ -25,7 +25,7 @@ const TeamSection = () => {
       <div className={`animate items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10 ${fadeIn ? 'fade-in' : ''}`}>
         {team.map((item, index) => (
           <div key={index} className="relative team-hover">
-            <img src={item.imageSrc} alt="portfolio" className="w-width-100" />
+            <img src={item.imageSrc} alt="portfolio" className="w-width-100" loading="lazy" />
             <div className="icon-social">
               <Link><BiLogoFacebook /></Link>
               <Link><BiLogoInstagram /></Link>
