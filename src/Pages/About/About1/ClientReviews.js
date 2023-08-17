@@ -22,7 +22,7 @@ const ClientReviews = () => {
                     <h2 className="">
                       <VscQuote className="text-primary-strong w-width-37 h-height-30" />
                     </h2>
-                    <div className="text mt-5">" {item.review} "</div>
+                    <div className="text mt-5 clamp-3">{"\"" + item.review + "\""}</div>
                     <div className="detail !mb-0">{item.name}</div>
                     <div>
                       <div className="uppercase detail font-semibold">Client of company</div>

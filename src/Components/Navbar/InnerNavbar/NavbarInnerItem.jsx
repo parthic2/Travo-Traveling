@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { navigationItems } from '../../../Data/NavbarItem';
 
 const NavbarInnerItem = ({ isSidebarOpen, textColor }) => {
+  const location = useLocation();
+  const isSubLinkActive = (subItems) => {
+    return subItems && subItems.some((subItem) => subItem.link === location.pathname);
+  };
+
   return (
     <div className="wrapper">
       <input
@@ -20,13 +25,18 @@ const NavbarInnerItem = ({ isSidebarOpen, textColor }) => {
       <ul className={`nav-links ${isSidebarOpen ? 'show' : ''}`}>
         {navigationItems.map((item, index) => (
           <li key={index}>
-            <Link
+            <NavLink
               to={item.link}
-              className="item uppercase sm:text-black"
+              className={({ isActive }) =>
+                `item uppercase sm:text-black ${isActive || isSubLinkActive(item.subItems)
+                  ? 'active-link'
+                  : ''
+                }`
+              }
               style={{ color: textColor }}
             >
               {item.text}
-            </Link>
+            </NavLink>
 
             {item.icon ?
               <p className="dropdown-icon">{item.icon}</p>

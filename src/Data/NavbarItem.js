@@ -7,7 +7,7 @@ export const navigationItems = [
     },
     {
         text: 'About',
-        link: '',
+        link: '/About_1',
         icon: <MdOutlineArrowDropDown />,
         subItems: [
             { text: 'About 1', link: '/About_1' },

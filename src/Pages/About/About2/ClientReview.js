@@ -21,7 +21,7 @@ const ClientReview = () => {
             >
               {review.map((item, index) => (
                 <div key={index}>
-                  <h2 className="text-center font-semibold text-small-text-size md:text-normal-text lg:text-heading-text">" {item.review} "</h2>
+                  <h2 className="text-center font-semibold text-small-text-size md:text-normal-text lg:text-heading-text clamp-3">{"\"" + item.review + "\""}</h2>
                   <div className="flex flex-col justify-center items-center">
                     <p className="pt-5 capitalize font-bold">{item.name}</p>
                     <p className="uppercase detail">Client of company</p>

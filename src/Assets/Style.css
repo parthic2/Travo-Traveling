@@ -850,6 +850,10 @@
     z-index: 15;
 }
 
+.active-link {
+    color: #c3964e !important;
+}
+
 .navbar {
     background-color: transparent;
     padding: 20px 35px;
@@ -1101,4 +1105,14 @@ nav input {
 input[type=checkbox]:checked {
     accent-color: #a77e2d !important;
     color: #ffffff !important;
+}
+
+/* 3 dots css */
+.clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Number of lines to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
