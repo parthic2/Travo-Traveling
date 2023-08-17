@@ -48,7 +48,7 @@ const Trends = () => {
               <div className="absolute bottom-0 right-0 z-[1] landscape:md:!-bottom-spacing-m-25">
                 <span className="inline-block">
                   <div className="achievement">
-                    <button className="btn-sonar">
+                    <button className="btn-sonar" aria-label="Play Company Achievements">
                       <BsPlay />
                     </button>
                     <span className="video-icon-text">Company Achievements</span>

@@ -33,9 +33,9 @@ const Navbar = () => {
           </div>
 
           <div className="social" style={{ color: textColor }}>
-            <div><Link><BiLogoFacebook /></Link></div>
-            <div><Link><BiLogoInstagram /></Link></div>
-            <div><Link><BiLogoLinkedin /></Link></div>
+            <div><Link to="/" aria-label="Visit our Facebook page"><BiLogoFacebook /></Link></div>
+            <div><Link to="/" aria-label="Visit our Instagram page"><BiLogoInstagram /></Link></div>
+            <div><Link to="/" aria-label="Visit our LinkedIn page"><BiLogoLinkedin /></Link></div>
           </div>
         </div>
       </nav>
