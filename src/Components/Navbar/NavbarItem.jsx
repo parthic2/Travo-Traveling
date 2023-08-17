@@ -4,8 +4,8 @@ import { navigationItems } from '../../Data/NavbarItem';
 
 const NavbarItem = ({ isSidebarOpen, textColor }) => {
   const location = useLocation();
-  const isSubLinkActive = (subItems) => {
-    return subItems && subItems.some((subItem) => subItem.link === location.pathname);
+  const isSubLinkActive = (subItems, link) => {
+    return (subItems && subItems.some((subItem) => subItem.link === location.pathname)) || link === location.pathname;
   };
 
   return (
@@ -28,7 +28,7 @@ const NavbarItem = ({ isSidebarOpen, textColor }) => {
             <NavLink
               to={item.link}
               className={({ isActive }) =>
-                `list uppercase sm:text-black ${isActive || isSubLinkActive(item.subItems)
+                `list uppercase sm:text-black ${isActive || isSubLinkActive(item.subItems, item.link)
                   ? 'active-link'
                   : ''
                 }`
