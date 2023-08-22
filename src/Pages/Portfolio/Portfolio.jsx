@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <>
       <NavbarInner />
-      <section className="aboutPadding">
+      <section className="aboutPadding min-h-screen">
         <div className="px-4">
           <div className="items-center justify-center gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {portfolio.map((item, index) => (

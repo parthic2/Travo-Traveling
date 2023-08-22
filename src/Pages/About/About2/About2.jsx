@@ -11,7 +11,7 @@ const About2 = () => {
     <>
       <NavbarInner />
       <div className="container mx-auto px-4 py-24">
-        <div className="flex min-h-screen flex-col">
+        <div className="flex flex-col">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
             <div className="mt-5 self-center">
               <h2 className="heading-4 xl:w-full">

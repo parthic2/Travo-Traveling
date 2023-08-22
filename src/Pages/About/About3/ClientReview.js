@@ -2,10 +2,10 @@ import React from 'react';
 import { VscQuote } from 'react-icons/vsc';
 import { review } from '../../../Data/CarouselItem';
 
-const ClientReview = ({ fadeIn }) => {
+const ClientReview = () => {
   return (
     <div className="bg-background-light">
-      <div className={`animate items-center grid grid-cols-1 lg:grid-cols-2 gap-4 p-9 lg:p-28 container mx-auto ${fadeIn ? 'fade-in' : ''}`}>
+      <div className={`animate items-center grid grid-cols-1 lg:grid-cols-2 gap-4 p-9 lg:p-28 container mx-auto`}>
         {review.map((item, index) => (
           <div key={index}>
             <div className="hover:bg-white border border-dark-border overflow-hidden lg:mr-5 md:mr-0 h-height-320 ease-in duration-100">

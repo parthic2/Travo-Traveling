@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Index from './Components/Index';
-import RootLayout from './RootLayout/RootLayout';
-import Services from './Pages/Services/Services';
-import Contact from './Pages/Contact/Contact';
-import About1 from './Pages/About/About1/About1';
-import Portfolio from './Pages/Portfolio/Portfolio';
-import About2 from './Pages/About/About2/About2';
-import About3 from './Pages/About/About3/About3';
+import { lazy } from "react";
+const RootLayout = lazy(() => import('./RootLayout/RootLayout'));
+const Services = lazy(() => import('./Pages/Services/Services'));
+const Contact = lazy(() => import('./Pages/Contact/Contact'));
+const About1 = lazy(() => import('./Pages/About/About1/About1'));
+const Portfolio = lazy(() => import('./Pages/Portfolio/Portfolio'));
+const About2 = lazy(() => import('./Pages/About/About2/About2'));
+const About3 = lazy(() => import('./Pages/About/About3/About3'));
+const Index = lazy(() => import("./Components/Index"));
 
 export const Router = createBrowserRouter([
     {

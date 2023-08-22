@@ -1,9 +1,9 @@
 import React from 'react';
 import { BiRadioCircle } from 'react-icons/bi';
 
-const WhyChooseUs = ({ registerElement }) => {
+const WhyChooseUs = () => {
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28" ref={(element) => registerElement(element)}>
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 gap-2">
           <img src="/assets1/choose-about6.jpg" alt="about2" loading="lazy" />

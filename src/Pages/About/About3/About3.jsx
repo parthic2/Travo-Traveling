@@ -1,6 +1,4 @@
 import React from 'react';
-import useScrollAnimationTrends from '../../../Hooks/useScrollAnimationTrends';
-import useScrollAnimation from '../../../Hooks/useScrollAnimation';
 import ClientReview from './ClientReview';
 import MeetOurTeam from './MeetOurTeam';
 import WhyChooseUs from './WhyChooseUs';
@@ -9,15 +7,13 @@ import Footer from '../../../Components/Footer/Footer';
 
 const About3 = () => {
   window.scrollTo(0, 0);
-  const registerElement = useScrollAnimationTrends();
-  const fadeIn = useScrollAnimation(".animate");
 
   return (
     <>
       <NavbarInner />
       <div className="container mx-auto px-4 py-24">
-        <div className="flex min-h-screen flex-col">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2" ref={(element) => registerElement(element)}>
+        <div className="flex flex-col">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
             <div className="mt-5 self-center">
               <h2 className="heading-4 xl:w-full">
                 It’s Time for a New Material
@@ -40,13 +36,13 @@ const About3 = () => {
             </div>
           </div>
 
-          <WhyChooseUs registerElement={registerElement} />
+          <WhyChooseUs />
 
           <MeetOurTeam />
         </div>
       </div>
 
-      <ClientReview fadeIn={fadeIn} />
+      <ClientReview />
       <Footer />
     </>
   )
