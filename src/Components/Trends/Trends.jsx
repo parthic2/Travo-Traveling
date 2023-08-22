@@ -11,7 +11,6 @@ const Trends = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div className="" ref={(element) => registerElement(element)}>
             <h1 className="heading-3">We are interior design team based in New York</h1>
-
             <div className="lg:mt-20 w-width-70 mx:lg-0 md:mt-0 xs:w-1/2 xxs:w-width-70">
               <div className="text-primary-strong hover:text-background-dark underline underline-offset-4 font-medium cursor-pointer">
                 hello@domain.com
@@ -44,7 +43,6 @@ const Trends = () => {
                 height={542}
                 loading="lazy"
               />
-
               <div className="absolute bottom-0 right-0 z-[1] landscape:md:!-bottom-spacing-m-25">
                 <span className="inline-block">
                   <div className="achievement">
