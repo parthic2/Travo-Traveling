@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <nav id="headerBar" className="navbar flex justify-between items-center" style={{ backgroundColor: navbarColor, color: textColor }}>
         <div className="logo" style={{ color: textColor }}>
-          <Link to="/">Retro</Link>
+          <Link to="/">Decora</Link>
         </div>
 
         <div className="justify-center">

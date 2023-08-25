@@ -18,7 +18,7 @@ const NavbarInner = () => {
     <header className="reverse-scroll" style={{ display: navbarVisible ? 'block' : 'none' }}>
       <nav id="headerBar" className="navbar-inner flex justify-between items-center" >
         <div className="text-black cursor-pointer">
-          <Link to="/">Retro</Link>
+          <Link to="/">Decora</Link>
         </div>
 
         <div className="justify-center">
