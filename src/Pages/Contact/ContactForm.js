@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { countries } from '../../Data/CarouselItem';
@@ -11,13 +11,11 @@ const ContactForm = () => {
     handleInputBlur,
     handleInputChange,
     handleCheckboxChange,
-    sendEmail,
+    handleSubmit
   } = useContactForm();
 
-  const form = useRef();
-
   return (
-    <form ref={form} className="flex justify-center items-center" onSubmit={sendEmail} autoComplete="off">
+    <form onSubmit={handleSubmit} className="flex justify-center items-center" autoComplete="off">
       <ToastContainer position="top-left" style={{ padding: "20px" }} />
       <div className="lg:w-3/4 md:w-3/4 space-y-4 w-full">
         <div>

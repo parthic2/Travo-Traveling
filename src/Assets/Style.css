@@ -855,7 +855,7 @@
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: white;
     padding: 20px 35px;
 }
 
@@ -863,12 +863,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
 }
 
 .social {
     display: flex;
-    color: white;
+    color: black;
     gap: 16px;
 }
 
@@ -896,7 +896,7 @@ nav input {
 }
 
 .nav-links li .list {
-    color: #ffffff;
+    color: black;
     font-size: 14px;
     font-weight: 500;
     padding: 9px 15px;

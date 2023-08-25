@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
 
 export const useContactForm = () => {
   const initialFormValue = {
@@ -106,36 +104,15 @@ export const useContactForm = () => {
     setFormValue({ ...formValue, subscribe: e.target.checked });
   };
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateForm()) {
       return; // If the form is not valid, do not proceed with sending the email
     }
 
-    const message = formValue.subscribe ? "Subscribe" : "Unsubscribe";
-
-    const templateParams = {
-      ...formValue,
-      subscribe: message,
-    };
-
-    emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      templateParams,
-      process.env.REACT_APP_PUBLIC_KEY
-    )
-      .then(() => {
-        toast.success("Message Sent Successfully!");
-        setFormValue(initialFormValue);
-        setFormErrors(initialFormValue);
-      })
-      .catch((error) => {
-        toast.error("Something Went Wrong!");
-        setFormValue(initialFormValue);
-        setFormErrors(initialFormValue);
-      });
+    setFormValue(initialFormValue);
+    setFormErrors(initialFormValue);
   };
 
   return {
@@ -144,6 +121,6 @@ export const useContactForm = () => {
     handleInputBlur,
     handleInputChange,
     handleCheckboxChange,
-    sendEmail,
+    handleSubmit,
   };
 };

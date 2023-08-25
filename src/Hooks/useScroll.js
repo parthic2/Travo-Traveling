@@ -14,12 +14,12 @@ const useScroll = () => {
             const isAtTop = currentScrollY === 0;
 
             if (isAtTop) {
-                setNavbarColor("transparent");
-                setTextColor("#f4f4f4");
+                setNavbarColor("white");
+                setTextColor("black");
             } else if (currentScrollY > prevScrollY) {
                 setNavbarVisible(false);
-                setNavbarColor("transparent");
-                setTextColor("#f4f4f4");
+                setNavbarColor("white");
+                setTextColor("black");
             } else {
                 setNavbarVisible(true);
                 setNavbarColor("white");
