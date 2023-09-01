@@ -25,7 +25,7 @@ const renderSection = (title, items, isInterest = false) => (
     <div className="items-center justify-center gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
       {items.map((item, index) => (
         <div key={index} className="relative image-container">
-          <img className="rounded-md" src={item.img} alt="portfolio" loading="lazy" />
+          <img className="rounded-md" src={item.img} alt="portfolio" />
           <div className={isInterest ? 'overlay' : 'overlay'}>
             <h3 className="text">{item.text}</h3>
             <span className="detail">{item.detail}</span>
