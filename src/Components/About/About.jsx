@@ -12,22 +12,12 @@ const About = () => {
         <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
           <div className="relative">
             <div className="lg-no-parallax relative w-1/2 md:w-width-70 z-[2] mt-spacing-t lg:mr-auto flex justify-center items-center">
-              <img src={AboutImage1} alt="about" className="aboutImage-1" loading="lazy" />
+              <img src={AboutImage1} alt="about" className="aboutImage-1" loading="lazy" width={"60%"} height={50} />
             </div>
             <div className="lg-no-parallax flex justify-center items-center w-width-65 bg-no-repeat absolute bottom-spacing-b right-spacing-right-15 lg:!left-auto lg:!right-0">
               <img src={AboutImage2} className="aboutImage-2" alt="about" loading="lazy" width={"100%"} height={50} />
             </div>
           </div>
-
-
-          {/* <div className="relative">
-            <div className="lg-no-parallax relative z-[2] mt-spacing-t lg:mr-auto">
-              <img src={AboutImage1} alt="about" className="aboutImage-1" loading="lazy" height={50} />
-            </div>
-            <div className="lg-no-parallax flex justify-center items-center bg-no-repeat absolute bottom-spacing-b right-spacing-right-15 lg:!left-auto lg:!right-0">
-              <img src={AboutImage2} className="aboutImage-2" alt="about" loading="lazy" width={"100%"} height={50} />
-            </div>
-          </div> */}
 
           <div className="pt-35 lg:ml-28">
             <div className="small">
