@@ -85,7 +85,7 @@ export const testimonialItems = [
         customerDes: 'Creative director'
     },
     {
-        image: require("../Images/home-interior-design-testimonial-img03.png"),
+        image: require("../Images/home-interior-design-testimonial-img03.jpg"),
         detail:
             'Their team is easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Professional support.',
         customerName: 'Jonsan Donner',
@@ -140,42 +140,42 @@ export const weekendPackages = [
 
 export const team = [
     {
-        imageSrc: require("../Images/team1.png"),
+        imageSrc: require("../Images/team1.jpg"),
         name: 'Anna smith',
         designation: 'Co-founder',
     },
     {
-        imageSrc: require("../Images/team2.png"),
+        imageSrc: require("../Images/team2.jpg"),
         name: 'Amanda red',
         designation: 'Interior designer',
     },
     {
-        imageSrc: require("../Images/team3.png"),
+        imageSrc: require("../Images/team3.jpg"),
         name: 'samuel jacobs',
         designation: 'Photographer',
     },
     {
-        imageSrc: require("../Images/team4.png"),
+        imageSrc: require("../Images/team4.jpg"),
         name: 'Alan Miller',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: require("../Images/team5.png"),
+        imageSrc: require("../Images/team5.jpg"),
         name: 'Clara sonra',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: require("../Images/team6.png"),
+        imageSrc: require("../Images/team6.jpg"),
         name: 'Tommy Ridar',
         designation: 'Photographer',
     },
     {
-        imageSrc: require("../Images/team7.png"),
+        imageSrc: require("../Images/team7.jpg"),
         name: 'Anna Ridar',
         designation: 'Architecture',
     },
     {
-        imageSrc: require("../Images/team8.png"),
+        imageSrc: require("../Images/team8.jpg"),
         name: 'Amah sonra',
         designation: 'art director',
     },
