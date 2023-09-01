@@ -482,11 +482,11 @@
     position: relative;
 }
 
-.portfolio-box img {
+/* .portfolio-box img {
     display: inline-block;
     height: 580px;
     width: 100%;
-}
+} */
 
 .portfolio-box:hover .portfolio-hover {
     opacity: 1;
