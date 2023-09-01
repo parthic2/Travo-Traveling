@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../Assets/Portfolio.css";
 import { portfolio } from '../../Data/CarouselItem';
 import NavbarInner from '../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../Components/Footer/Footer';

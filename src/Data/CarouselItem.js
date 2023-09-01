@@ -19,22 +19,22 @@ export const slides = [
 export const carouselItems = [
     {
         number: '01',
-        text: 'Lighting design',
+        text: 'High-quality services',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
     {
         number: '02',
-        text: 'Interior decoration',
+        text: 'Massage to any taste',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
     {
         number: '03',
-        text: 'Lighting design',
+        text: 'Qualified treatment',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
     {
         number: '04',
-        text: 'Interior decoration',
+        text: 'Pleasant prices',
         detail: 'Lorem ipsum dolor sit consectetur adipiscing elit eiusmod incididunt',
     },
 ];
@@ -48,44 +48,44 @@ export const counterItems = [
 
 export const projectData = [
     {
-        imageSrc: '/assets1/home-interior-design-portfolio-img01.jpg',
-        category: 'Interior',
-        title: 'Mongolish',
+        imageSrc: '/assets/home-interior-design-portfolio-img01.jpg',
+        category: 'Travelling',
+        title: 'boats docked',
     },
     {
-        imageSrc: '/assets1/home-interior-design-portfolio-img02.jpg',
-        category: 'Interior',
-        title: 'Geometry',
+        imageSrc: '/assets/home-interior-design-portfolio-img02.jpg',
+        category: 'Travelling',
+        title: 'Nature',
     },
     {
-        imageSrc: '/assets1/home-interior-design-portfolio-img03.jpg',
-        category: 'Interior',
-        title: 'Sphere',
+        imageSrc: '/assets/home-interior-design-portfolio-img03.jpg',
+        category: 'Travelling',
+        title: 'Iceland',
     },
     {
-        imageSrc: '/assets1/home-interior-design-portfolio-img04.jpg',
-        category: 'Interior',
-        title: 'Bedroom',
+        imageSrc: '/assets/home-interior-design-portfolio-img04.jpg',
+        category: 'Travelling',
+        title: 'Taj Mahal',
     }
 ];
 
 export const testimonialItems = [
     {
-        image: '/assets1/home-interior-design-testimonial-img01.jpg',
+        image: '/assets/home-interior-design-testimonial-img01.jpg',
         detail:
             'This theme has a wide variety of options and a really good customer support. But even so, the theme still gives a lot of features while prioritizing web speed.',
         customerName: 'Harvard Alexander',
         customerDes: 'Microsoft Design'
     },
     {
-        image: '/assets1/home-interior-design-testimonial-img02.jpg',
+        image: '/assets/home-interior-design-testimonial-img02.jpg',
         detail:
             'Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies. Excellent company!',
         customerName: 'Mackangy Rose',
         customerDes: 'Creative director'
     },
     {
-        image: '/assets1/home-interior-design-testimonial-img03.png',
+        image: '/assets/home-interior-design-testimonial-img03.png',
         detail:
             'Their team is easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Professional support.',
         customerName: 'Jonsan Donner',
@@ -95,123 +95,87 @@ export const testimonialItems = [
 
 export const blogs = [
     {
-        category: 'creative',
-        imageSrc: '/assets1/blog-img232.jpg',
-        title: 'Creativity is nothing but a mindset free',
+        category: 'Europe',
+        imageSrc: '/assets/blog-img232.jpg',
+        title: 'Why You Shouldn’t Ride France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'Jeremy Dupont'
     },
     {
-        category: 'concept',
-        imageSrc: '/assets1/blog-img233.jpg',
-        title: 'Simplicity, wit, and good typography',
+        category: 'Africa',
+        imageSrc: '/assets/blog-img233.jpg',
+        title: 'Why You Shouldn Elephants France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'bill gardner'
     },
     {
-        category: 'business',
-        imageSrc: '/assets1/blog-img237.jpg',
+        category: 'Asia',
+        imageSrc: '/assets/blog-img237.jpg',
         title: 'Look at usual things with unusual',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'vico magistre'
     }
 ];
 
-export const service = [
-    {
-        category: '2D / 3D',
-        imageSrc: '/assets1/2d.jpg',
-        title: '2D / 3D Design Layout',
-        detail: 'We Do All Types Of 2D And 3D design Elegant Innovative Luxurious Design Interior.'
-    },
-    {
-        category: 'Bathroom',
-        imageSrc: '/assets1/master.jpg',
-        title: 'Master Bathroom',
-        detail: 'We Do Master Bathroom Designing And Decoration And Luxury Bathroom Designing.'
-    },
-    {
-        category: 'Office',
-        imageSrc: '/assets1/office.jpg',
-        title: 'Office Interior',
-        detail: 'We Do All Types Of Interior Designing Solution And Decoration Of Office And Other Commercial Space.'
-    },
-    {
-        category: 'Kitchen',
-        imageSrc: '/assets1/kitchen.jpg',
-        title: 'Modular Kitchen',
-        detail: 'We Do All Types Of Modular Kitchen Designing And Luxury Kitchen Designing So To Make Your Kitchen Your Favorite Place.'
-    },
-    {
-        category: 'Residential',
-        imageSrc: '/assets1/residential.jpg',
-        title: 'Residential Interior',
-        detail: 'We Do All Types Of Interior Designing, Decoration And Furnishing Of Bed Room, Living Room, Dinning Room, Hall Room, Kids Room, Guest Room.'
-    },
-    {
-        category: 'Furniture',
-        imageSrc: '/assets1/furniture.jpg',
-        title: 'Furniture & Fixture',
-        detail: 'We Make Custom Design Furniture And Deals With All Types Of Other Modular Furniture And Fixture, So That You Can Get Exactly What You Want.'
-    },
-    {
-        category: 'false',
-        imageSrc: '/assets1/false.jpg',
-        title: 'False Ceiling',
-        detail: 'We Make Custom Made False Ceiling And Do All Types Of Ceiling Work. We Also Do 3D False Ceiling Work So That You Always Look Up In Your Home And In Your Life.'
-    },
-    {
-        category: 'restaurants',
-        imageSrc: '/assets1/restaurants.jpg',
-        title: 'Restaurants & Cafeteria',
-        detail: 'All Types Of Interior Designing For Restaurant, Coffee Shops And Cafeteria, So That People Get A Reason To Spend More Time In Your Place.'
-    },
-    {
-        category: 'Glass & Lightening',
-        imageSrc: '/assets1/glass.jpg',
-        title: 'Glass & Lightening',
-        detail: 'All Types Of Glass Decoration And Light Decoration With Innovative Modern Glass And Lightning So That Your Space Can Get A Look Of Masterpiece.'
-    }
+export const packages = [
+    { img: '/assets/package-1.jpg', text: '50+ Packages', detail: 'Uttarakhand' },
+    { img: '/assets/package-2.jpg', text: '40+ Packages', detail: 'Kerala' },
+    { img: '/assets/package-3.jpg', text: '20+ Packages', detail: 'Sikkim' },
+    { img: '/assets/package-4.jpg', text: '10+ Packages', detail: 'Bhutan' },
+];
+
+export const interests = [
+    { img: '/assets/package-5.jpg', text: 'Wildlife Tours' },
+    { img: '/assets/package-6.jpg', text: 'Heritage Tours' },
+    { img: '/assets/package-7.jpg', text: 'Honeymoon Tours' },
+    { img: '/assets/package-8.jpg', text: 'Hill Station Tours' },
+];
+
+export const weekendPackages = [
+    { img: '/assets/package-9.jpg', text: '20 Tour Packages', detail: 'Weekend Trips From Delhi' },
+    { img: '/assets/package-10.jpg', text: '30 Tour Packages', detail: 'Weekend Trips For Mumbai' },
+    { img: '/assets/package-11.jpg', text: '20 Tour Packages', detail: 'Weekend Trips For Bangalore' },
+    { img: '/assets/package-12.jpg', text: '25 Tour Packages', detail: 'Weekend Trips For Chennai' },
 ];
 
 export const team = [
     {
-        imageSrc: '/assets1/team1.png',
+        imageSrc: '/assets/team1.png',
         name: 'Anna smith',
         designation: 'Co-founder',
     },
     {
-        imageSrc: '/assets1/team2.png',
+        imageSrc: '/assets/team2.png',
         name: 'Amanda red',
         designation: 'Interior designer',
     },
     {
-        imageSrc: '/assets1/team3.png',
+        imageSrc: '/assets/team3.png',
         name: 'samuel jacobs',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets1/team4.png',
+        imageSrc: '/assets/team4.png',
         name: 'Alan Miller',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets1/team5.png',
+        imageSrc: '/assets/team5.png',
         name: 'Clara sonra',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets1/team6.png',
+        imageSrc: '/assets/team6.png',
         name: 'Tommy Ridar',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets1/team7.png',
+        imageSrc: '/assets/team7.png',
         name: 'Anna Ridar',
         designation: 'Architecture',
     },
     {
-        imageSrc: '/assets1/team8.png',
+        imageSrc: '/assets/team8.png',
         name: 'Amah sonra',
         designation: 'art director',
     },
@@ -238,49 +202,49 @@ export const review = [
 
 export const portfolio = [
     {
-        imgSrc: "/assets1/hotel-interior-design.jpg",
-        title: "Hotel Interior Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/hotel-interior-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/modern-home-design.jpg",
-        title: "Modern Home Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/modern-home-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/home-office-design.jpg",
-        title: "Home Office Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/home-office-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/apartments-design.jpg",
-        title: "Apartments Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/apartments-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/bedroom-design.jpg",
-        title: "Bedroom Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/bedroom-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/dining-room-design.jpg",
-        title: "Dining Room Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/dining-room-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/kids-room-design.jpg",
-        title: "Kids Room Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/kids-room-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/studio-apartments-design.jpg",
-        title: "Studio Apartments Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/studio-apartments-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets1/bathroom-design.jpg",
-        title: "Bathroom Design",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        imgSrc: "/assets/bathroom-design.jpg",
+        title: "Beautiful Beach",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
 ]
 
@@ -309,23 +273,23 @@ export const countries = [
 
 export const fancyBoxItems = [
     {
-        image: "/assets1/home-interior-design-services.jpg",
-        title: "interior design is a business of trust",
+        image: "/assets/home-interior-design-services.jpg",
+        title: "Hurawalhi Island",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets1/home-interior-design-services-02.jpg",
-        title: "we believe in the power of design",
+        image: "/assets/home-interior-design-services-02.jpg",
+        title: "Bali Province",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets1/home-interior-design-services-03.jpg",
-        title: "design is the process of discovery",
+        image: "/assets/home-interior-design-services-03.jpg",
+        title: "Cox's Sea Beach",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets1/home-interior-design-services-04.jpg",
-        title: "we want to bring interior design",
+        image: "/assets/home-interior-design-services-04.jpg",
+        title: "city beach",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     }
 ];

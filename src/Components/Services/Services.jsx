@@ -28,11 +28,11 @@ const Services = () => {
         <div className="flex lg:justify-center md:justify-start text-center lg:mb-16 md:mb-12 xs:mb-20">
           <div className="md:text-left">
             <span className="text-primary-strong font-medium mb-spacing-b-20 uppercase flex lg:justify-center md:justify-start" style={{ textAlign: 'start' }}>
-              Home decoration services
+              Our Values For You
             </span>
-            <h2 className="heading-5 text-start">
-              Simple is good, we turn ideas
-              <span className="flex justify-center items-center start">into works of design art</span>
+            <h2 className="heading-5 text-start lg:text-center">
+              Find Travel Perfection,
+              <span className="flex justify-center items-center start">With The Wisdom Of Experts</span>
             </h2>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Services = () => {
         <div className="items-center grid grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="col-span-2 lg:col-span-1 pt-50 customerLeftColumn">
             <span className="mb-spacing-b-20 block uppercase font-medium text-grey-text">Expert services</span>
-            <h1 className="heading-6">We like to make you feel more at home</h1>
+            <h1 className="heading-6">Explore all corners of The world with us</h1>
           </div>
 
           <div className="col-span-2 customerRightColumn">
@@ -55,7 +55,7 @@ const Services = () => {
                     <div className="feature-box-move-bottom-top">
                       <h2 className="number">{item.number}</h2>
                       <div className="feature-box-content">
-                        <span className="text">{item.text}</span>
+                        <span className="text mb-5">{item.text}</span>
                         <p className="detail">{item.detail}</p>
                       </div>
                       <div className="w-full flex justify-start xs:mt-0">

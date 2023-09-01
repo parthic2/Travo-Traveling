@@ -14,7 +14,7 @@ const FancyBoxItem = ({ image, title, description, handleHover, handleMouseLeave
 
       <div className="fancy-text-box relative overflow-hidden h-height-800 xl:h-height-500 xs:h-height-250 z-[3]">
         <div className="fancy-text-content fancyPadding">
-          <h3 className="fancy-content-text">{title}</h3>
+          <h3 className="fancy-content-text mb-2">{title}</h3>
           <div className="fancy-text-box-bottom justify-center">
             <div className="flex">
               <p className="mb-2 self-center text-white-text opacity-60 text-small-text-size leading-l-20">{description}</p>

@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           <div>
             <div className="md:text-center text-start last:m-0 md:mt-spacing-m-25 text-white">
-              <span>Decora</span>
+              <span>Travo</span>
               <p className="text-grey-text mt-3">© Copyright 2023 {" "}
-                <span>Decora</span>
+                <span>Travo</span>
               </p>
             </div>
           </div>

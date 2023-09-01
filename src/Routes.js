@@ -28,7 +28,7 @@ export const Router = createBrowserRouter([
         element: <About3 />
     },
     {
-        path: "/Service",
+        path: "/Package",
         element: <Services />
     },
     {

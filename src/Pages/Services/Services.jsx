@@ -1,51 +1,39 @@
 import React from 'react';
-import { service } from '../../Data/CarouselItem';
 import NavbarInner from '../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../Components/Footer/Footer';
+import { interests, packages, weekendPackages } from '../../Data/CarouselItem';
 
 const Services = () => {
   window.scrollTo(0, 0);
+
   return (
     <>
       <NavbarInner />
-      <section className={`relative bg-background-light py-32 min-h-screen`}>
-        <div className="container-fluid">
-          <div className="justify-center text-center">
-            <div className="flex flex-col items-center text-center mb-24 lg:mb-16 md:mb-12 xs:mb-20">
-              <h2 className="text-center text-normal-text-1 font-bold">
-                Services Which We Offer And Expertise In Home And Commercial Interior Design Service
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid px-4">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
-            {service.map((blog, index) => (
-              <div key={index}>
-                <div
-                  className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                  <div className={blog.category}>
-                    <div className="lg:h-height-350 sm:h-full flex sm:flex-row flex-col sm:justify-start">
-                      <img alt="team" className="blog-image" src={blog.imageSrc} loading="lazy" />
-                      <div className="p-spacing-p">
-                        <div className="blog-title" style={{ width: "100%" }}>{blog.title}</div>
-                        <p className="detail" style={{ marginBottom: "0" }}>{blog.detail}</p>
-                        <div className="w-full flex justify-start xs:mt-0">
-                          <span className="readBtn" style={{ display: "block", paddingTop: "25px" }}>Read More</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section className="bg-background-light py-32 min-h-screen">
+        {renderSection('Top Trending Destinations', packages)}
+        {renderSection('Holidays by Interest', interests, true)}
+        {renderSection('Top Weekend Destinations', weekendPackages)}
       </section>
       <Footer />
     </>
   );
 };
+
+const renderSection = (title, items, isInterest = false) => (
+  <div className="container mx-auto px-4 mt-5">
+    <h1 className="heading-3">{title}</h1>
+    <div className="items-center justify-center gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      {items.map((item, index) => (
+        <div key={index} className="relative image-container">
+          <img className="rounded-md" src={item.img} alt="portfolio" loading="lazy" />
+          <div className={isInterest ? 'overlay' : 'overlay'}>
+            <h3 className="text">{item.text}</h3>
+            <span className="detail">{item.detail}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 export default Services;

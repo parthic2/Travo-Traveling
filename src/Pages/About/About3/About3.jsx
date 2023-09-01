@@ -16,22 +16,22 @@ const About3 = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
             <div className="mt-5 self-center">
               <h2 className="heading-4 xl:w-full">
-                It’s Time for a New Material
+                It’s Time for a New journey
               </h2>
               <p className="detail">
-                Working closely with professional chefs drives our design process. Function is always paramount – every detail is cared for to help each piece fulfil its intended purpose.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               </p>
 
               <p className="detail">
-                “ I curate and deliver hospitality environments and projects that seek to create. ”
+                “ Lorem Ipsum is simply dummy text of the printing and typesetting industry ”
               </p>
               <button className="discover">discover</button>
             </div>
 
             <div className="pl-0 lg:pl-20">
               <div className="grid grid-cols-2 gap-2">
-                <img src="/assets1/material-about1.jpg" alt="about2" loading="lazy" />
-                <img src="/assets1/material-about2.jpg" alt="about2" loading="lazy" />
+                <img src="/assets/material-about1.jpg" alt="about2" loading="lazy" />
+                <img src="/assets/material-about2.jpg" alt="about2" loading="lazy" />
               </div>
             </div>
           </div>

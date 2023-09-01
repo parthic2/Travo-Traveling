@@ -14,8 +14,8 @@ const Projects = () => {
       <div className="container-fluid">
         <div className="justify-center text-center mb-spacing-mb-heading lg:mb-20 md:mb-16">
           <div className="">
-            <span className="font-medium text-primary-strong text-base uppercase block mb-spacing-m">interior Design</span>
-            <h2 className="heading-5">Latest Projects</h2>
+            <span className="font-medium text-primary-strong text-base uppercase block mb-spacing-m">Explore Place's</span>
+            <h2 className="heading-5">Latest Destinations</h2>
           </div>
         </div>
 

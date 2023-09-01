@@ -16,8 +16,8 @@ export const navigationItems = [
         ],
     },
     {
-        text: 'Services',
-        link: '/Service',
+        text: 'Package',
+        link: '/Package',
     },
     {
         text: 'Portfolio',
