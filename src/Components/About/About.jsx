@@ -12,10 +12,10 @@ const About = () => {
         <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
           <div className="relative">
             <div className="lg-no-parallax relative z-[2] mt-spacing-t lg:mr-auto">
-              <img src={AboutImage1} alt="about" className="aboutImage-1" loading="lazy" />
+              <img src={AboutImage1} alt="about" className="aboutImage-1" loading="lazy" width={"50%"} height={50} />
             </div>
             <div className="lg-no-parallax flex justify-center items-center bg-no-repeat absolute bottom-spacing-b right-spacing-right-15 lg:!left-auto lg:!right-0">
-              <img src={AboutImage2} className="aboutImage-2" alt="about" loading="lazy" />
+              <img src={AboutImage2} className="aboutImage-2" alt="about" loading="lazy" width={"100%"} height={50} />
             </div>
           </div>
 
