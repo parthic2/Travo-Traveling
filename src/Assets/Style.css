@@ -317,7 +317,7 @@
 
 /* about css */
 .cover-background {
-    background-image: url("../../public/assets/home-interior-design-about-bg.png");
+    background-image: url("../Images/home-interior-design-about-bg.png");
     opacity: 1;
 }
 
@@ -776,7 +776,7 @@
 
 /* Banner css */
 .bannerBg {
-    background-image: url("../../public/assets/home-interior-design-start-project-bg.jpg");
+    background-image: url("../Images/home-interior-design-start-project-bg.jpg");
     background-size: cover;
     position: relative;
     background-position: center;

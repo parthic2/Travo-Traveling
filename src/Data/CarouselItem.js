@@ -48,22 +48,22 @@ export const counterItems = [
 
 export const projectData = [
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img01.jpg',
+        imageSrc: require("../Images/home-interior-design-portfolio-img01.jpg"),
         category: 'Travelling',
         title: 'boats docked',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img02.jpg',
+        imageSrc: require("../Images/home-interior-design-portfolio-img02.jpg"),
         category: 'Travelling',
         title: 'Nature',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img03.jpg',
+        imageSrc: require("../Images/home-interior-design-portfolio-img03.jpg"),
         category: 'Travelling',
         title: 'Iceland',
     },
     {
-        imageSrc: '/assets/home-interior-design-portfolio-img04.jpg',
+        imageSrc: require("../Images/home-interior-design-portfolio-img04.jpg"),
         category: 'Travelling',
         title: 'Taj Mahal',
     }
@@ -71,21 +71,21 @@ export const projectData = [
 
 export const testimonialItems = [
     {
-        image: '/assets/home-interior-design-testimonial-img01.jpg',
+        image: require("../Images/home-interior-design-testimonial-img01.jpg"),
         detail:
             'This theme has a wide variety of options and a really good customer support. But even so, the theme still gives a lot of features while prioritizing web speed.',
         customerName: 'Harvard Alexander',
         customerDes: 'Microsoft Design'
     },
     {
-        image: '/assets/home-interior-design-testimonial-img02.jpg',
+        image: require("../Images/home-interior-design-testimonial-img02.jpg"),
         detail:
             'Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies. Excellent company!',
         customerName: 'Mackangy Rose',
         customerDes: 'Creative director'
     },
     {
-        image: '/assets/home-interior-design-testimonial-img03.png',
+        image: require("../Images/home-interior-design-testimonial-img03.png"),
         detail:
             'Their team is easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Professional support.',
         customerName: 'Jonsan Donner',
@@ -96,21 +96,21 @@ export const testimonialItems = [
 export const blogs = [
     {
         category: 'Europe',
-        imageSrc: '/assets/blog-img232.jpg',
+        imageSrc: require("../Images/blog-img232.jpg"),
         title: 'Why You Shouldn’t Ride France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'Jeremy Dupont'
     },
     {
         category: 'Africa',
-        imageSrc: '/assets/blog-img233.jpg',
+        imageSrc: require("../Images/blog-img233.jpg"),
         title: 'Why You Shouldn Elephants France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'bill gardner'
     },
     {
         category: 'Asia',
-        imageSrc: '/assets/blog-img237.jpg',
+        imageSrc: require("../Images/blog-img237.jpg"),
         title: 'Look at usual things with unusual',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'vico magistre'
@@ -118,64 +118,64 @@ export const blogs = [
 ];
 
 export const packages = [
-    { img: '/assets/package-1.jpg', text: '50+ Packages', detail: 'Uttarakhand' },
-    { img: '/assets/package-2.jpg', text: '40+ Packages', detail: 'Kerala' },
-    { img: '/assets/package-3.jpg', text: '20+ Packages', detail: 'Sikkim' },
-    { img: '/assets/package-4.jpg', text: '10+ Packages', detail: 'Bhutan' },
+    { img: require("../Images/package-1.jpg"), text: '50+ Packages', detail: 'Uttarakhand' },
+    { img: require("../Images/package-2.jpg"), text: '40+ Packages', detail: 'Kerala' },
+    { img: require("../Images/package-3.jpg"), text: '20+ Packages', detail: 'Sikkim' },
+    { img: require("../Images/package-4.jpg"), text: '10+ Packages', detail: 'Bhutan' },
 ];
 
 export const interests = [
-    { img: '/assets/package-5.jpg', text: 'Wildlife Tours' },
-    { img: '/assets/package-6.jpg', text: 'Heritage Tours' },
-    { img: '/assets/package-7.jpg', text: 'Honeymoon Tours' },
-    { img: '/assets/package-8.jpg', text: 'Hill Station Tours' },
+    { img: require("../Images/package-5.jpg"), text: 'Wildlife Tours' },
+    { img: require("../Images/package-6.jpg"), text: 'Heritage Tours' },
+    { img: require("../Images/package-7.jpg"), text: 'Honeymoon Tours' },
+    { img: require("../Images/package-8.jpg"), text: 'Hill Station Tours' },
 ];
 
 export const weekendPackages = [
-    { img: '/assets/package-9.jpg', text: '20 Tour Packages', detail: 'Weekend Trips From Delhi' },
-    { img: '/assets/package-10.jpg', text: '30 Tour Packages', detail: 'Weekend Trips For Mumbai' },
-    { img: '/assets/package-11.jpg', text: '20 Tour Packages', detail: 'Weekend Trips For Bangalore' },
-    { img: '/assets/package-12.jpg', text: '25 Tour Packages', detail: 'Weekend Trips For Chennai' },
+    { img: require("../Images/package-9.jpg"), text: '20 Tour Packages', detail: 'Weekend Trips From Delhi' },
+    { img: require("../Images/package-10.jpg"), text: '30 Tour Packages', detail: 'Weekend Trips For Mumbai' },
+    { img: require("../Images/package-11.jpg"), text: '20 Tour Packages', detail: 'Weekend Trips For Bangalore' },
+    { img: require("../Images/package-12.jpg"), text: '25 Tour Packages', detail: 'Weekend Trips For Chennai' },
 ];
 
 export const team = [
     {
-        imageSrc: '/assets/team1.png',
+        imageSrc: require("../Images/team1.png"),
         name: 'Anna smith',
         designation: 'Co-founder',
     },
     {
-        imageSrc: '/assets/team2.png',
+        imageSrc: require("../Images/team2.png"),
         name: 'Amanda red',
         designation: 'Interior designer',
     },
     {
-        imageSrc: '/assets/team3.png',
+        imageSrc: require("../Images/team3.png"),
         name: 'samuel jacobs',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets/team4.png',
+        imageSrc: require("../Images/team4.png"),
         name: 'Alan Miller',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets/team5.png',
+        imageSrc: require("../Images/team5.png"),
         name: 'Clara sonra',
         designation: 'Interior Designer',
     },
     {
-        imageSrc: '/assets/team6.png',
+        imageSrc: require("../Images/team6.png"),
         name: 'Tommy Ridar',
         designation: 'Photographer',
     },
     {
-        imageSrc: '/assets/team7.png',
+        imageSrc: require("../Images/team7.png"),
         name: 'Anna Ridar',
         designation: 'Architecture',
     },
     {
-        imageSrc: '/assets/team8.png',
+        imageSrc: require("../Images/team8.png"),
         name: 'Amah sonra',
         designation: 'art director',
     },
@@ -202,47 +202,47 @@ export const review = [
 
 export const portfolio = [
     {
-        imgSrc: "/assets/hotel-interior-design.jpg",
+        imgSrc: require("../Images/hotel-interior-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/modern-home-design.jpg",
+        imgSrc: require("../Images/modern-home-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/home-office-design.jpg",
+        imgSrc: require("../Images/home-office-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/apartments-design.jpg",
+        imgSrc: require("../Images/apartments-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/bedroom-design.jpg",
+        imgSrc: require("../Images/bedroom-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/dining-room-design.jpg",
+        imgSrc: require("../Images/dining-room-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/kids-room-design.jpg",
+        imgSrc: require("../Images/kids-room-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/studio-apartments-design.jpg",
+        imgSrc: require("../Images/studio-apartments-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        imgSrc: "/assets/bathroom-design.jpg",
+        imgSrc: require("../Images/bathroom-design.jpg"),
         title: "Beautiful Beach",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
@@ -273,22 +273,22 @@ export const countries = [
 
 export const fancyBoxItems = [
     {
-        image: "/assets/home-interior-design-services.jpg",
+        image: require("../Images/home-interior-design-services.jpg"),
         title: "Hurawalhi Island",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-02.jpg",
+        image: require("../Images/home-interior-design-services-02.jpg"),
         title: "Bali Province",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-03.jpg",
+        image: require("../Images/home-interior-design-services-03.jpg"),
         title: "Cox's Sea Beach",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     },
     {
-        image: "/assets/home-interior-design-services-04.jpg",
+        image: require("../Images/home-interior-design-services-04.jpg"),
         title: "city beach",
         description: "Lorem ipsum dolor consectetur adipiscing dolor incididunt."
     }

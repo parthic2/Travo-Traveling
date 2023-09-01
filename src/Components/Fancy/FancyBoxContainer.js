@@ -3,7 +3,7 @@ import FancyBoxItem from './FancyBoxItem';
 import { fancyBoxItems } from '../../Data/CarouselItem';
 import useScrollAnimation from '../../Hooks/useScrollAnimation';
 
-const defaultImage = '/assets/home-interior-design-services.jpg';
+const defaultImage = require("../../Images/home-interior-design-services.jpg");
 
 const FancyBoxContainer = () => {
   const fadeIn = useScrollAnimation(".cover1-background");
