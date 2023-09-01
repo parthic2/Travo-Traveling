@@ -6,10 +6,10 @@ const WhyChooseUs = () => {
     <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 gap-2">
-          <img src="/assets/choose-about6.jpg" alt="about2" />
+          {/* <img src="/assets/choose-about6.jpg" alt="about2" />
           <img src="/assets/choose-about3.jpg" alt="about2" />
           <img src="/assets/choose-about4.jpg" alt="about2" />
-          <img src="/assets/choose-about5.jpg" alt="about2" />
+          <img src="/assets/choose-about5.jpg" alt="about2" /> */}
         </div>
       </div>
 

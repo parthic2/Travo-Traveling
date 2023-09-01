@@ -15,7 +15,7 @@ const Portfolio = () => {
               <div className="portfolio" key={index}>
                 <div className="portfolio-box-card">
                   <div className="portfolio-image-card">
-                    <img src={item.imgSrc} alt="portfolio"  />
+                    {/* <img src={item.imgSrc} alt="portfolio"  /> */}
 
                     <div className="portfolio-hover-card justify-between flex">
                       <div className="portfolio-content">
