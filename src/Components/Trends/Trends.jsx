@@ -39,7 +39,7 @@ const Trends = () => {
               <img
                 src={AboutImage}
                 alt="about"
-                className="relative z-[1]"
+                className="relative z-[1] w-width-100"
               />
               <div className="absolute bottom-0 right-0">
                 <span className="inline-block">
