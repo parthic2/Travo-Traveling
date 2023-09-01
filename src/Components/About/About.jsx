@@ -23,7 +23,7 @@ const About = () => {
             <div className="small">
               <span className="smallBorder" />
               <div className="flex-grow-1">
-                <span className="text-primary-strong uppercase">about travelling</span>
+                <span className="text-primary-strong uppercase">about traveling</span>
               </div>
             </div>
             <h2 className="heading-4 xl:w-full">
