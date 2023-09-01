@@ -3,6 +3,8 @@ import ClientReviews from './ClientReviews';
 import TeamSection from './TeamSection';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
+import AboutImg1 from "../../../Images/about2.jpg";
+import AboutImg2 from "../../../Images/about1.jpg";
 
 const About1 = () => {
   window.scrollTo(0, 0);
@@ -14,10 +16,10 @@ const About1 = () => {
           <div className="items-center justify-center grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
             <div className="relative">
               <div className="lg-no-parallax relative w-1/2 md:w-width-70 z-[2] mt-spacing-t lg:mt-0 lg:mr-auto flex justify-center items-center">
-                {/* <img src="/assets/about2.jpg" alt="about" className="aboutImage-1" /> */}
+                <img src={AboutImg1} alt="about" className="aboutImage-1" loading="lazy" />
               </div>
               <div className="lg-no-parallax flex justify-center items-center w-width-65 bg-no-repeat absolute bottom-spacing-b right-spacing-right-15 lg:!left-auto lg:!right-0">
-                {/* <img src="/assets/about1.jpg" className="aboutImage-2" alt="about" /> */}
+                <img src={AboutImg2} className="aboutImage-2" alt="about" loading="lazy" />
               </div>
             </div>
 

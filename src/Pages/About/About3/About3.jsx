@@ -4,6 +4,8 @@ import MeetOurTeam from './MeetOurTeam';
 import WhyChooseUs from './WhyChooseUs';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
+import AboutImg1 from "../../../Images/material-about1.jpg";
+import AboutImg2 from "../../../Images/material-about2.jpg";
 
 const About3 = () => {
   window.scrollTo(0, 0);
@@ -30,8 +32,8 @@ const About3 = () => {
 
             <div className="pl-0 lg:pl-20">
               <div className="grid grid-cols-2 gap-2">
-                {/* <img src="/assets/material-about1.jpg" alt="about2" />
-                <img src="/assets/material-about2.jpg" alt="about2" /> */}
+                <img src={AboutImg1} alt="about2" loading="lazy" />
+                <img src={AboutImg2} alt="about2" loading="lazy" />
               </div>
             </div>
           </div>

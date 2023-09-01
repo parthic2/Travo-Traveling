@@ -1,11 +1,14 @@
 import React from 'react';
 import { BiRadioCircle } from 'react-icons/bi';
+import Choose1 from "../../../Images/choose-about.jpg"
+import Choose2 from "../../../Images/choose-about1.jpg"
+import Choose3 from "../../../Images/choose-about2.jpg"
 
 const WhyChooseUs = () => {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 pt-28">
       <div className="flex justify-center items-center">
-        {/* <img src="/assets/choose-about.jpg" alt="about2" /> */}
+        <img src={Choose1} alt="about2" loading="lazy" />
       </div>
 
       <div className="mt-5 pl-0 lg:pl-20 self-center">
@@ -44,8 +47,8 @@ const WhyChooseUs = () => {
         </div>
         <button className="discover">Our Service</button>
         <div className="grid grid-cols-2 gap-2 pt-4">
-          {/* <img src="/assets/choose-about1.jpg" alt="about2" />
-          <img src="/assets/choose-about2.jpg" alt="about2" /> */}
+          <img src={Choose2} alt="about2" loading="lazy" />
+          <img src={Choose3} alt="about2" loading="lazy" />
         </div>
       </div>
     </div>

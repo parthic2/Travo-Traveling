@@ -30,7 +30,7 @@ const Projects = () => {
                 <div className="portfolio-colorful" key={index}>
                   <div className="portfolio-box">
                     <div className="portfolio-image">
-                      {/* <img src={project.imageSrc} alt="portfolio" /> */}
+                      <img src={project.imageSrc} alt="portfolio" loading="lazy" />
 
                       <div className="portfolio-hover justify-between flex">
                         <div className="portfolio-content">

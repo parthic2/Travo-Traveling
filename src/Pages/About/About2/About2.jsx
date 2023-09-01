@@ -4,6 +4,7 @@ import MeetOurTeam from './MeetOurTeam';
 import ClientReview from './ClientReview';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
+import AboutImg1 from "../../../Images/material-about.jpg"
 
 const About2 = () => {
   window.scrollTo(0, 0);
@@ -28,7 +29,7 @@ const About2 = () => {
             </div>
 
             <div className="pl-0 lg:pl-20">
-              {/* <img src="/assets/material-about.jpg" alt="about2" /> */}
+              <img src={AboutImg1} alt="about2" loading="lazy" />
             </div>
           </div>
 

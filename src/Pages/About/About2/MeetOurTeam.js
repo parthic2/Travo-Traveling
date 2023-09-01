@@ -34,7 +34,7 @@ const MeetOurTeam = () => {
           >
             {team.map((item, index) => (
               <div key={index} className="relative team-hover">
-                {/* <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" /> */}
+                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" loading="lazy" />
                 <div className="icon-social" style={{ width: "88%" }}>
                   <Link><BiLogoFacebook /></Link>
                   <Link><BiLogoInstagram /></Link>
