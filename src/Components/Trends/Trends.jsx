@@ -40,7 +40,7 @@ const Trends = () => {
                 src={AboutImage}
                 alt="about"
                 className="relative z-[1]"
-                width={460}
+                width={"100%"}
                 height={542}
                 loading="lazy"
               />
