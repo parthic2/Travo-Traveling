@@ -40,8 +40,6 @@ const Trends = () => {
                 src={AboutImage}
                 alt="about"
                 className="relative z-[1] w-full"
-                // width={360}
-                // height={542}
                 loading="lazy"
               />
               <div className="absolute bottom-0 right-0 z-[1] landscape:md:!-bottom-spacing-m-25">
