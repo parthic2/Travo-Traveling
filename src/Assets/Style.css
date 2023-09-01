@@ -322,39 +322,39 @@
 }
 
 .aboutImage-1 {
-    width: 278px;
+    /* width: 278px; */
     height: 344px;
 }
 
 @media (max-width: 500px) {
     .aboutImage-1 {
-        width: 278px;
+        /* width: 278px; */
         height: 300px;
     }
 }
 
 @media (max-width: 400px) {
     .aboutImage-1 {
-        width: 278px;
+        /* width: 278px; */
         height: 230px;
     }
 }
 
 .aboutImage-2 {
-    width: 380px;
+    /* width: 380px; */
     height: 554px;
 }
 
 @media (max-width: 500px) {
     .aboutImage-2 {
-        width: 380px;
+        /* width: 380px; */
         height: 480px;
     }
 }
 
 @media (max-width: 400px) {
     .aboutImage-2 {
-        width: 380px;
+        /* width: 380px; */
         height: 400px;
     }
 }
