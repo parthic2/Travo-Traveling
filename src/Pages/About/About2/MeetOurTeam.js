@@ -1,10 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { team } from '../../../Data/CarouselItem';
-import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
-import { AiOutlineTwitter } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
-import { responsiveFourSlide } from '../../../Data/ResponsiveCarousel';
+import { responsiveSlide } from '../../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../../Project.config';
 
 const MeetOurTeam = () => {
@@ -14,14 +11,14 @@ const MeetOurTeam = () => {
         <div className="small">
           <span className="smallBorder" />
           <div className="flex-grow-1">
-            <span className="text-primary-strong uppercase">OUR PROFESSIONALS</span>
+            <span className="text-primary-strong uppercase">Tour Packages</span>
           </div>
         </div>
         <h2 className="heading-4 xl:w-full">
-          Meet Our Skilled Team
+          Best Selling Packages
         </h2>
         <p className="detail">
-          Work with you to understand your business specifics and your target audience to our marketing fully strategy.
+          Tourism of India brings to you international tours that offer outstanding deals and tailor-made tours and let you experience the best of any destination.
         </p>
       </div>
 
@@ -29,19 +26,13 @@ const MeetOurTeam = () => {
         <div className="slider">
           <Carousel
             className="mySwiper"
-            responsive={responsiveFourSlide}
+            responsive={responsiveSlide}
             {...carouselSettings}
           >
             {team.map((item, index) => (
-              <div key={index} className="relative team-hover">
-                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-100 border-2 border-primary-strong" loading="lazy" />
-                <div className="icon-social" style={{ width: "88%" }}>
-                  <Link><BiLogoFacebook /></Link>
-                  <Link><BiLogoInstagram /></Link>
-                  <Link><AiOutlineTwitter /></Link>
-                </div>
+              <div key={index}>
+                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-250 border-2 border-primary-strong" loading="lazy" />
                 <p className="pt-5 capitalize font-bold">{item.name}</p>
-                <p className="uppercase detail">{item.designation}</p>
               </div>
             ))}
           </Carousel>

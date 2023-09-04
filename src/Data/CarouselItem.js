@@ -1,18 +1,18 @@
 export const slides = [
     {
         id: 1,
-        title: 'Concrete pent house',
-        category: 'Office interior',
+        title: 'Blue Lagoon',
+        category: 'The lagoon',
     },
     {
         id: 2,
-        title: 'Modernism table pots',
-        category: 'Pots collection',
+        title: 'Flying Hot Air Balloon',
+        category: 'Be on Your Dream',
     },
     {
         id: 3,
-        title: 'Comfort seating',
-        category: 'Resident interior',
+        title: 'South Palm Resort',
+        category: 'Maldives',
     },
 ];
 
@@ -140,44 +140,36 @@ export const weekendPackages = [
 
 export const team = [
     {
-        imageSrc: require("../Images/team1.jpg"),
-        name: 'Anna smith',
-        designation: 'Co-founder',
+        imageSrc: require("../Images/best-package-1.jpg"),
+        name: 'Bangkok with Phuket',
     },
     {
-        imageSrc: require("../Images/team2.jpg"),
-        name: 'Amanda red',
-        designation: 'Interior designer',
+        imageSrc: require("../Images/best-package-2.jpg"),
+        name: 'Singapore and Cruise',
     },
     {
-        imageSrc: require("../Images/team3.jpg"),
-        name: 'samuel jacobs',
-        designation: 'Photographer',
+        imageSrc: require("../Images/best-package-3.jpg"),
+        name: 'Bangkok and Pattaya Tour',
     },
     {
-        imageSrc: require("../Images/team4.jpg"),
-        name: 'Alan Miller',
-        designation: 'Interior Designer',
+        imageSrc: require("../Images/best-package-4.jpg"),
+        name: 'Malaysia and Bali Tour',
     },
     {
-        imageSrc: require("../Images/team5.jpg"),
-        name: 'Clara sonra',
-        designation: 'Interior Designer',
+        imageSrc: require("../Images/best-package-5.jpg"),
+        name: 'Exotic Malaysia Tour',
     },
     {
-        imageSrc: require("../Images/team6.jpg"),
-        name: 'Tommy Ridar',
-        designation: 'Photographer',
+        imageSrc: require("../Images/best-package-6.jpg"),
+        name: 'Majestic Dubai',
     },
     {
-        imageSrc: require("../Images/team7.jpg"),
-        name: 'Anna Ridar',
-        designation: 'Architecture',
+        imageSrc: require("../Images/best-package-7.jpg"),
+        name: 'Sri Lanka Delights',
     },
     {
-        imageSrc: require("../Images/team8.jpg"),
-        name: 'Amah sonra',
-        designation: 'art director',
+        imageSrc: require("../Images/best-package-8.jpg"),
+        name: 'Singapore Royal Cruise Package',
     },
 ]
 
