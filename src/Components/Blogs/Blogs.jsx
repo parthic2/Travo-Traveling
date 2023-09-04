@@ -12,7 +12,7 @@ const Blogs = () => {
         <div className="justify-center text-center">
           <div className="flex flex-col items-center text-center mb-24 lg:mb-16 md:mb-12 xs:mb-20">
             <span className="font-medium text-primary-strong text-base uppercase block m-spacing-m">
-              Travelling posts
+              Traveling posts
             </span>
             <h2 className="heading-5">
               Latest Blogs

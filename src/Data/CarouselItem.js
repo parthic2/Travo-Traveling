@@ -49,22 +49,22 @@ export const counterItems = [
 export const projectData = [
     {
         imageSrc: require("../Images/home-interior-design-portfolio-img01.jpg"),
-        category: 'Travelling',
+        category: 'Traveling',
         title: 'boats docked',
     },
     {
         imageSrc: require("../Images/home-interior-design-portfolio-img02.jpg"),
-        category: 'Travelling',
+        category: 'Traveling',
         title: 'Nature',
     },
     {
         imageSrc: require("../Images/home-interior-design-portfolio-img03.jpg"),
-        category: 'Travelling',
+        category: 'Traveling',
         title: 'Iceland',
     },
     {
         imageSrc: require("../Images/home-interior-design-portfolio-img04.jpg"),
-        category: 'Travelling',
+        category: 'Traveling',
         title: 'Taj Mahal',
     }
 ];
