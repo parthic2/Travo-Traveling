@@ -104,7 +104,7 @@ export const blogs = [
     {
         category: 'Africa',
         imageSrc: require("../Images/blog-img233.jpg"),
-        title: 'Why You Shouldn Elephants France.',
+        title: 'Why You Shouldn’t Elephants France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'bill gardner'
     },
