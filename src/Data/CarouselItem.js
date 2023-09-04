@@ -1,8 +1,8 @@
 export const slides = [
     {
         id: 1,
-        title: 'Blue Lagoon',
-        category: 'The lagoon',
+        title: 'Swaraj Dweep',
+        category: 'Andaman Islands',
     },
     {
         id: 2,
