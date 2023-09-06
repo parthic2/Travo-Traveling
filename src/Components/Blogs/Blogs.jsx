@@ -25,8 +25,8 @@ const Blogs = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
           {blogs.map((blog, index) => (
             <div key={index}>
-              <div className="h-full flex sm:flex-row flex-col items-left justify-left text-left bg-white rounded-lg">
-                <img alt="team" className="flex-shrink-0 w-full md:w-64 sm:w-64 h-80 object-cover object-center sm:mb-0 mb-4" src={blog.imageSrc} />
+              <div className="h-full flex sm:flex-row flex-col items-center justify-center text-left bg-white rounded-lg">
+                <img alt="team" className="flex-shrink-0 w-full md:w-72 sm:w-72 h-96 object-cover object-center sm:mb-0 mb-4" src={blog.imageSrc} />
                 <div className="flex-grow px-8">
                   <div className="mt-5">
                     <Link to="/" className="blog-category">{blog.category}</Link>
