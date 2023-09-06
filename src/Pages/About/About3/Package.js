@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import { responsiveSlide } from '../../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../../Project.config';
 
-const MeetOurTeam = () => {
+const Packages = () => {
   return (
     <div className="pt-28">
       <div className="lg:text-center md:text-left">
@@ -42,4 +42,4 @@ const MeetOurTeam = () => {
   )
 }
 
-export default MeetOurTeam;
+export default Packages;

@@ -2,7 +2,7 @@ import React from 'react';
 import { team } from '../../../Data/CarouselItem';
 import useScrollAnimation from '../../../Hooks/useScrollAnimation';
 
-const TeamSection = () => {
+const Packages = () => {
   const fadeIn = useScrollAnimation(".animate");
   return (
     <div className="pt-28">
@@ -33,4 +33,4 @@ const TeamSection = () => {
   );
 };
 
-export default TeamSection;
+export default Packages;

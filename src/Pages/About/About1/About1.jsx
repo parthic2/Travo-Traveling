@@ -1,10 +1,10 @@
 import React from 'react';
 import ClientReviews from './ClientReviews';
-import TeamSection from './TeamSection';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
 import AboutImg1 from "../../../Images/about2.jpg";
 import AboutImg2 from "../../../Images/about1.jpg";
+import Packages from './Package';
 
 const About1 = () => {
   window.scrollTo(0, 0);
@@ -37,7 +37,7 @@ const About1 = () => {
             </div>
           </div>
 
-          <TeamSection />
+          <Packages />
         </div>
 
         <ClientReviews />

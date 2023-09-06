@@ -1,11 +1,11 @@
 import React from 'react';
 import ClientReview from './ClientReview';
-import MeetOurTeam from './MeetOurTeam';
 import WhyChooseUs from './WhyChooseUs';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
 import AboutImg1 from "../../../Images/material-about1.jpg";
 import AboutImg2 from "../../../Images/material-about2.jpg";
+import Packages from './Package';
 
 const About3 = () => {
   window.scrollTo(0, 0);
@@ -40,7 +40,7 @@ const About3 = () => {
 
           <WhyChooseUs />
 
-          <MeetOurTeam />
+          <Packages />
         </div>
       </div>
 

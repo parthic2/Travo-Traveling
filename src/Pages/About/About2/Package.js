@@ -4,7 +4,7 @@ import { team } from '../../../Data/CarouselItem';
 import { responsiveSlide } from '../../../Data/ResponsiveCarousel';
 import { carouselSettings } from '../../../Project.config';
 
-const MeetOurTeam = () => {
+const Packages = () => {
   return (
     <div className="items-center grid grid-cols-2 lg:grid-cols-3 gap-4 pt-28">
       <div className="col-span-2 lg:col-span-1 pt-50">
@@ -42,4 +42,4 @@ const MeetOurTeam = () => {
   )
 }
 
-export default MeetOurTeam;
+export default Packages;

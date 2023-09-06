@@ -1,10 +1,10 @@
 import React from 'react';
 import WhyChooseUs from './WhyChooseUs';
-import MeetOurTeam from './MeetOurTeam';
 import ClientReview from './ClientReview';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
 import AboutImg1 from "../../../Images/material-about.jpg"
+import Packages from './Package';
 
 const About2 = () => {
   window.scrollTo(0, 0);
@@ -34,7 +34,7 @@ const About2 = () => {
           </div>
 
           <WhyChooseUs />
-          <MeetOurTeam />
+          <Packages />
         </div>
       </div>
 
