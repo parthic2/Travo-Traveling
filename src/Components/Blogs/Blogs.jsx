@@ -21,20 +21,22 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="container-fluid px-4">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
           {blogs.map((blog, index) => (
-            <div className="mb-3" key={index}>
-              <div className="flex flex-wrap justify-center items-center">
-                <div className={blog.category}>
-                  <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center">
-                    <img alt="team" className="blog-image" src={blog.imageSrc} style={{ height: "349px" }} loading="lazy" />
-                    <div className="post-details">
-                      <Link to="/" className="blog-category">{blog.category}</Link>
-                      <Link to="/" className="blog-title">{blog.title}</Link>
-                      <p className="detail">{blog.detail}</p>
-                      <Link to="/" className="blog-author">{blog.author}</Link>
-                    </div>
+            <div key={index}>
+              <div className="h-full flex sm:flex-row flex-col items-left justify-left text-left bg-white rounded-lg">
+                <img alt="team" className="flex-shrink-0 w-full md:w-64 sm:w-64 h-80 object-cover object-center sm:mb-0 mb-4" src={blog.imageSrc} />
+                <div className="flex-grow px-8">
+                  <div className="mt-5">
+                    <Link to="/" className="blog-category">{blog.category}</Link>
+                  </div>
+                  <div className="mt-10">
+                    <Link to="/" className="blog-title">{blog.title}</Link>
+                  </div>
+                  <p className="detail mt-2">{blog.detail}</p>
+                  <div className="mb-10">
+                    <Link to="/" className="blog-author">{blog.author}</Link>
                   </div>
                 </div>
               </div>

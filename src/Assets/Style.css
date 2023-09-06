@@ -687,14 +687,6 @@
     opacity: 0.3;
 }
 
-.post-details {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-    width: 100%;
-}
-
 .blog-category {
     align-self: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.1);
