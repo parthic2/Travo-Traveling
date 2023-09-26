@@ -48,22 +48,22 @@ export const counterItems = [
 
 export const projectData = [
     {
-        imageSrc: require("../Images/home-interior-design-portfolio-img01.jpg"),
+        imageSrc: require("../img/home-interior-design-portfolio-img01.jpg"),
         category: 'Traveling',
         title: 'boats docked',
     },
     {
-        imageSrc: require("../Images/home-interior-design-portfolio-img02.jpg"),
+        imageSrc: require("../img/home-interior-design-portfolio-img02.jpg"),
         category: 'Traveling',
         title: 'Nature',
     },
     {
-        imageSrc: require("../Images/home-interior-design-portfolio-img03.jpg"),
+        imageSrc: require("../img/home-interior-design-portfolio-img03.jpg"),
         category: 'Traveling',
         title: 'Iceland',
     },
     {
-        imageSrc: require("../Images/home-interior-design-portfolio-img04.jpg"),
+        imageSrc: require("../img/home-interior-design-portfolio-img04.jpg"),
         category: 'Traveling',
         title: 'Taj Mahal',
     }
@@ -96,14 +96,14 @@ export const testimonialItems = [
 export const blogs = [
     {
         category: 'Europe',
-        imageSrc: require("../Images/blog-img232.jpg"),
+        imageSrc: require("../img/blog-img232.jpg"),
         title: 'Why You Shouldn’t Ride France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'Jeremy Dupont'
     },
     {
         category: 'Africa',
-        imageSrc: require("../Images/blog-img233.jpg"),
+        imageSrc: require("../img/blog-img233.jpg"),
         title: 'Why You Shouldn’t Elephants France.',
         detail: 'Lorem ipsum is simply dummy text printing...',
         author: 'bill gardner'

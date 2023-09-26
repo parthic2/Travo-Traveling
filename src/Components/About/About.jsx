@@ -1,7 +1,7 @@
 import React from 'react';
 import useScrollAnimation from '../../Hooks/useScrollAnimation';
-import AboutImage1 from "../../Images/home-interior-design-about-img02.jpg";
-import AboutImage2 from "../../Images/home-interior-design-about-img03.jpg";
+import AboutImage1 from "../../img/home-interior-design-about-img03.jpg";
+import AboutImage2 from "../../img/home-interior-design-about-img02.jpg";
 
 const About = () => {
   const fadeIn = useScrollAnimation(".aboutPadding");

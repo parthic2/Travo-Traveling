@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsPlay } from 'react-icons/bs';
 import useScrollAnimationTrends from '../../Hooks/useScrollAnimationTrends';
-import AboutImage from "../../Images/home-interior-design-about-img01.jpg";
+import AboutImage from "../../img/home-interior-design-about-img01.jpg";
 
 const Trends = () => {
   const registerElement = useScrollAnimationTrends();
@@ -11,7 +11,7 @@ const Trends = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div className="" ref={(element) => registerElement(element)}>
-            <h1 className="heading-3">The Way TO Move. The Way To Care</h1>
+            <h1 className="heading-3">The Way To Move. The Way To Care</h1>
             <div className="lg:mt-20 w-width-70 mx:lg-0 md:mt-0 xs:w-1/2 xxs:w-width-70">
               <div className="text-primary-strong hover:text-background-dark underline underline-offset-4 font-medium cursor-pointer">
                 hello@domain.com
