@@ -31,7 +31,7 @@ const Packages = () => {
           >
             {team.map((item, index) => (
               <div key={index}>
-                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-250 border-2 border-primary-strong" loading="lazy" />
+                <img src={item.imageSrc} alt="portfolio" className="w-width-90 h-height-280 border-2 border-primary-strong" loading="lazy" />
                 <p className="pt-5 capitalize font-bold">{item.name}</p>
               </div>
             ))}
