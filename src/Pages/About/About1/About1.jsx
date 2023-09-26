@@ -2,8 +2,8 @@ import React from 'react';
 import ClientReviews from './ClientReviews';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
-import AboutImg1 from "../../../Images/about2.jpg";
-import AboutImg2 from "../../../Images/about1.jpg";
+import AboutImg1 from "../../../img/about2.jpg";
+import AboutImg2 from "../../../img/about1.jpg";
 import Packages from './Package';
 
 const About1 = () => {

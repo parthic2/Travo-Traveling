@@ -1,9 +1,9 @@
 import React from 'react';
 import { BiRadioCircle } from 'react-icons/bi';
-import Choose1 from "../../../Images/choose-about6.jpg";
-import Choose2 from "../../../Images/choose-about3.jpg";
-import Choose3 from "../../../Images/choose-about4.jpg";
-import Choose4 from "../../../Images/choose-about5.jpg";
+import Choose1 from "../../../img/choose-about6.jpg";
+import Choose2 from "../../../img/choose-about3.jpg";
+import Choose3 from "../../../img/choose-about4.jpg";
+import Choose4 from "../../../img/choose-about5.jpg";
 
 const WhyChooseUs = () => {
   return (

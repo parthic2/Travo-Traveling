@@ -3,8 +3,8 @@ import ClientReview from './ClientReview';
 import WhyChooseUs from './WhyChooseUs';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
-import AboutImg1 from "../../../Images/material-about1.jpg";
-import AboutImg2 from "../../../Images/material-about2.jpg";
+import AboutImg1 from "../../../img/material-about1.jpg";
+import AboutImg2 from "../../../img/material-about2.jpg";
 import Packages from './Package';
 
 const About3 = () => {

@@ -17,7 +17,7 @@
 }
 
 .sliderImage-1 {
-    background-image: url("../Images/home-interior-design-slider-img01.jpg");
+    background-image: url("../img/home-interior-design-slider-img01.jpg");
 }
 
 .sliderImage-2 {
@@ -312,7 +312,7 @@
 
 /* about css */
 .cover-background {
-    background-image: url("../Images/home-interior-design-about-bg.png");
+    background-image: url("../img/home-interior-design-about-bg.png");
     opacity: 1;
 }
 
@@ -763,7 +763,7 @@
 
 /* Banner css */
 .bannerBg {
-    background-image: url("../Images/home-interior-design-start-project-bg.jpg");
+    background-image: url("../img/home-interior-design-start-project-bg.jpg");
     background-size: cover;
     position: relative;
     background-position: center;

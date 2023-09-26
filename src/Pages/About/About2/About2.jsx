@@ -3,7 +3,7 @@ import WhyChooseUs from './WhyChooseUs';
 import ClientReview from './ClientReview';
 import NavbarInner from '../../../Components/Navbar/InnerNavbar/NavbarInner';
 import Footer from '../../../Components/Footer/Footer';
-import AboutImg1 from "../../../Images/material-about.jpg"
+import AboutImg1 from "../../../img/material-about.jpg"
 import Packages from './Package';
 
 const About2 = () => {
